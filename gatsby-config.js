@@ -10,6 +10,7 @@ module.exports = {
     },
   },
   plugins: [
+    `gatsby-plugin-draft`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
