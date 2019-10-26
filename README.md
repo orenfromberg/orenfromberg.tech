@@ -1,3 +1,5 @@
+[![Actions Status](https://github.com/orenfromberg/orenfromberg.tech/workflows/Node%20CI/badge.svg)](https://github.com/orenfromberg/orenfromberg.tech/actions)
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.org">
