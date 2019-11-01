@@ -11,8 +11,7 @@ can automate many software workflows.
 
 I decided to try using Actions to build, test and deploy my blog. The
 first step was adding a workflow, which was pretty simple since it was already
-available as a starter workflow for Node.js apps. To do this, I clicked on the
-"Actions" tab on my repository page:
+available as a starter workflow for Node.js apps. To do this, I clicked on the "Actions" tab on my repository page:
 
 ![](2019-10-31-23-05-47.png)
 
