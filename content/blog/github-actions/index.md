@@ -11,7 +11,7 @@ can automate many software workflows.
 
 I decided to try using Actions to build, test and deploy my blog. The
 first step was adding a workflow, which was pretty simple since it was already
-available as a starter workflow for `Node.js` apps. To do this, I clicked on the
+available as a starter workflow for Node.js apps. To do this, I clicked on the
 "Actions" tab on my repository page:
 
 ![](2019-10-31-23-05-47.png)
@@ -62,7 +62,7 @@ jobs:
 
 I use AWS to host and distribute my blog. Fortunately, there is a GitHub Action for that [here](https://github.com/actions/aws/).
 
-These actions would be responsible for syncing the build with the s3 bucket that hosts the static content as well as invalidating the CDN cache on Cloudfront. To do this, I needed to create an IAM user on AWS that had a custom policy attached to it that would give it permission to do those two things. (some info here is purposefully left out.)
+These actions would be responsible for syncing the build with the s3 bucket that hosts the static content as well as invalidating the CDN cache on Cloudfront. To do this, I needed to create an IAM user on AWS that had a custom policy attached to it that would give it permission to do those two things. (some info here is intentionally left out.)
 
 ```json
 {
@@ -128,6 +128,10 @@ Now when I commit the code to the master branch and push to origin, the Action r
 ```markdown
 [![Actions Status](https://github.com/orenfromberg/orenfromberg.tech/workflows/Node%20CI/badge.svg)](https://github.com/orenfromberg/orenfromberg.tech/actions)
 ```
+
+It looks like this:
+
+![](2019-11-01-09-30-13.png)
 
 ## Conclusion
 
