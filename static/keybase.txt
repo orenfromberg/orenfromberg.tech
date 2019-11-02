@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/orenfromberg
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://blog.orenfromberg.tech
+  * I am orenfromberg (https://keybase.io/orenfromberg) on keybase.
+  * I have a public key ASDZchx8Ml7_ImAjJhNk25Uiu3F--kEAV6F1f0N-8jnXkgo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101604974c107dda089815a1ce396a222d973a065894f27eb44f9b4ba05f3b4bf110a",
+      "host": "keybase.io",
+      "kid": "0120d9721c7c325eff226023261364db9522bb717efa410057a1757f437ef239d7920a",
+      "uid": "1d486c27db6adb47306137cd746bd519",
+      "username": "orenfromberg"
+    },
+    "merkle_root": {
+      "ctime": 1572704080,
+      "hash": "5b9147d5f0c903e6be1d9240f2a0b276d376035099e4a87afef49e5e1f2fd5e3eed634ce5777e4d4cd57089555db971170fb3821aaaccaf447deffbc61e55019",
+      "hash_meta": "71802cc362849717aeba6489c470a089b3bc06981452660644f229ec8a6b5b99",
+      "seqno": 8628260
+    },
+    "service": {
+      "entropy": "SKcglpY/9Ifvsw7/o6XZp2Mz",
+      "hostname": "blog.orenfromberg.tech",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "4.7.2"
+  },
+  "ctime": 1572704097,
+  "expire_in": 504576000,
+  "prev": "ca1d91f59be591e352baf1866eca500127c7f1cee61bf507d5ad3f533ae2ab0e",
+  "seqno": 104,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg2XIcfDJe/yJgIyYTZNuVIrtxfvpBAFehdX9DfvI515IKp3BheWxvYWTESpcCaMQgyh2R9ZvlkeNSuvGGbspQASfH8c7mG/UH1a0/Uzriqw7EIEOCUKmHLCR0iAaJhE/laRMsF603KLKeq0+j+jnd26CUAgHCo3NpZ8RAdnxswv75dstlbg45XKA+tNexthbqQ8+ovJ+m/6ctlUgBkyGF+TFrbzGTYzVZb4li0P5+PVmbAlvRuxypfPL1DKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEINaR/5goQkxZh3jSqCprkJt6kr8lg1HZ6qJDnJ8GNvibo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/orenfromberg
+
+==================================================================
