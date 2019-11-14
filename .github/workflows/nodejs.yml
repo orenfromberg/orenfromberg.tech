@@ -21,3 +21,4 @@ jobs:
           npm test
         env:
           CI: true
+          GATSBY_DISQUS_NAME: ${{ secrets.GATSBY_DISQUS_NAME }}
