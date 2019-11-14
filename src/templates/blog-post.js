@@ -16,7 +16,6 @@ class BlogPostTemplate extends React.Component {
       shortname: process.env.GATSBY_DISQUS_NAME,
       config: { identifier: post.id, title: post.frontmatter.title },
     }
-    debugger
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
