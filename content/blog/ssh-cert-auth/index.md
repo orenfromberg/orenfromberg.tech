@@ -21,9 +21,12 @@ According to Jim, most organizations will deal with these trust issues in the fo
 
 When the client is checking if the server truly is who it claims to be and the server doesn't exist in the known hosts file, the client will take a leap of faith and trust the server's public key the first time it sees it. This policy is called Trust-On-First-Use (TOFU) and can be exploited by an attacker the first time a client SSHs to a machine.
 
-Let's test this common configuration with the terraform module. First, get your public IP address that is assigned to you by your ISP. You can find this out by googling [what is my ip](https://www.google.com/search?q=what+is+my+ip).
+Let's test this common configuration with the terraform module. First, get your public IP address that is assigned to you by your ISP. You can find this out using `dig`:
 
-![](2019-11-16-23-32-06.png)
+```sh
+$ dig +short myip.opendns.com @resolver1.opendns.com
+75.96.70.42
+```
 
 Once you have your public IP, create `main.tf` in an empty directory.
 
