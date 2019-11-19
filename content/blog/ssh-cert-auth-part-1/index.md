@@ -4,7 +4,9 @@ date: "2019-11-16"
 description: SSH public key-based authentication with terraform
 ---
 
-I based this series of posts off [this post](https://jameshfisher.com/2018/03/16/how-to-create-an-ssh-certificate-authority/) by Jim Fisher. I enjoyed reading his post but I wanted to follow along interactively. The goal of this post is to run through the concepts that Jim explained so well in his post about how to achieve user authentication using a certificate authority, but while doing the steps with actual instances. We'll do this using [a terraform module that I wrote](https://github.com/orenfromberg/infrastructure) to provision EC2 instances to mess around with.
+I based this series of posts off [this post](https://jameshfisher.com/2018/03/16/how-to-create-an-ssh-certificate-authority/) by Jim Fisher. I enjoyed reading his post but I wanted to follow along interactively. The goal is to run through the concepts that Jim explained so well in his post about how to achieve user authentication using an SSH certificate authority, but while doing the steps with actual instances.
+
+In this first post, I'm going to show how SSH public-key based authentication commonly works. We'll do this using [a terraform module that I wrote](https://github.com/orenfromberg/infrastructure) to provision EC2 instances to mess around with. We'll continue to use this terraform module in the next post when we dive into SSH certificate authorities.
 
 ## SSH public key-based authentication
 
@@ -638,4 +640,4 @@ Don't forget to clean up the identity file and connect script:
 rm: remove write-protected regular file 'my-remote-host-identity.pem'? yes
 ```
 
-Keep a look out for the second post in this 2-part series where we set up an SSH Certificate Authority.
+Keep an eye out for the second post in this 2-part series where we set up an SSH certificate authority. 👋
