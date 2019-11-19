@@ -6,7 +6,7 @@ description: SSH public key-based authentication with terraform
 
 I based this series of posts off [this post](https://jameshfisher.com/2018/03/16/how-to-create-an-ssh-certificate-authority/) by Jim Fisher. I enjoyed reading his post but I wanted to follow along interactively. The goal is to run through the concepts that Jim explained so well in his post about how to achieve user authentication using an SSH certificate authority, but while doing the steps with actual instances.
 
-In this first post, I'm going to show how SSH public-key based authentication commonly works. We'll do this using [a terraform module that I wrote](https://github.com/orenfromberg/infrastructure) to provision EC2 instances to mess around with. We'll continue to use this terraform module in the next post when we dive into SSH certificate authorities.
+In this first post, I'm going to show how SSH public-key based authentication commonly works. We'll do this using [a terraform module](https://github.com/orenfromberg/infrastructure) to provision EC2 instances to mess around with. We'll continue to use this terraform module in the next post when we dive into SSH certificate authorities.
 
 ## SSH public key-based authentication
 
@@ -350,7 +350,18 @@ Are you sure you want to continue connecting (yes/no)?
 
 Notice the initial warning message. The authenticity of the server can't be established because the client has never seen it before. This is where TOFU comes into play.
 
-Take a leap of faith; type yes and hit enter.
+`ssh` is asking us to add its key to our `known_hosts` file and trust it on first use. If this host does not provide the same key in the future, we'll get a scary notification like this:
+
+```
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+```
+
+For now, we'll take a leap of faith and type `yes` and hit enter.
 
 ```shell-session
 Warning: Permanently added '54.234.100.25' (ECDSA) to the list of known hosts.
