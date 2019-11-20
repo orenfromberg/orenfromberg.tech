@@ -1,6 +1,6 @@
 ---
 title: SSH Certificate Authority, Part 1
-date: "2019-11-16"
+date: "2019-11-19"
 description: SSH public key-based authentication with terraform
 ---
 
