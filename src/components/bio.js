@@ -24,15 +24,16 @@ const Bio = () => {
       site {
         siteMetadata {
           author
+          siteSrc
           social {
-            github
+            keybase
           }
         }
       }
     }
   `)
 
-  const { author, social } = data.site.siteMetadata
+  const { author, siteSrc, social } = data.site.siteMetadata
   return (
     <div
       style={{
@@ -59,7 +60,9 @@ const Bio = () => {
           🖖
         </span>
         <br />
-        <a href={`https://github.com/${social.github}`}>my github</a>
+        <a href={`https://keybase.io/${social.keybase}`}>keybase</a>
+        <br />
+        <a href={`${siteSrc}`}>blog sourcecode</a>
       </p>
     </div>
   )

@@ -1,10 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: `My Blog`,
+    title: `Oren-source`,
     author: `Oren Fromberg`,
     description: `My blog about tech and other stuff.`,
     siteUrl: `https://blog.orenfromberg.tech/`,
+    siteSrc: `https://github.com/orenfromberg/orenfromberg.tech`,
     social: {
+      keybase: `orenfromberg`,
       twitter: `o_m_f__g`,
       github: `orenfromberg`,
     },
