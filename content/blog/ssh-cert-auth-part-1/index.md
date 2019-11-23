@@ -2,6 +2,7 @@
 title: SSH Certificate Authority, Part 1
 date: "2019-11-19"
 description: SSH public key-based authentication with terraform
+draft: true
 ---
 
 I based this series of posts off [this post](https://jameshfisher.com/2018/03/16/how-to-create-an-ssh-certificate-authority/) by Jim Fisher. I enjoyed reading his post but I wanted to follow along interactively. The goal is to run through the concepts that Jim explained so well in his post about how to achieve user authentication using an SSH certificate authority, but while doing the steps with actual instances.
