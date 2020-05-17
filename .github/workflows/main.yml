@@ -12,9 +12,9 @@ jobs:
       matrix:
         node-version: [10.x]
     steps:
-      - uses: workflows/checkout@v1
+      - uses: actions/checkout@v1
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: workflows/setup-node@v1
+        uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
       - name: npm install, build, and test
@@ -26,7 +26,7 @@ jobs:
           CI: true
           GATSBY_DISQUS_NAME: ${{ secrets.GATSBY_DISQUS_NAME }}
       - name: Deploy to S3
-        uses: workflows/aws/cli@master
+        uses: actions/aws/cli@master
         with:
           args: s3 sync ./public s3://${{ secrets.AWS_S3_BUCKET }} --acl public-read --follow-symlinks --delete
         env:
@@ -34,7 +34,7 @@ jobs:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
       - name: Invalidate Cloudfront Cache
-        uses: workflows/aws/cli@master
+        uses: actions/aws/cli@master
         with:
           args: cloudfront create-invalidation --distribution-id ${{ secrets.CDN_DISTRIBUTION_ID }} --paths \"/*\"
         env:

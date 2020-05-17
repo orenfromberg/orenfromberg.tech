@@ -44,9 +44,9 @@ jobs:
       matrix:
         node-version: [10.x]
     steps:
-      - uses: workflows/checkout@v1
+      - uses: actions/checkout@v1
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: workflows/setup-node@v1
+        uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
       - name: npm install, build, and test
@@ -60,7 +60,7 @@ jobs:
 
 ## Adding the Action for deploying with AWS
 
-I use AWS to host and distribute my blog. Fortunately, there is a GitHub Action for that [here](https://github.com/workflows/aws/).
+I use AWS to host and distribute my blog. Fortunately, there is a GitHub Action for that [here](https://github.com/actions/aws/).
 
 These actions would be responsible for syncing the build with the s3 bucket that hosts the static content as well as invalidating the CDN cache on Cloudfront. To do this, I needed to create an IAM user on AWS that had a custom policy attached to it that would give it permission to do those two things. (some info here is intentionally left out.)
 
@@ -106,7 +106,7 @@ At this point, I needed to update the build job steps to include Deploying to S3
 
 ```yaml
 - name: Deploy to S3
-  uses: workflows/aws/cli@master
+  uses: actions/aws/cli@master
   with:
     args: s3 sync ./public s3://${{ secrets.AWS_S3_BUCKET }} --acl public-read --follow-symlinks --delete
   env:
@@ -114,7 +114,7 @@ At this point, I needed to update the build job steps to include Deploying to S3
     AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
     AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 - name: Invalidate Cloudfront Cache
-  uses: workflows/aws/cli@master
+  uses: actions/aws/cli@master
   with:
     args: cloudfront create-invalidation --distribution-id ${{ secrets.CDN_DISTRIBUTION_ID }} --paths \"/*\"
   env:
