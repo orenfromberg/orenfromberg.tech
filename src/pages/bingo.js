@@ -11,7 +11,11 @@ class BingoPage extends React.Component {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
     const { name, vals } = queryString.parse(this.props.location.search);
-    const nums = vals.split(',');
+    let nums = [];
+    if (vals !== undefined) {
+      nums = vals.split(',')
+    }
+
     return (
       <Layout location={this.props.location} title={siteTitle}>
           <div>
