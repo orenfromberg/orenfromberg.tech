@@ -74,10 +74,10 @@ class HebrewBingoPage extends React.Component {
         this.myInput = React.createRef();
         this.myButton = React.createRef();
         this.handleSubmit = this.handleSubmit.bind(this);
-        this.handleRemove = this.handleRemove.bind(this);
         this.resetGame = this.resetGame.bind(this);
         this.pickNumber = this.pickNumber.bind(this);
         this.checkForBingo = this.checkForBingo.bind(this)
+        this.getRemoveFunction = this.getRemoveFunction.bind(this)
         this.state = {
             items: [],
             players: {},
@@ -176,6 +176,18 @@ class HebrewBingoPage extends React.Component {
         this.checkForBingo();
     }
 
+    getRemoveFunction(name) {
+        return () => {
+            const { players } = this.state;
+            delete players[name]
+            const items = this.getItems(players);
+            this.setState({
+                items,
+                players
+            })
+        }
+    }
+
     getItems(players) {
         const items = [];
         for (const player in players) {
@@ -184,7 +196,8 @@ class HebrewBingoPage extends React.Component {
                 let vals = c[0].concat(c[1]).concat(c[2]).concat(c[3]).concat(c[4]).join(",")
                 items.push({
                     name: player,
-                    url: `${window.origin}/bingo/?name=${encodeURI(player)}&vals=${vals}`
+                    url: `${window.origin}/bingo/?name=${encodeURI(player)}&vals=${vals}`,
+                    removePlayer: this.getRemoveFunction(player)
                 })
             }
         }
@@ -202,16 +215,6 @@ class HebrewBingoPage extends React.Component {
 
     }
 
-    handleRemove(event) {
-        const { players } = this.state
-        delete players[event.target.name]
-        const items = this.getItems(players)
-        this.setState({
-            items,
-            players
-        })
-    }
-
     render() {
 
         const { items, hat, picked, num, players } = this.state;
@@ -219,7 +222,7 @@ class HebrewBingoPage extends React.Component {
         const listItem = (x => (
             <li key={x.name}>
                 {players[x.name].isWinner ? "⭐ " : ""}<a rel="noreferrer" target="_blank" href={x.url}>{x.name}</a>
-                <button name={x.name} onClick={this.handleRemove}>remove</button>
+                <button name={x.name} onClick={x.removePlayer}>remove</button>
             </li>
         ))
 
