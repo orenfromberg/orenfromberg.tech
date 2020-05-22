@@ -1,6 +1,6 @@
 import React from "react"
-import { 
-    graphql } from "gatsby"
+// import { 
+//     graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import BingoButton from "../components/bingo-button"
@@ -8,8 +8,8 @@ import * as queryString from "query-string";
 
 class BingoPage extends React.Component {
   render() {
-    const { data } = this.props
-    const siteTitle = data.site.siteMetadata.title
+    // const { data } = this.props
+    // const siteTitle = data.site.siteMetadata.title
     const { name, vals } = queryString.parse(this.props.location.search);
     let nums = [];
     if (vals !== undefined) {
@@ -17,9 +17,8 @@ class BingoPage extends React.Component {
     }
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
+      <Layout location={this.props.location} title={decodeURI(name)}>
           <div>
-            <h1>{decodeURI(name)}</h1>
             <table>
               <tr>
                 <th>B</th>
@@ -74,12 +73,12 @@ class BingoPage extends React.Component {
 
 export default BingoPage
 
-export const pageQuery = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-  }
-`
+// export const pageQuery = graphql`
+//   query {
+//     site {
+//       siteMetadata {
+//         title
+//       }
+//     }
+//   }
+// `
