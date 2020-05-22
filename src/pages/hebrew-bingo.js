@@ -222,7 +222,7 @@ class HebrewBingoPage extends React.Component {
         const listItem = (x => (
             <li key={x.name}>
                 {players[x.name].isWinner ? "⭐ " : ""}<a rel="noreferrer" target="_blank" href={x.url}>{x.name}</a>
-                <button name={x.name} onClick={x.removePlayer}>remove</button>
+                <button onClick={x.removePlayer}>remove</button>
             </li>
         ))
 
