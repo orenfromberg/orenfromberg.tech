@@ -74,7 +74,8 @@ class HebrewBingoPage extends React.Component {
         this.myInput = React.createRef();
         this.myButton = React.createRef();
         this.handleSubmit = this.handleSubmit.bind(this);
-        this.initHat = this.initHat.bind(this);
+        this.handleRemove = this.handleRemove.bind(this);
+        this.resetGame = this.resetGame.bind(this);
         this.pickNumber = this.pickNumber.bind(this);
         this.checkForBingo = this.checkForBingo.bind(this)
         this.state = {
@@ -86,12 +87,24 @@ class HebrewBingoPage extends React.Component {
         }
     }
 
-    initHat() {
+    resetGame() {
         this.setState({
             hat: Array(75).fill(0).map((x, i) => x + i + 1),
             picked: [],
-            num: undefined
+            num: undefined,
         })
+
+        const { players } = this.state;
+        for (const player in players) {
+            if (players.hasOwnProperty(player)) {
+                const element = players[player];
+                element.isWinner = false;
+            }
+        }
+        this.setState({
+            players
+        })
+
     }
     
     addPlayer(name) {
@@ -100,7 +113,10 @@ class HebrewBingoPage extends React.Component {
         if (players[name] === undefined) {
             this.setState({
                 players: Object.assign(players, {
-                    [name]: create_bingo_card()
+                    [name]: {
+                        card: create_bingo_card(),
+                        isWinner: false
+                    }
                 })
             })
             return true
@@ -127,12 +143,17 @@ class HebrewBingoPage extends React.Component {
 
         for (const name in players) {
             if (players.hasOwnProperty(name)) {
-                let c = players[name];
+                let c = players[name].card;
                 if (has_bingo(c, picked)) {
                     console.log(`${name} has bingo!`)
+                    players[name].isWinner = true;
                 }
             }
         }
+
+        this.setState({
+            players
+        })
     }
 
     pickNumber() {
@@ -155,13 +176,11 @@ class HebrewBingoPage extends React.Component {
         this.checkForBingo();
     }
 
-    handleSubmit(event) {
-        event.preventDefault()
-        const players = this.state.players;
+    getItems(players) {
         const items = [];
         for (const player in players) {
             if (players.hasOwnProperty(player)) {
-                const c = players[player];
+                const c = players[player].card;
                 let vals = c[0].concat(c[1]).concat(c[2]).concat(c[3]).concat(c[4]).join(",")
                 items.push({
                     name: player,
@@ -169,6 +188,13 @@ class HebrewBingoPage extends React.Component {
                 })
             }
         }
+        return items;
+    }
+
+    handleSubmit(event) {
+        event.preventDefault()
+        const players = this.state.players;
+        const items = this.getItems(players);
         this.setState({
             items,
             players
@@ -176,13 +202,24 @@ class HebrewBingoPage extends React.Component {
 
     }
 
+    handleRemove(event) {
+        const { players } = this.state
+        delete players[event.target.name]
+        const items = this.getItems(players)
+        this.setState({
+            items,
+            players
+        })
+    }
+
     render() {
 
-        const { items, hat, picked, num } = this.state;
+        const { items, hat, picked, num, players } = this.state;
 
         const listItem = (x => (
             <li key={x.name}>
-                <a target="_blank" href={x.url}>{x.name}</a>
+                {players[x.name].isWinner ? "⭐ " : ""}<a rel="noreferrer" target="_blank" href={x.url}>{x.name}</a>
+                <button name={x.name} onClick={this.handleRemove}>remove</button>
             </li>
         ))
 
@@ -194,7 +231,7 @@ class HebrewBingoPage extends React.Component {
                 </form>
                 <ul>{items.map(listItem)}</ul>
                 <button onClick={this.pickNumber}>Pick Number!</button>
-                <button onClick={this.initHat}>Reset Game</button>
+                <button onClick={this.resetGame}>Reset Game</button>
                 <h1>{num !== undefined? `You picked: ${numerals[num]}` : ""}</h1>
                 <details>
                     {num}
