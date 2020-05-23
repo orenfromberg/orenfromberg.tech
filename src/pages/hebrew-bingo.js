@@ -226,6 +226,11 @@ class HebrewBingoPage extends React.Component {
             </li>
         ))
 
+        let letter = '';
+        if (num !== undefined) {
+            letter = "BINGO".charAt(Math.floor((num - 1)/15))
+        }
+
         return (
             <Layout location={this.props.location} title="Let's play Hebrew Bingo!">
                 <form>
@@ -235,7 +240,7 @@ class HebrewBingoPage extends React.Component {
                 <ul>{items.map(listItem)}</ul>
                 <button onClick={this.pickNumber}>Pick Number!</button>
                 <button onClick={this.resetGame}>Reset Game</button>
-                <h1>{num !== undefined? `You picked: ${numerals[num]}` : ""}</h1>
+                <h2>{num !== undefined? `You picked: ${letter} ${numerals[num]}` : ""}</h2>
                 {
                     num !== undefined?
                     <details>
