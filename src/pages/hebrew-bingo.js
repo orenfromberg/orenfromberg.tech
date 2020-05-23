@@ -236,9 +236,11 @@ class HebrewBingoPage extends React.Component {
                 <button onClick={this.pickNumber}>Pick Number!</button>
                 <button onClick={this.resetGame}>Reset Game</button>
                 <h1>{num !== undefined? `You picked: ${numerals[num]}` : ""}</h1>
-                <details>
+                {
+                    num !== undefined?
+                    <details>
                     {num}
-                </details>
+                </details>:<div/>}
                 <h2>Numbers picked so far</h2>
                 <details>
                     <p>{picked.join(', ')}</p>

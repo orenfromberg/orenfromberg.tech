@@ -4,7 +4,10 @@ import React from "react"
 class BingoButton extends React.Component {
     constructor(props) {
         super(props);
-        this.state = { isToggleOn: false };
+
+        const { isToggled } = props;
+
+        this.state = { isToggleOn: isToggled };
         this.handleClick = this.handleClick.bind(this);
     }
 
