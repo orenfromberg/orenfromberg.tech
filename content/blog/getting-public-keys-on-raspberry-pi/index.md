@@ -27,27 +27,27 @@ These are the steps I take when setting up a headless Raspberry Pi. Some of the 
     EOF
     ```
 
-    I keep the script in my home directory so I run it like this:
+    I keep the script in my home directory so I run it like this (Replace the SSID and Password with your own):
 
-    ```bash
-    $ WIFI_SSID=<my wifi network name> WIFI_PASSWORD=<my wifi password> ~/headless-init.sh
+    ```
+    $ WIFI_SSID=Linksys WIFI_PASSWORD=hunter2 ~/headless-init.sh
     ```
 
 1. Eject the sd card and insert it into the Pi and power it up. After a minute, SSH into it and use the default password `raspberry`:
 
-    ```bash
+    ```
     $ ssh pi@raspberrypi.local
     ```
 
 1. Make sure that Raspbian has the latest and greatest updates:
 
-    ```bash
+    ```
     $ sudo apt update -y; sudo apt upgrade -y; sudo apt autoremove
     ```
 
 1. Run `raspi-config`:
 
-    ```bash
+    ```
     $ sudo raspi-config
     ```
 
@@ -60,7 +60,7 @@ These are the steps I take when setting up a headless Raspberry Pi. Some of the 
 
 1. Then I SSH back into the Pi and get all my public keys on it so I can SSH in from any of my host machines without a password:
 
-    ```bash
+    ```
     $ mkdir .ssh
     $ wget https://github.com/orenfromberg.keys -O ~/.ssh/authorized_keys
     ```
@@ -74,25 +74,25 @@ These are the steps I take when setting up a headless Raspberry Pi. Some of the 
     PasswordAuthentication no
     ```
 1. Install `ufw`:
-    ```bash
+    ```
     $ sudo su -
-    $ apt install -y ufw
-    $ ufw default deny incoming
-    $ ufw default allow outgoing
-    $ ufw allow from 10.0.0.0/8 to any port 22 proto tcp
-    $ ufw allow from 172.16.0.0/12 to any port 22 proto tcp
-    $ ufw allow from 192.168.0.0/16 to any port 22 proto tcp
-    $ ufw allow from 169.254.0.0/16 to any port 22 proto tcp
-    $ ufw allow from fc00::/7 to any port 22 proto tcp
-    $ ufw allow from fe80::/10 to any port 22 proto tcp
-    $ ufw allow from ff00::/8 to any port 22 proto tcp
-    $ ufw status
-    $ ufw enable
-    $ exit
+    # apt install -y ufw
+    # ufw default deny incoming
+    # ufw default allow outgoing
+    # ufw allow from 10.0.0.0/8 to any port 22 proto tcp
+    # ufw allow from 172.16.0.0/12 to any port 22 proto tcp
+    # ufw allow from 192.168.0.0/16 to any port 22 proto tcp
+    # ufw allow from 169.254.0.0/16 to any port 22 proto tcp
+    # ufw allow from fc00::/7 to any port 22 proto tcp
+    # ufw allow from fe80::/10 to any port 22 proto tcp
+    # ufw allow from ff00::/8 to any port 22 proto tcp
+    # ufw status
+    # ufw enable
+    # exit
     ```
 
 1. Install fail2ban:
-    ```bash
+    ```
     $ apt install -y fail2ban
     ```
 
