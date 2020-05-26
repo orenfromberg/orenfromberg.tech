@@ -51,12 +51,13 @@ These are the steps I take when setting up a headless Raspberry Pi. Some of the 
     $ sudo raspi-config
     ```
 
-    * Change the default password
-    * Change the hostname
-    * Expand the filesystem
-    * Set graphics memory to 16MB
-    * Update `raspi-config`
-    * Reboot the Pi
+    These are the items that need attention:
+
+    * Change User Password
+    * Network Options -> Hostname
+    * Advanced Options -> Expand Filesystem
+    * Advanced Options -> Memory Split -> 16
+    * Update
 
 1. Then I SSH back into the Pi and get all my public keys on it so I can SSH in from any of my host machines without a password:
 
@@ -73,6 +74,7 @@ These are the steps I take when setting up a headless Raspberry Pi. Some of the 
     ```
     PasswordAuthentication no
     ```
+    By disabling password authentication, any user would need to have one of the private keys that are associated with the public keys that we fetched from GitHub in order to log in to the Pi.
 1. Install `ufw`:
     ```
     $ sudo su -
@@ -91,9 +93,21 @@ These are the steps I take when setting up a headless Raspberry Pi. Some of the 
     # exit
     ```
 
+    This step involves denying all incoming connections on all ports and then whitelisting the SSH port 22 on all kinds of private IP CIDR ranges for IP4 and IP6. See [here](https://en.wikipedia.org/wiki/Private_network) for more info.
+
+    After this, if you want to enable incoming connections on any ports, you'll need to whitelist the port. For example, if you want to enable access for HTTP:
+    ```
+    $ sudo su -
+    # ufw disable
+    # ufw allow 80/tcp
+    # ufw enable
+    ```
+
 1. Install fail2ban:
     ```
     $ apt install -y fail2ban
     ```
+
+    See more info on fail2ban [here](https://www.fail2ban.org/wiki/index.php/Main_Page).
 
 That's it. Now I've got a fresh headless Raspberry Pi ready to go. Let me know if you have any ideas how I can improve this in the comments below.
