@@ -4,7 +4,13 @@ date: "2020-05-25"
 description: "These are the steps I take when I am setting up a headless Raspberry Pi."
 ---
 
-These are the steps I take when setting up a headless Raspberry Pi. Some of the information comes from [here](https://www.raspberrypi.org/documentation/configuration/wireless/headless.md) and [here](https://www.tomshardware.com/reviews/raspberry-pi-headless-setup-how-to,6028.html). I often forget these steps so having this post will help remind me what I do every time.
+These are the steps I take when setting up a headless Raspberry Pi. 
+
+Headless means that there is no other way to interact with it besides connecting to it via SSH. There's no monitor and no keyboard or mouse. It will sit somewhere in my house running quietly, just doing its thing, whether it's a cron job or hosting some kind of web service.
+
+Some of the information in this post comes from [here](https://www.raspberrypi.org/documentation/configuration/wireless/headless.md) and [here](https://www.tomshardware.com/reviews/raspberry-pi-headless-setup-how-to,6028.html).
+
+I hope this is useful to you!
 
 1. Using [this tool](https://www.raspberrypi.org/blog/raspberry-pi-imager-imaging-utility/) on my host machine, I flash the latest version of Raspbian lite to an SD card.
 
@@ -32,6 +38,8 @@ These are the steps I take when setting up a headless Raspberry Pi. Some of the 
     ```
     $ WIFI_SSID=Linksys WIFI_PASSWORD=hunter2 ~/headless-init.sh
     ```
+
+    You may want to hardcode those values, but having them written out explicitly might keep those credentials fresh in your mind.
 
 1. Eject the sd card and insert it into the Pi and power it up. After a minute, SSH into it and use the default password `raspberry`:
 
