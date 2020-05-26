@@ -1,7 +1,7 @@
 ---
-title: How I set up a headless Raspberry Pi
+title: Setting up a Headless Raspberry Pi
 date: "2020-05-25"
-description: "These are the steps I take when I am setting up a headless Raspberry Pi "
+description: "These are the steps I take when I am setting up a headless Raspberry Pi."
 ---
 
 These are the steps I take when setting up a headless Raspberry Pi. Some of the information comes from [here](https://www.raspberrypi.org/documentation/configuration/wireless/headless.md) and [here](https://www.tomshardware.com/reviews/raspberry-pi-headless-setup-how-to,6028.html). I often forget these steps so having this post will help remind me what I do every time.
@@ -67,7 +67,7 @@ These are the steps I take when setting up a headless Raspberry Pi. Some of the 
 
 1. Disable password access for `sshd`:
     ```
-    $ sudo vim /etc/ssh/sshd_config`
+    $ sudo vim /etc/ssh/sshd_config
     ```
     Then make sure password authentication is set to no:
     ```
