@@ -14,17 +14,17 @@ I made this Hebrew bingo game to help my students (5th graders) build the skill 
 
 First, it helps to review the Hebrew alphabet and point out that each letter is given a value, and this system is called [gematria](https://en.wikipedia.org/wiki/Gematria). Here are the letters according to a simple encoding:
 
-<table>
+<table class="he">
     <tr>
-        <td><b>א</b></td>
-        <td><b>ב</b></td>
-        <td><b>ג</b></td>
-        <td><b>ד</b></td>
-        <td><b>ה</b></td>
-        <td><b>ו</b></td>
-        <td><b>ז</b></td>
-        <td><b>ח</b></td>
-        <td><b>ט</b></td>
+        <td>א</td>
+        <td>ב</td>
+        <td>ג</td>
+        <td>ד</td>
+        <td>ה</td>
+        <td>ו</td>
+        <td>ז</td>
+        <td>ח</td>
+        <td>ט</td>
     </tr>
     <tr>
         <td>1</td>
@@ -38,15 +38,15 @@ First, it helps to review the Hebrew alphabet and point out that each letter is 
         <td>9</td>
     </tr>
     <tr>
-        <td><b>י</b></td>
-        <td><b>כ</b></td>
-        <td><b>ל</b></td>
-        <td><b>מ</b></td>
-        <td><b>נ</b></td>
-        <td><b>ס</b></td>
-        <td><b>ע</b></td>
-        <td><b>פ</b></td>
-        <td><b>צ</b></td>
+        <td>י</td>
+        <td>כ</td>
+        <td>ל</td>
+        <td>מ</td>
+        <td>נ</td>
+        <td>ס</td>
+        <td>ע</td>
+        <td>פ</td>
+        <td>צ</td>
     </tr>
     <tr>
         <td>10</td>
@@ -60,15 +60,15 @@ First, it helps to review the Hebrew alphabet and point out that each letter is 
         <td>90</td>
     </tr>
     <tr>
-        <td><b>ק</b></td>
-        <td><b>ר</b></td>
-        <td><b>ש</b></td>
-        <td><b>ת</b></td>
-        <td><b>ך</b></td>
-        <td><b>ם</b></td>
-        <td><b>ן</b></td>
-        <td><b>ף</b></td>
-        <td><b>ץ</b></td>
+        <td>ק</td>
+        <td>ר</td>
+        <td>ש</td>
+        <td>ת</td>
+        <td>ך</td>
+        <td>ם</td>
+        <td>ן</td>
+        <td>ף</td>
+        <td>ץ</td>
     </tr>
     <tr>
         <td>100</td>
@@ -87,17 +87,17 @@ Next, it helps to observe how Hebrew numerals work. For Bingo we only need to fo
 
 So for example, the numbers 21-29 are:
 
-<table>
+<table class="he">
     <tr>
-        <td><b>כ״א</b></td>
-        <td><b>כ״ב</b></td>
-        <td><b>כ״ג</b></td>
-        <td><b>כ״ד</b></td>
-        <td><b>כ״ה</b></td>
-        <td><b>כ״ו</b></td>
-        <td><b>כ״ז</b></td>
-        <td><b>כ״ח</b></td>
-        <td><b>כ״ט</b></td>
+        <td>כ״א</td>
+        <td>כ״ב</td>
+        <td>כ״ג</td>
+        <td>כ״ד</td>
+        <td>כ״ה</td>
+        <td>כ״ו</td>
+        <td>כ״ז</td>
+        <td>כ״ח</td>
+        <td>כ״ט</td>
     </tr>
     <tr>
         <td>21</td>
@@ -115,17 +115,17 @@ So for example, the numbers 21-29 are:
 It's easy to observe the pattern there, that it is the tens value followed by the gershayim mark ״ and the ones value.
 
 The gotchas live in the numbers between 11-19:
-<table>
+<table class="he">
     <tr>
-        <td><b>י״א</b></td>
-        <td><b>י״ב</b></td>
-        <td><b>י״ג</b></td>
-        <td><b>י״ד</b></td>
-        <td><b>ט״ו</b></td>
-        <td><b>ט״ז</b></td>
-        <td><b>י״ז</b></td>
-        <td><b>י״ח</b></td>
-        <td><b>י״ט</b></td>
+        <td>י״א</td>
+        <td>י״ב</td>
+        <td>י״ג</td>
+        <td>י״ד</td>
+        <td>ט״ו</td>
+        <td>ט״ז</td>
+        <td>י״ז</td>
+        <td>י״ח</td>
+        <td>י״ט</td>
     </tr>
     <tr>
         <td>11</td>
