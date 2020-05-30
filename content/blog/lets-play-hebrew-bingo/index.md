@@ -6,7 +6,21 @@ description: A fun game to teach kids hebrew numerals.
 
 [Hebrew numerals](https://en.wikipedia.org/wiki/Hebrew_numerals) are often used to represent dates on the Hebrew calendar. 
 
-For example, לַ״ג בָּעוֹמֶר [Lag B'Omer](https://en.wikipedia.org/wiki/Lag_BaOmer), ט״וּ בִּשְׁבָט [Tu B'Shvat](https://en.wikipedia.org/wiki/Tu_BiShvat), and ט״וּ בְּאָב [Tu B'Av](https://en.wikipedia.org/wiki/Tu_B%27Av).
+For example: 
+<ul>
+  <li>
+    <span class="he">לַ״ג בָּעוֹמֶר &mdash; </span>
+    <a href="https://en.wikipedia.org/wiki/Lag_BaOmer">Lag B'Omer</a>
+  </li>
+  <li>
+    <span class="he">ט״וּ בִּשְׁבָט &mdash;</span>
+    <a href="https://en.wikipedia.org/wiki/Tu_BiShvat">Tu B'Shvat</a>
+  </li>
+  <li>
+    <span class="he">ט״וּ בְּאָב &mdash;</span>
+    <a href="https://en.wikipedia.org/wiki/Tu_B%27Av">Tu B'Av</a>
+  </li>
+</ul>
 
 Dates on a Ketubah (Jewish Marriage Contract) are written with Hebrew Numerals, and so are dates on a Jewish grave stone.
 
@@ -14,8 +28,8 @@ I made this Hebrew bingo game to help my students (5th graders) build the skill 
 
 First, it helps to review the Hebrew alphabet and point out that each letter is given a value, and this system is called [gematria](https://en.wikipedia.org/wiki/Gematria). Here are the letters according to a simple encoding:
 
-<table class="he">
-    <tr>
+<table class="gematria">
+    <tr class="he">
         <td>א</td>
         <td>ב</td>
         <td>ג</td>
@@ -37,7 +51,7 @@ First, it helps to review the Hebrew alphabet and point out that each letter is 
         <td>8</td>
         <td>9</td>
     </tr>
-    <tr>
+    <tr class="he">
         <td>י</td>
         <td>כ</td>
         <td>ל</td>
@@ -59,7 +73,7 @@ First, it helps to review the Hebrew alphabet and point out that each letter is 
         <td>80</td>
         <td>90</td>
     </tr>
-    <tr>
+    <tr class="he">
         <td>ק</td>
         <td>ר</td>
         <td>ש</td>
@@ -87,8 +101,8 @@ Next, it helps to observe how Hebrew numerals work. For Bingo we only need to fo
 
 So for example, the numbers 21-29 are:
 
-<table class="he">
-    <tr>
+<table class="gematria">
+    <tr class="he">
         <td>כ״א</td>
         <td>כ״ב</td>
         <td>כ״ג</td>
@@ -115,8 +129,8 @@ So for example, the numbers 21-29 are:
 It's easy to observe the pattern there, that it is the tens value followed by the gershayim mark ״ and the ones value.
 
 The gotchas live in the numbers between 11-19:
-<table class="he">
-    <tr>
+<table class="gematria">
+    <tr class="he">
         <td>י״א</td>
         <td>י״ב</td>
         <td>י״ג</td>

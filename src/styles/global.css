@@ -1,4 +1,22 @@
-table.he {
+.he {
     font-family: "Frank Ruehl";
-    font-size: 1.5rem;
+    font-size: 2rem;
+}
+
+.gematria > tr > td {
+    text-align: center;
+}
+
+.bingo > tr > th {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.bingo > tr:nth-child(4) > td:nth-child(3) > button:nth-child(1) {
+    font-size: 1.3rem;
+}
+
+.bingo > tr > td {
+    text-align: center;
+    font-size: 2rem;
 }

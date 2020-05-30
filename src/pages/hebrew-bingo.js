@@ -1,4 +1,6 @@
 import React from "react"
+import { graphql } from "gatsby"
+
 import Layout from "../components/layout"
 
 const numerals = require('./bingo/hebrew-numerals.json')
@@ -216,7 +218,8 @@ class HebrewBingoPage extends React.Component {
     }
 
     render() {
-
+        const { data } = this.props;
+        const siteTitle = data.site.siteMetadata.title;
         const { items, hat, picked, num, players } = this.state;
 
         const listItem = (x => (
@@ -232,7 +235,8 @@ class HebrewBingoPage extends React.Component {
         }
 
         return (
-            <Layout location={this.props.location} title="Let's play Hebrew Bingo!">
+            <Layout location={this.props.location} title={siteTitle}>
+                <h1>Let's play Hebrew Bingo!</h1>
                 <form>
                     <input ref={this.myInput} onSubmit={this.handleSubmit} type="text"></input>
                     <button ref={this.myButton} onClick={this.handleSubmit}>Add player</button>
@@ -260,3 +264,13 @@ class HebrewBingoPage extends React.Component {
 }
 
 export default HebrewBingoPage
+
+export const pageQuery = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+`
