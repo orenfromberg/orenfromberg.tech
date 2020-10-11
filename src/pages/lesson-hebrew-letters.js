@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 
-const material = ["א", "בּ", "ב", "גּ", "ג", "דּ", "ד", "ה", "ו", "ז", "ח", "ט", "י", "כּ", "כ", "ךְ", "ל", "מ", "ם", "נ", "ן", "ס", "ע", "פּ", "פ", "ף", "צ", "ק", "ר", "שׁ", "שׂ", "ת", "תּ"]
+const material = ["א","בּ","ב","גּ","ג","דּ","ד","ה","ו","ז","ח","ט","י","כּ","כ","ךְ","ל","מ","מּ","ם","נ","נּ","ן","ס","ע","פּ","פ","ף","צ","ץ","ק","ר","שׁ","שׂ","ת","תּ"]
 
 const sample = (arr) => {
   return arr[Math.floor(Math.random() * arr.length)]
@@ -117,14 +117,36 @@ class LessonHebrewLettersPage extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <h1>Let's Learn Hebrew Letters</h1>
+        <details>
+        <table>
+          <tr><td>Vav</td><td>Hey</td><td>Dalet</td><td>Gimel</td><td>Vet</td><td>Bet</td><td>Alef</td></tr>
+          <tr class="he"><td>ו</td><td>ה</td><td>ד</td><td>ג</td><td>ב</td><td>בּ</td><td>א</td></tr>
+          </table>
+          <table>
+          <tr><td>Final Chaf</td><td>Chaf</td><td>Kaf</td><td>Yud</td><td>Tet</td><td>Chet</td><td>Zayin</td></tr>
+          <tr class="he"><td>ך</td><td>כ</td><td>כּ</td><td>י</td><td>ט</td><td>ח</td><td>ז</td></tr>
+          </table>
+          <table>
+          <tr><td>Ayin</td><td>Samech</td><td>Final Nun</td><td>Nun</td><td>Final Mem</td><td>Mem</td><td>Lamed</td></tr>
+          <tr class="he"><td>ע</td><td>ס</td><td>ן</td><td>נ</td><td>ם</td><td>מ</td><td>ל</td></tr>
+          </table>
+          <table>
+          <tr><td>Resh</td><td>Kuf</td><td>Final Tzadee</td><td>Tzadee</td><td>Final Fey</td><td>Fey</td><td>Pey</td></tr>
+          <tr class="he"><td>ר</td><td>ק</td><td>ץ</td><td>צ</td><td>ף</td><td>פ</td><td>פּ</td></tr>
+          </table>
+          <table>
+          <tr><td>Tav</td><td>Sin</td><td>Shin</td></tr>
+          <tr class="he"><td>ת</td><td>שׂ</td><td>שׁ</td></tr>
+          </table>
+        </details>
         <form>
           <input ref={this.myInput} onSubmit={this.handleSubmit} type="text"></input>
           <button ref={this.myButton} onClick={this.handleSubmit}>Add student</button>
         </form>
         <h4>{items.map((x, i, arr) => (<span>{`${x.name} `}<button onClick={x.removeStudent}>x</button>{i === arr.length - 1 ? ' ' : `, `}</span>))}</h4>
         <button onClick={this.quizStudent}>Quiz Student!</button>
-        <hr/>
-    <h1>{quiz !== undefined ? `${quiz.student}, what letter is this?` : ""}</h1>
+        <hr />
+        <h1>{quiz !== undefined ? `${quiz.student}, what letter is this?` : ""}</h1>
         <p class="he quiz">{quiz !== undefined ? quiz.question : ""}</p>
 
       </Layout>
