@@ -3,6 +3,11 @@
     font-size: 2rem;
 }
 
+.quiz {
+    text-align: center;
+    font-size: 10rem;
+}
+
 .gematria > tr > td {
     text-align: center;
 }
