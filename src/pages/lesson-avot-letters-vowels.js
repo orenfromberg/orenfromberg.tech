@@ -3,13 +3,13 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 
-const material = ["בֲּ", "בִּ", "בֶּ", "בֱּ", "בֻּ", "בּוּ", "בֹּ", "בְּ", "בִּי", "בּוֹ", "בַּ", "בֳּ", "בָּ", "בֵּ", "בֵּי", "בִּיעַ", "בִּיחַ"]
+const material = ["אָ", "בוֹת", "אֲ", "בוֹ", "תֵי", "נוּ", "אֱ", "לֹ", "הֵי", "אַבְ", "רָ", "הָם", "יִצְ", "חָק", "יַ", "עֲ", "קֹב", "אִ", "מָּ", "הוֹת", "אִ", "מּוֹ", "תֵי", "נוּ", "שָׂ", "רָה", "רִבְ", "קָה", "לֵ", "אָה", "רָ", "חֵל", "הַ", "גָּ", "דוֹל", "הַ", "גִּ", "בּוֹר", "וְ", "הַ", "נּוֹ", "רָא", "עֶלְ", "יוֹן", "חֲ", "סָ", "דִים", "טוֹ", "בִים", "מֶ", "לֶךְ", "עוֹ", "זֵר", "וּ", "מוֹ", "שִׁיעַ", "וּ", "מָ", "גֵן"]
 
 const sample = (arr) => {
     return arr[Math.floor(Math.random() * arr.length)]
 }
 
-class LessonHebrewVowelsPage extends React.Component {
+class LessonAvotLettersVowelsPage extends React.Component {
     constructor(props) {
         super(props)
         this.myInput = React.createRef();
@@ -116,7 +116,7 @@ class LessonHebrewVowelsPage extends React.Component {
 
         return (
             <Layout location={this.props.location} title={siteTitle}>
-                <h1>Let's Learn Hebrew Vowels</h1>
+                <h1>Avot: Letters and Vowels</h1>
                 <details>
                     <table>
                         <tr>
@@ -172,7 +172,7 @@ class LessonHebrewVowelsPage extends React.Component {
     }
 }
 
-export default LessonHebrewVowelsPage
+export default LessonAvotLettersVowelsPage
 
 export const pageQuery = graphql`
   query {
