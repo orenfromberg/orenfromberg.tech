@@ -356,6 +356,76 @@
                     "question": "גֵן"
                 }
             ]
+        },
+        {
+            "title": "Avot: Words",
+            "description": "The Avot blessing is the first blessing in the Amidah. These are some words you may encounter in this blessing.",
+            "prompt": "can you read this word?",
+            "material": [
+                {
+                    "question": "אָבוֹת"
+                },
+                {
+                    "question": "אֲבוֹתֵינוּ"
+                },
+                {
+                    "question": "אֱלֹהֵי"
+                },
+                {
+                    "question": "אַבְרָהָם"
+                },
+                {
+                    "question": "יִצְחָק"
+                },
+                {
+                    "question": "יַעֲקֹב"
+                },
+                {
+                    "question": "אִמָּהוֹת"
+                },
+                {
+                    "question": "אִמּוֹתֵינוּ"
+                },
+                {
+                    "question": "שָׂרָה"
+                },
+                {
+                    "question": "רִבְקָה"
+                },
+                {
+                    "question": "לֵאָה"
+                },
+                {
+                    "question": "רָחֵל"
+                },
+                {
+                    "question": "הַגָּדוֹל"
+                },
+                {
+                    "question": "הַגִּבּוֹר"
+                },
+                {
+                    "question": "וְהַנּוֹרָא"
+                },
+                {
+                    "question": "עֶלְיוֹן"
+                },
+                {
+                    "question": "חֲסָדִים טוֹבִים"
+                },
+                {
+                    "question": "מֶלֶךְ"
+                },
+                {
+                    "question": "עוֹזֵר"
+                },
+                {
+                    "question": "וּמוֹשִׁיעַ"
+                },
+                {
+                    "question": "וּמָגֵן"
+                }
+            ]
         }
     ]
 }
