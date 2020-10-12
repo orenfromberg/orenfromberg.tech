@@ -430,7 +430,7 @@
         {
             "title": "Kita Hey Vocabulary Words",
             "description": "These are all the words we'll learn in Kita Hey.",
-            "prompt": "can you read this word?",
+            "prompt": "can you read this?",
             "material": [
                 {
                     "question": "אָבוֹת"
@@ -619,7 +619,7 @@
                     "question": "עָלֵינוּ"
                 },
                 {
-                    "question": "וְעל"
+                    "question": "וְעַל"
                 },
                 {
                     "question": "כָּל"
