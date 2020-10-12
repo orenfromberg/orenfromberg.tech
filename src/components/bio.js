@@ -63,6 +63,8 @@ const Bio = () => {
         <a href={`https://keybase.io/${social.keybase}`}>keybase</a>
         <br />
         <a href={`${siteSrc}`}>blog sourcecode</a>
+        <br />
+        <span>orenfromberg at gmail dot com</span>
       </p>
     </div>
   )
