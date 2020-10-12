@@ -1,0 +1,361 @@
+{
+    "lessons": [
+        {
+            "title": "Hebrew Letters",
+            "description": "There are 22 Hebrew Letters, plus 4 final letters. Additionally, certain letters appear with a dagesh that changes its sound. Those letters are known as begadkefat letters. You may also see the dagesh on any other letter to indicate emphasis.",
+            "prompt": "what letter is this?",
+            "material": [
+                {
+                    "question": "א"
+                },
+                {
+                    "question": "בּ"
+                },
+                {
+                    "question": "ב"
+                },
+                {
+                    "question": "גּ"
+                },
+                {
+                    "question": "ג"
+                },
+                {
+                    "question": "דּ"
+                },
+                {
+                    "question": "ד"
+                },
+                {
+                    "question": "ה"
+                },
+                {
+                    "question": "ו"
+                },
+                {
+                    "question": "ז"
+                },
+                {
+                    "question": "ח"
+                },
+                {
+                    "question": "ט"
+                },
+                {
+                    "question": "י"
+                },
+                {
+                    "question": "כּ"
+                },
+                {
+                    "question": "כ"
+                },
+                {
+                    "question": "ךְ"
+                },
+                {
+                    "question": "ל"
+                },
+                {
+                    "question": "מ"
+                },
+                {
+                    "question": "מּ"
+                },
+                {
+                    "question": "ם"
+                },
+                {
+                    "question": "נ"
+                },
+                {
+                    "question": "נּ"
+                },
+                {
+                    "question": "ן"
+                },
+                {
+                    "question": "ס"
+                },
+                {
+                    "question": "ע"
+                },
+                {
+                    "question": "פּ"
+                },
+                {
+                    "question": "פ"
+                },
+                {
+                    "question": "ף"
+                },
+                {
+                    "question": "צ"
+                },
+                {
+                    "question": "ץ"
+                },
+                {
+                    "question": "ק"
+                },
+                {
+                    "question": "ר"
+                },
+                {
+                    "question": "שׁ"
+                },
+                {
+                    "question": "שׂ"
+                },
+                {
+                    "question": "ת"
+                },
+                {
+                    "question": "תּ"
+                }
+            ]
+        },
+        {
+            "title": "Hebrew Vowels",
+            "description": "Here are a sample of common vowels you may see.",
+            "prompt": "can you sound this out?",
+            "material": [
+                {
+                    "question": "בֲּ"
+                },
+                {
+                    "question": "בִּ"
+                },
+                {
+                    "question": "בֶּ"
+                },
+                {
+                    "question": "בֱּ"
+                },
+                {
+                    "question": "בֻּ"
+                },
+                {
+                    "question": "בּוּ"
+                },
+                {
+                    "question": "בֹּ"
+                },
+                {
+                    "question": "בְּ"
+                },
+                {
+                    "question": "בִּי"
+                },
+                {
+                    "question": "בּוֹ"
+                },
+                {
+                    "question": "בַּ"
+                },
+                {
+                    "question": "בֳּ"
+                },
+                {
+                    "question": "בָּ"
+                },
+                {
+                    "question": "בֵּ"
+                },
+                {
+                    "question": "בֵּי"
+                },
+                {
+                    "question": "בִּיעַ"
+                },
+                {
+                    "question": "בִּיחַ"
+                }
+            ]
+        },
+        {
+            "title": "Avot: Letters and Vowels",
+            "description": "The Avot blessing is the first blessing in the Amidah. These are common syllables you may encounter in this blessing.",
+            "prompt": "can you sound this out?",
+            "material": [
+                {
+                    "question": "אָ"
+                },
+                {
+                    "question": "בוֹת"
+                },
+                {
+                    "question": "אֲ"
+                },
+                {
+                    "question": "בוֹ"
+                },
+                {
+                    "question": "תֵי"
+                },
+                {
+                    "question": "נוּ"
+                },
+                {
+                    "question": "אֱ"
+                },
+                {
+                    "question": "לֹ"
+                },
+                {
+                    "question": "הֵי"
+                },
+                {
+                    "question": "אַבְ"
+                },
+                {
+                    "question": "רָ"
+                },
+                {
+                    "question": "הָם"
+                },
+                {
+                    "question": "יִצְ"
+                },
+                {
+                    "question": "חָק"
+                },
+                {
+                    "question": "יַ"
+                },
+                {
+                    "question": "עֲ"
+                },
+                {
+                    "question": "קֹב"
+                },
+                {
+                    "question": "אִ"
+                },
+                {
+                    "question": "מָּ"
+                },
+                {
+                    "question": "הוֹת"
+                },
+                {
+                    "question": "אִ"
+                },
+                {
+                    "question": "מּוֹ"
+                },
+                {
+                    "question": "תֵי"
+                },
+                {
+                    "question": "נוּ"
+                },
+                {
+                    "question": "שָׂ"
+                },
+                {
+                    "question": "רָה"
+                },
+                {
+                    "question": "רִבְ"
+                },
+                {
+                    "question": "קָה"
+                },
+                {
+                    "question": "לֵ"
+                },
+                {
+                    "question": "אָה"
+                },
+                {
+                    "question": "רָ"
+                },
+                {
+                    "question": "חֵל"
+                },
+                {
+                    "question": "הַ"
+                },
+                {
+                    "question": "גָּ"
+                },
+                {
+                    "question": "דוֹל"
+                },
+                {
+                    "question": "הַ"
+                },
+                {
+                    "question": "גִּ"
+                },
+                {
+                    "question": "בּוֹר"
+                },
+                {
+                    "question": "וְ"
+                },
+                {
+                    "question": "הַ"
+                },
+                {
+                    "question": "נּוֹ"
+                },
+                {
+                    "question": "רָא"
+                },
+                {
+                    "question": "עֶלְ"
+                },
+                {
+                    "question": "יוֹן"
+                },
+                {
+                    "question": "חֲ"
+                },
+                {
+                    "question": "סָ"
+                },
+                {
+                    "question": "דִים"
+                },
+                {
+                    "question": "טוֹ"
+                },
+                {
+                    "question": "בִים"
+                },
+                {
+                    "question": "מֶ"
+                },
+                {
+                    "question": "לֶךְ"
+                },
+                {
+                    "question": "עוֹ"
+                },
+                {
+                    "question": "זֵר"
+                },
+                {
+                    "question": "וּ"
+                },
+                {
+                    "question": "מוֹ"
+                },
+                {
+                    "question": "שִׁיעַ"
+                },
+                {
+                    "question": "וּ"
+                },
+                {
+                    "question": "מָ"
+                },
+                {
+                    "question": "גֵן"
+                }
+            ]
+        }
+    ]
+}
