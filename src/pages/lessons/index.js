@@ -154,7 +154,7 @@ class LessonPage extends React.Component {
   render() {
     const { data } = this.props;
     const siteTitle = data.site.siteMetadata.title;
-    const { items, quiz, curr_lesson } = this.state;
+    const { items, quiz, curr_lesson, curr_student } = this.state;
 
     const display_lesson_selection = () => {
       return (
@@ -174,7 +174,7 @@ class LessonPage extends React.Component {
         return (
           <div>
             <button onClick={this.quizStudent}>Next Challenge</button>
-            <button onClick={this.challengeNextStudent}>Let another student try</button>
+            <button disabled={items.length === 1} onClick={this.challengeNextStudent}>Let another student try</button>
             <hr />
             <h1>{quiz !== undefined ? `${quiz.student}, ${prompt}` : ""}</h1>
             <p className="he quiz">{quiz !== undefined ? quiz.question : ""}</p>
@@ -250,14 +250,14 @@ class LessonPage extends React.Component {
       )
     }
 
-    const display_students = () => {
+    const display_students = (items, curr_student) => {
       return (
         <div>
           <form>
             <input ref={this.myInput} onSubmit={this.handleSubmit} type="text"></input>
             <button ref={this.myButton} onClick={this.handleSubmit}>Add student</button>
           </form>
-          <h4>{items.map((x, i, arr) => (<span key={i}>{`${x.name} `}<button onClick={x.removeStudent}>x</button>{i === arr.length - 1 ? ' ' : `, `}</span>))}</h4>
+          <p>{items.map((x, i, arr) => (<span key={i} className={i === curr_student ? "bold" : ""}>{`${x.name} `}<button onClick={x.removeStudent}>x</button>{i === arr.length - 1 ? ' ' : `, `}</span>))}</p>
         </div>
       )
     }
@@ -278,7 +278,7 @@ class LessonPage extends React.Component {
           display_details()
         }
         {
-          display_students()
+          display_students(items, curr_student)
         }
         {
           display_quiz(items, lessons[curr_lesson].prompt)
