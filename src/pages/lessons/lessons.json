@@ -426,6 +426,286 @@
                     "question": "וּמָגֵן"
                 }
             ]
+        },
+        {
+            "title": "Kita Hey Vocabulary Words",
+            "description": "These are all the words we'll learn in Kita Hey.",
+            "prompt": "can you read this word?",
+            "material": [
+                {
+                    "question": "אָבוֹת"
+                },
+                {
+                    "question": "אֲבוֹתֵינוּ"
+                },
+                {
+                    "question": "אֱלֹהֵי"
+                },
+                {
+                    "question": "אַבְרָהָם"
+                },
+                {
+                    "question": "יִצְחָק"
+                },
+                {
+                    "question": "יַעֲקֹב"
+                },
+                {
+                    "question": "אִמָּהוֹת"
+                },
+                {
+                    "question": "אִמּוֹתֵינוּ"
+                },
+                {
+                    "question": "שָׂרָה"
+                },
+                {
+                    "question": "רִבְקָה"
+                },
+                {
+                    "question": "לֵאָה"
+                },
+                {
+                    "question": "רָחֵל"
+                },
+                {
+                    "question": "הַגָּדוֹל"
+                },
+                {
+                    "question": "הַגִּבּוֹר"
+                },
+                {
+                    "question": "וְהַנּוֹרָא"
+                },
+                {
+                    "question": "עֶלְיוֹן"
+                },
+                {
+                    "question": "חֲסָדִים טוֹבִים"
+                },
+                {
+                    "question": "מֶלֶךְ"
+                },
+                {
+                    "question": "עוֹזֵר"
+                },
+                {
+                    "question": "וּמוֹשִׁיעַ"
+                },
+                {
+                    "question": "וּמָגֵן"
+                },
+                {
+                    "question": "אַתָּה"
+                },
+                {
+                    "question": "גִּבּוֹר"
+                },
+                {
+                    "question": "לְעוֹלָם"
+                },
+                {
+                    "question": "מְחַיֵּה"
+                },
+                {
+                    "question": "לְהוֹשִׁיעַ"
+                },
+                {
+                    "question": "חַיִּים"
+                },
+                {
+                    "question": "בְּרַחֲמִים"
+                },
+                {
+                    "question": "מִי כָמוֹךָ"
+                },
+                {
+                    "question": "נְקַדֵּשׁ"
+                },
+                {
+                    "question": "שִׁמְךָ"
+                },
+                {
+                    "question": "כְּבוֹדוֹ"
+                },
+                {
+                    "question": "יִמְלֹךְ"
+                },
+                {
+                    "question": "לְדוֹר וָדוֹר"
+                },
+                {
+                    "question": "נַגִּיד"
+                },
+                {
+                    "question": "גָּדְלֶךָ"
+                },
+                {
+                    "question": "מוֹדִים"
+                },
+                {
+                    "question": "אֲנַחְנוּ"
+                },
+                {
+                    "question": "נוֹדֶה"
+                },
+                {
+                    "question": "תְּהִלָּתֶךָ"
+                },
+                {
+                    "question": "וִיהַלְלוּ"
+                },
+                {
+                    "question": "בֶּאֱמֶת"
+                },
+                {
+                    "question": "לְהוֹדוֹת"
+                },
+                {
+                    "question": "שָׁלוֹם"
+                },
+                {
+                    "question": "רָב"
+                },
+                {
+                    "question": "יִשְׂרָאֵל"
+                },
+                {
+                    "question": "עַמְּךָ"
+                },
+                {
+                    "question": "וְטוֹב"
+                },
+                {
+                    "question": "בְּעֵינֶיךָ"
+                },
+                {
+                    "question": "לְבָרֵךְ"
+                },
+                {
+                    "question": "בִּשְׁלוֹמֶךָ"
+                },
+                {
+                    "question": "שִׂים"
+                },
+                {
+                    "question": "טוֹבה"
+                },
+                {
+                    "question": "חֵן"
+                },
+                {
+                    "question": "אָבִינוּ"
+                },
+                {
+                    "question": "כֻּלָּנוּ כְּאֶחָד"
+                },
+                {
+                    "question": "נָתַתָּ"
+                },
+                {
+                    "question": "תּוֹרַת חַיִּים"
+                },
+                {
+                    "question": "וְאַהֲבַת חֶסֶד"
+                },
+                {
+                    "question": "עֹשֶׂה"
+                },
+                {
+                    "question": "יַעֲשֶׂה"
+                },
+                {
+                    "question": "עָלֵינוּ"
+                },
+                {
+                    "question": "וְעל"
+                },
+                {
+                    "question": "כָּל"
+                },
+                {
+                    "question": "וְאִמְרוּ"
+                },
+                {
+                    "question": "אָמֵן"
+                },
+                {
+                    "question": "לְכָה"
+                },
+                {
+                    "question": "דוֹדִי"
+                },
+                {
+                    "question": "כַּלָּה"
+                },
+                {
+                    "question": "פְּנֵי"
+                },
+                {
+                    "question": "נְקַבְּלָה"
+                },
+                {
+                    "question": "שָׁמוֹר"
+                },
+                {
+                    "question": "זָכוֹר"
+                },
+                {
+                    "question": "בֹּאִי"
+                },
+                {
+                    "question": "וְשָׁמְרוּ"
+                },
+                {
+                    "question": "בְּנֵי"
+                },
+                {
+                    "question": "לַעֲשׂוֹת"
+                },
+                {
+                    "question": "לְדֹרֹתָם"
+                },
+                {
+                    "question": "בְּרִית"
+                },
+                {
+                    "question": "עוֹלָם"
+                },
+                {
+                    "question": "הַשָּׁמַיִם"
+                },
+                {
+                    "question": "הָאָרֶץ"
+                },
+                {
+                    "question": "יוֹם הַשְּׁבִיעִי"
+                },
+                {
+                    "question": "שָׁבָת"
+                },
+                {
+                    "question": "עֲלֵיכֶם"
+                },
+                {
+                    "question": "מַלְאֲכֵי"
+                },
+                {
+                    "question": "מֶלֶךְ מַלְכֵי הַמְּלָכִים"
+                },
+                {
+                    "question": "הַקָּדוֹשׁ בָּרוּךְ הוּא"
+                },
+                {
+                    "question": "בּוֹאֲכֶם"
+                },
+                {
+                    "question": "בָּרְכוּנִי"
+                },
+                {
+                    "question": "צֵאתְכֶם"
+                }
+            ]
         }
     ]
 }
