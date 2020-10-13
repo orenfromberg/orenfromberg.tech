@@ -176,7 +176,7 @@ class LessonPage extends React.Component {
             <button onClick={this.quizStudent}>Next Challenge</button>
             <button disabled={items.length === 1} onClick={this.challengeNextStudent}>Let another student try</button>
             <hr />
-            <h1>{quiz !== undefined ? `${quiz.student}, ${prompt}` : ""}</h1>
+            <h1 style={{textAlign: "center"}}>{quiz !== undefined ? `${quiz.student}, ${prompt}` : ""}</h1>
             <p className="he quiz">{quiz !== undefined ? quiz.question : ""}</p>
           </div>
         )
