@@ -428,6 +428,466 @@
             ]
         },
         {
+            "title": "Gvurot: Letters and Vowels",
+            "description": "The Gvurot blessing speaks of God's powers to help us when we are in need. These are common syllables you may encounter in this blessing.",
+            "prompt": "can you sound this out?",
+            "material": [
+                {
+                    "question": "אַ"
+                },
+                {
+                    "question": "תָּה"
+                },
+                {
+                    "question": "גִּ"
+                },
+                {
+                    "question": "בּוֹר"
+                },
+                {
+                    "question": "לְ"
+                },
+                {
+                    "question": "עוֹ"
+                },
+                {
+                    "question": "לָם"
+                },
+                {
+                    "question": "מְ"
+                },
+                {
+                    "question": "חַ"
+                },
+                {
+                    "question": "יֵּה"
+                },
+                {
+                    "question": "לְ"
+                },
+                {
+                    "question": "הוֹ"
+                },
+                {
+                    "question": "שִׁי"
+                },
+                {
+                    "question": "עַ"
+                },
+                {
+                    "question": "חַ"
+                },
+                {
+                    "question": "יִּים"
+                },
+                {
+                    "question": "בְּ"
+                },
+                {
+                    "question": "רַ"
+                },
+                {
+                    "question": "חֲ"
+                },
+                {
+                    "question": "מִים"
+                },
+                {
+                    "question": "מִי"
+                },
+                {
+                    "question": "כָ"
+                },
+                {
+                    "question": "מוֹ"
+                },
+                {
+                    "question": "ךָ"
+                }
+            ]
+        },
+        {
+            "title": "Gvurot: Words",
+            "description": "The Gvurot blessing speaks of God's powers to help us when we are in need. These are some words you may encounter in this blessing.",
+            "prompt": "can you read this word?",
+            "material": [
+                {
+                    "question": "אַתָּה"
+                },
+                {
+                    "question": "גִּבּוֹר"
+                },
+                {
+                    "question": "לְעוֹלָם"
+                },
+                {
+                    "question": "מְחַיֵּה"
+                },
+                {
+                    "question": "לְהוֹשִׁיעַ"
+                },
+                {
+                    "question": "חַיִּים"
+                },
+                {
+                    "question": "בְּרַחֲמִים"
+                },
+                {
+                    "question": "מִי כָמוֹךָ"
+                }
+            ]
+        },
+        {
+            "title": "Gvurot: Cumulative Letters and Vowels",
+            "description": "These are common syllables you may encounter in Avot and Gvurot.",
+            "prompt": "can you sound this out?",
+            "material": [
+                {
+                    "question": "אָ"
+                },
+                {
+                    "question": "בוֹת"
+                },
+                {
+                    "question": "אֲ"
+                },
+                {
+                    "question": "בוֹ"
+                },
+                {
+                    "question": "תֵי"
+                },
+                {
+                    "question": "נוּ"
+                },
+                {
+                    "question": "אֱ"
+                },
+                {
+                    "question": "לֹ"
+                },
+                {
+                    "question": "הֵי"
+                },
+                {
+                    "question": "אַבְ"
+                },
+                {
+                    "question": "רָ"
+                },
+                {
+                    "question": "הָם"
+                },
+                {
+                    "question": "יִצְ"
+                },
+                {
+                    "question": "חָק"
+                },
+                {
+                    "question": "יַ"
+                },
+                {
+                    "question": "עֲ"
+                },
+                {
+                    "question": "קֹב"
+                },
+                {
+                    "question": "אִ"
+                },
+                {
+                    "question": "מָּ"
+                },
+                {
+                    "question": "הוֹת"
+                },
+                {
+                    "question": "אִ"
+                },
+                {
+                    "question": "מּוֹ"
+                },
+                {
+                    "question": "תֵי"
+                },
+                {
+                    "question": "נוּ"
+                },
+                {
+                    "question": "שָׂ"
+                },
+                {
+                    "question": "רָה"
+                },
+                {
+                    "question": "רִבְ"
+                },
+                {
+                    "question": "קָה"
+                },
+                {
+                    "question": "לֵ"
+                },
+                {
+                    "question": "אָה"
+                },
+                {
+                    "question": "רָ"
+                },
+                {
+                    "question": "חֵל"
+                },
+                {
+                    "question": "הַ"
+                },
+                {
+                    "question": "גָּ"
+                },
+                {
+                    "question": "דוֹל"
+                },
+                {
+                    "question": "הַ"
+                },
+                {
+                    "question": "גִּ"
+                },
+                {
+                    "question": "בּוֹר"
+                },
+                {
+                    "question": "וְ"
+                },
+                {
+                    "question": "הַ"
+                },
+                {
+                    "question": "נּוֹ"
+                },
+                {
+                    "question": "רָא"
+                },
+                {
+                    "question": "עֶלְ"
+                },
+                {
+                    "question": "יוֹן"
+                },
+                {
+                    "question": "חֲ"
+                },
+                {
+                    "question": "סָ"
+                },
+                {
+                    "question": "דִים"
+                },
+                {
+                    "question": "טוֹ"
+                },
+                {
+                    "question": "בִים"
+                },
+                {
+                    "question": "מֶ"
+                },
+                {
+                    "question": "לֶךְ"
+                },
+                {
+                    "question": "עוֹ"
+                },
+                {
+                    "question": "זֵר"
+                },
+                {
+                    "question": "וּ"
+                },
+                {
+                    "question": "מוֹ"
+                },
+                {
+                    "question": "שִׁיעַ"
+                },
+                {
+                    "question": "וּ"
+                },
+                {
+                    "question": "מָ"
+                },
+                {
+                    "question": "גֵן"
+                },
+                {
+                    "question": "אַ"
+                },
+                {
+                    "question": "תָּה"
+                },
+                {
+                    "question": "גִּ"
+                },
+                {
+                    "question": "בּוֹר"
+                },
+                {
+                    "question": "לְ"
+                },
+                {
+                    "question": "עוֹ"
+                },
+                {
+                    "question": "לָם"
+                },
+                {
+                    "question": "מְ"
+                },
+                {
+                    "question": "חַ"
+                },
+                {
+                    "question": "יֵּה"
+                },
+                {
+                    "question": "לְ"
+                },
+                {
+                    "question": "הוֹ"
+                },
+                {
+                    "question": "שִׁי"
+                },
+                {
+                    "question": "עַ"
+                },
+                {
+                    "question": "חַ"
+                },
+                {
+                    "question": "יִּים"
+                },
+                {
+                    "question": "בְּ"
+                },
+                {
+                    "question": "רַ"
+                },
+                {
+                    "question": "חֲ"
+                },
+                {
+                    "question": "מִים"
+                },
+                {
+                    "question": "מִי"
+                },
+                {
+                    "question": "כָ"
+                },
+                {
+                    "question": "מוֹ"
+                },
+                {
+                    "question": "ךָ"
+                }
+            ]
+        },
+        {
+            "title": "Gvurot: Cumulative Words",
+            "description": "These are some words you may encounter in Avot and Gvurot.",
+            "prompt": "can you read this word?",
+            "material": [
+                {
+                    "question": "אַתָּה"
+                },
+                {
+                    "question": "גִּבּוֹר"
+                },
+                {
+                    "question": "לְעוֹלָם"
+                },
+                {
+                    "question": "מְחַיֵּה"
+                },
+                {
+                    "question": "לְהוֹשִׁיעַ"
+                },
+                {
+                    "question": "חַיִּים"
+                },
+                {
+                    "question": "בְּרַחֲמִים"
+                },
+                {
+                    "question": "מִי כָמוֹךָ"
+                },
+                {
+                    "question": "אָבוֹת"
+                },
+                {
+                    "question": "אֲבוֹתֵינוּ"
+                },
+                {
+                    "question": "אֱלֹהֵי"
+                },
+                {
+                    "question": "אַבְרָהָם"
+                },
+                {
+                    "question": "יִצְחָק"
+                },
+                {
+                    "question": "יַעֲקֹב"
+                },
+                {
+                    "question": "אִמָּהוֹת"
+                },
+                {
+                    "question": "אִמּוֹתֵינוּ"
+                },
+                {
+                    "question": "שָׂרָה"
+                },
+                {
+                    "question": "רִבְקָה"
+                },
+                {
+                    "question": "לֵאָה"
+                },
+                {
+                    "question": "רָחֵל"
+                },
+                {
+                    "question": "הַגָּדוֹל"
+                },
+                {
+                    "question": "הַגִּבּוֹר"
+                },
+                {
+                    "question": "וְהַנּוֹרָא"
+                },
+                {
+                    "question": "עֶלְיוֹן"
+                },
+                {
+                    "question": "חֲסָדִים טוֹבִים"
+                },
+                {
+                    "question": "מֶלֶךְ"
+                },
+                {
+                    "question": "עוֹזֵר"
+                },
+                {
+                    "question": "וּמוֹשִׁיעַ"
+                },
+                {
+                    "question": "וּמָגֵן"
+                }
+            ]
+        },
+        {
             "title": "Kita Hey Vocabulary Words",
             "description": "These are all the words we'll learn in Kita Hey.",
             "prompt": "can you read this?",
