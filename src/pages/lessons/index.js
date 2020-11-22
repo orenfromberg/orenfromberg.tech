@@ -311,6 +311,11 @@ class LessonPage extends React.Component {
         {
           display_details()
         }
+        {
+          <div>
+            If you find this useful, please support my work with <a rel="noreferrer" target="_blank" href="https://www.paypal.com/paypalme/orenfromberg" >paypal</a> 🙌🙇
+          </div>
+        }
       </Layout>
     )
   }
