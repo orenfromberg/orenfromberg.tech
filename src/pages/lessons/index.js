@@ -18,33 +18,57 @@ class LessonPage extends React.Component {
     this.handleChangeLesson = this.handleChangeLesson.bind(this)
     this.quizStudent = this.quizStudent.bind(this);
     this.challengeNextStudent = this.challengeNextStudent.bind(this);
-    this.getRemoveFunction = this.getRemoveFunction.bind(this)
 
     this.state = {
-      items: [],
-      students: {},
+
+      students: [],
+
       quiz: undefined,
       curr_student: undefined,
       curr_lesson: 0
     }
   }
 
+  removeStudent(name) {
+    return () => {
+      const { students, curr_student, quiz } = this.state;
+
+      const new_students = students.filter(student => student !== name)
+
+      let new_student = curr_student;
+      if (students[curr_student] === name) {
+        new_student = (curr_student - 1) >= 0 ? curr_student - 1 : 0;
+      } else {
+        new_student = new_students.findIndex(el => el === students[curr_student])
+      }
+
+      this.setState({
+        curr_student: new_student,
+        students: new_students,
+        quiz: {
+          student: new_students[new_student],
+          question: quiz.question
+        }
+      })
+    }
+  }
+
   addStudent(name) {
     const { students } = this.state;
 
-    if (students[name] === undefined) {
-      this.setState({
-        students: Object.assign(students, {
-          [name]: {
-            // card: create_bingo_card(),
-            // isWinner: false
-          }
-        })
-      })
-      return true
-    } else {
+    if (name === "") {
+      return false;
+    }
+
+    if (students.includes(name)) {
       console.log("student already exists")
       return false
+    } else {
+      students.push(name)
+      this.setState({
+        students
+      })
+      return true;
     }
   }
 
@@ -61,77 +85,47 @@ class LessonPage extends React.Component {
   }
 
   challengeNextStudent() {
-    const { curr_student, items, quiz } = this.state;
+    const { curr_student, students, quiz } = this.state;
 
-    if (curr_student === undefined) {
-      return;
+    if (curr_student !== undefined) {
+      let new_student = (curr_student + 1) % students.length
+      this.setState({
+        curr_student: new_student,
+        quiz: {
+          student: students[new_student],
+          question: quiz.question
+        }
+      })
     }
-
-    const new_student = (curr_student + 1) % items.length
-
-    this.setState({
-      curr_student: new_student,
-      quiz: {
-        student: items[new_student].name,
-        question: quiz.question
-      }
-    })
   }
 
   quizStudent() {
-    const { curr_student, curr_lesson, items } = this.state;
+    const { curr_student, curr_lesson, students } = this.state;
 
-    const i = curr_student === undefined ? 0 : (curr_student + 1) % items.length;
+    const i = curr_student === undefined ? 0 : (curr_student + 1) % students.length;
 
     this.setState({
       curr_student: i,
       quiz: {
-        student: items[i].name,
+        student: students[i],
         question: get_random_question(lessons[curr_lesson].material)
       }
     })
   }
 
-  getRemoveFunction(name) {
-    return () => {
-      const { students } = this.state;
-      delete students[name]
-      const items = this.getItems(students);
-      this.setState({
-        items,
-        students
-      })
-    }
-  }
-
-  getItems(students) {
-    const items = [];
-    for (const student in students) {
-      if (students.hasOwnProperty(student)) {
-        // const c = students[student].card;
-        // let vals = c[0].concat(c[1]).concat(c[2]).concat(c[3]).concat(c[4]).join(",")
-        items.push({
-          name: student,
-          // url: `${window.origin}/bingo/?name=${encodeURI(player)}&vals=${vals}`,
-          removeStudent: this.getRemoveFunction(student)
-        })
-      }
-    }
-    return items;
-  }
-
   handleSubmit(event) {
     event.preventDefault()
     const students = this.state.students;
-    const items = this.getItems(students);
     this.setState({
-      items,
       students
     })
   }
 
   handleChangeLesson(event) {
-    const { curr_student, items } = this.state;
+    const { 
+      curr_student,
+      students,
+    } = this.state;
 
     const curr_lesson = event.target.value;
 
@@ -139,7 +133,7 @@ class LessonPage extends React.Component {
 
     if (curr_student !== undefined) {
       quiz = {
-        student:items[curr_student].name,
+        student: students[curr_student],
         question: get_random_question(lessons[curr_lesson].material)
       }
     }
@@ -154,7 +148,9 @@ class LessonPage extends React.Component {
   render() {
     const { data } = this.props;
     const siteTitle = data.site.siteMetadata.title;
-    const { items, quiz, curr_lesson, curr_student } = this.state;
+    const { 
+      students,
+      quiz, curr_lesson, curr_student } = this.state;
 
     const display_lesson_selection = () => {
       return (
@@ -169,12 +165,12 @@ class LessonPage extends React.Component {
       )
     }
 
-    const display_quiz = (items, prompt) => {
-      if (items.length > 0) {
+    const display_quiz = (students, prompt) => {
+      if (students.length > 0) {
         return (
           <div>
             <button onClick={this.quizStudent}>Next Challenge</button>
-            <button disabled={items.length === 1} onClick={this.challengeNextStudent}>Let another student try</button>
+            <button disabled={students.length === 1} onClick={this.challengeNextStudent}>Let another student try</button>
             <hr />
             <h1 style={{textAlign: "center"}}>{quiz !== undefined ? `${quiz.student}, ${prompt}` : ""}</h1>
             <p className="he quiz">{quiz !== undefined ? quiz.question : ""}</p>
@@ -250,14 +246,14 @@ class LessonPage extends React.Component {
       )
     }
 
-    const display_students = (items, curr_student) => {
+    const display_students = (students, curr_student) => {
       return (
         <div>
           <form>
             <input ref={this.myInput} onSubmit={this.handleSubmit} type="text"></input>
             <button ref={this.myButton} onClick={this.handleSubmit}>Add student</button>
           </form>
-          <p>{items.map((x, i, arr) => (<span key={i} className={i === curr_student ? "bold" : ""}>{`${x.name} `}<button onClick={x.removeStudent}>x</button>{i === arr.length - 1 ? ' ' : `, `}</span>))}</p>
+          <p>{students.map((x, i, arr) => (<span key={i} className={i === curr_student ? "bold" : ""}>{`${x} `}<button onClick={this.removeStudent(x)}>x</button>{i === arr.length - 1 ? ' ' : `, `}</span>))}</p>
         </div>
       )
     }
@@ -278,10 +274,10 @@ class LessonPage extends React.Component {
           display_details()
         }
         {
-          display_students(items, curr_student)
+          display_students(students, curr_student)
         }
         {
-          display_quiz(items, lessons[curr_lesson].prompt)
+          display_quiz(students, lessons[curr_lesson].prompt)
         }
       </Layout>
     )
