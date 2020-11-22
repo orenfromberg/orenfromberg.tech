@@ -209,7 +209,7 @@ class LessonPage extends React.Component {
 
     const display_details = () => {
       return (
-        <details>
+        <details className="cheatsheet">
           <summary>Display Cheatsheet</summary>
           <h2>Letters</h2>
           <table><tbody>

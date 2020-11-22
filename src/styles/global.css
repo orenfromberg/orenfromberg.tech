@@ -31,3 +31,16 @@
 .bold {
     font-weight: bold;
 }
+
+.cheatsheet {
+    border-width: 1px;
+    border-style: dotted;
+}
+
+.cheatsheet > h2 {
+    text-align: center;
+}
+
+tr > td {
+    text-align: center;
+}
