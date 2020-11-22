@@ -33,6 +33,9 @@ class LessonPage extends React.Component {
     return () => {
       const { students, curr_student, quiz } = this.state;
 
+      let new_quiz = {}
+      Object.assign(new_quiz, quiz)
+
       const new_students = students.filter(student => student !== name)
 
       let new_student = curr_student;
@@ -42,13 +45,17 @@ class LessonPage extends React.Component {
         new_student = new_students.findIndex(el => el === students[curr_student])
       }
 
+      new_quiz.student = new_students[new_student]
+
+      if (new_students.length === 0) {
+        new_student = undefined;
+        new_quiz = undefined
+      }
+
       this.setState({
         curr_student: new_student,
         students: new_students,
-        quiz: {
-          student: new_students[new_student],
-          question: quiz.question
-        }
+        quiz: new_quiz
       })
     }
   }
@@ -254,6 +261,9 @@ class LessonPage extends React.Component {
             <input ref={this.myInput} onSubmit={this.handleSubmit} type="text"></input>
             <button ref={this.myButton} onClick={this.handleSubmit}>Add student</button>
           </form>
+          {
+            students.length === 0 && <h1><span role="img" aria-label="point up">👆</span> Add a student to begin</h1>
+          }
           <p>{students.map((x, i, arr) => (<span key={i} className={i === curr_student ? "bold" : ""}>{`${x} `}<button onClick={this.removeStudent(x)}>x</button>{i === arr.length - 1 ? ' ' : `, `}</span>))}</p>
         </div>
       )
