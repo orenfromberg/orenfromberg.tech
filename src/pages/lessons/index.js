@@ -16,7 +16,8 @@ class LessonPage extends React.Component {
     this.myButton = React.createRef();
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleChangeLesson = this.handleChangeLesson.bind(this)
-    this.quizStudent = this.quizStudent.bind(this);
+    this.nextChallenge = this.nextChallenge.bind(this);
+    this.nextRandomChallenge = this.nextRandomChallenge.bind(this);
     this.challengeNextStudent = this.challengeNextStudent.bind(this);
 
     this.state = {
@@ -25,7 +26,8 @@ class LessonPage extends React.Component {
 
       quiz: undefined,
       curr_student: undefined,
-      curr_lesson: 0
+      curr_lesson: 0,
+      curr_question: undefined
     }
   }
 
@@ -106,7 +108,24 @@ class LessonPage extends React.Component {
     }
   }
 
-  quizStudent() {
+  nextChallenge() {
+    const { curr_student, curr_lesson, students, curr_question } = this.state;
+
+    const i = curr_student === undefined ? 0 : (curr_student + 1) % students.length;
+
+    const next_question = curr_question === undefined ? 0 : (curr_question + 1) % lessons[curr_lesson].material.length;
+
+    this.setState({
+      curr_student: i,
+      curr_question: next_question,
+      quiz: {
+        student: students[i],
+        question: lessons[curr_lesson].material[next_question].question
+      }
+    })
+  }
+
+  nextRandomChallenge() {
     const { curr_student, curr_lesson, students } = this.state;
 
     const i = curr_student === undefined ? 0 : (curr_student + 1) % students.length;
@@ -146,6 +165,7 @@ class LessonPage extends React.Component {
     }
 
     this.setState({
+      curr_question: undefined,
       curr_lesson,
       curr_student,
       quiz
@@ -176,7 +196,8 @@ class LessonPage extends React.Component {
       if (students.length > 0) {
         return (
           <div>
-            <button onClick={this.quizStudent}>Next Challenge</button>
+            <button onClick={this.nextChallenge}>Next Challenge</button>
+            <button onClick={this.nextRandomChallenge}>Random Challenge</button>
             <button disabled={students.length === 1} onClick={this.challengeNextStudent}>Let another student try</button>
             <hr />
             <h1 style={{textAlign: "center"}}>{quiz !== undefined ? `${quiz.student}, ${prompt}` : ""}</h1>

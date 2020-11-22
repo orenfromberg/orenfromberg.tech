@@ -358,6 +358,175 @@
             ]
         },
         {
+            "title": "Avot: Full Text",
+            "description": "This is the full text of the Avot blessing",
+            "prompt": "can you read this word?",
+            "material": [
+                {
+                    "question": "בָּרוּךְ"
+                },
+                {
+                    "question": "אַתָּה"
+                },
+                {
+                    "question": "יְיָ"
+                },
+                {
+                    "question": "אֱלֹהֵינוּ"
+                },
+                {
+                    "question": "וֵאלֹהֵי"
+                },
+                {
+                    "question": "אֲבוֹתֵינוּ"
+                },
+                {
+                    "question": "וְאִמּוֹתֵינוּ"
+                },
+                {
+                    "question": "אֱלֹהֵי"
+                },
+                {
+                    "question": "אַבְרָהָם"
+                },
+                {
+                    "question": "אֱלֹהֵי"
+                },
+                {
+                    "question": "יִצְחָק"
+                },
+                {
+                    "question": "וֵאלֹהֵי"
+                },
+                {
+                    "question": "יַעֲקֹב"
+                },
+                {
+                    "question": "אֱלֹהֵי"
+                },
+                {
+                    "question": "שָׂרָה"
+                },
+                {
+                    "question": "אֱלֹהֵי"
+                },
+                {
+                    "question": "רִבְקָה"
+                },
+                {
+                    "question": "אֱלֹהֵי"
+                },
+                {
+                    "question": "לֵאָה"
+                },
+                {
+                    "question": "וְרָחֵל"
+                },
+                {
+                    "question": "הָאֵל"
+                },
+                {
+                    "question": "הַגָּדוֹל"
+                },
+                {
+                    "question": "הַגִּבּוֹר"
+                },
+                {
+                    "question": "וְהַנּוֹרָא"
+                },
+                {
+                    "question": "אֵל"
+                },
+                {
+                    "question": "עֶלְיוֹן"
+                },
+                {
+                    "question": "גּוֹמֵל"
+                },
+                {
+                    "question": "חֲסָדִים"
+                },
+                {
+                    "question": "טוֹבִים"
+                },
+                {
+                    "question": "וְקוֹנֵה"
+                },
+                {
+                    "question": "הַכֹּל"
+                },
+                {
+                    "question": "וְזוֹכֵר"
+                },
+                {
+                    "question": "חַסְדֵי"
+                },
+                {
+                    "question": "אָבוֹת"
+                },
+                {
+                    "question": "וְאִמָּהוֹת"
+                },
+                {
+                    "question": "וּמֵבִיא"
+                },
+                {
+                    "question": "גּוֹאֵל"
+                },
+                {
+                    "question": "גְּאֻלָּה"
+                },
+                {
+                    "question": "לִבְנֵי"
+                },
+                {
+                    "question": "בְנֵיהֶם"
+                },
+                {
+                    "question": "לְמַעַן"
+                },
+                {
+                    "question": "שְׁמוֹ"
+                },
+                {
+                    "question": "בְּאַהֲבָה"
+                },
+                {
+                    "question": "מֶלֶךְ"
+                },
+                {
+                    "question": "עוֹזֵר"
+                },
+                {
+                    "question": "וּמוֹשִׁיעַ"
+                },
+                {
+                    "question": "וּמָגֵן"
+                },
+                {
+                    "question": "בָּרוּךְ"
+                },
+                {
+                    "question": "אַתָּה"
+                },
+                {
+                    "question": "יְיָ"
+                },
+                {
+                    "question": "מָגֵן"
+                },
+                {
+                    "question": "אַבְרָהָם"
+                },
+                {
+                    "question": "וְעֶזְרַת"
+                },
+                {
+                    "question": "שָׂרָה"
+                }
+            ]
+        },
+        {
             "title": "Avot: Words",
             "description": "The Avot blessing is the first blessing in the Amidah. These are some words you may encounter in this blessing.",
             "prompt": "can you read this word?",
@@ -884,6 +1053,884 @@
                 },
                 {
                     "question": "וּמָגֵן"
+                }
+            ]
+        },
+        {
+            "title": "Gvurot: Full Text",
+            "description": "This is the full text of the Gvurot blessing",
+            "prompt": "can you read this word?",
+            "material": [
+                {
+                    "question": "אַתָּה"
+                },
+                {
+                    "question": "גִּבּוֹר"
+                },
+                {
+                    "question": "לְעוֹלָם"
+                },
+                {
+                    "question": "אֲדֹנָי"
+                },
+                {
+                    "question": "מְחַיֵּה"
+                },
+                {
+                    "question": "הַכֹּל"
+                },
+                {
+                    "question": "מֵתִים"
+                },
+                {
+                    "question": "אַתָּה"
+                },
+                {
+                    "question": "רַב"
+                },
+                {
+                    "question": "לְהוֹשִׁיעַ"
+                },
+                {
+                    "question": "מְכַלְכֵּל"
+                },
+                {
+                    "question": "חַיִּים"
+                },
+                {
+                    "question": "בְּחֶסֶד"
+                },
+                {
+                    "question": "מְחַיֵּה"
+                },
+                {
+                    "question": "הַכֹּל"
+                },
+                {
+                    "question": "מֵתִים"
+                },
+                {
+                    "question": "בְּרַחֲמִים"
+                },
+                {
+                    "question": "רַבִּים"
+                },
+                {
+                    "question": "סוֹמֵךְ"
+                },
+                {
+                    "question": "נוֹפְלִים"
+                },
+                {
+                    "question": "וְרוֹפֵא"
+                },
+                {
+                    "question": "חוֹלִים"
+                },
+                {
+                    "question": "וּמַתִּיר"
+                },
+                {
+                    "question": "אֲסוּרִים"
+                },
+                {
+                    "question": "וּמְקַיֵּם"
+                },
+                {
+                    "question": "אֱמוּנָתוֹ"
+                },
+                {
+                    "question": "לִישֵׁנֵי"
+                },
+                {
+                    "question": "עָפָר"
+                },
+                {
+                    "question": "מִי"
+                },
+                {
+                    "question": "כָמוֹךָ"
+                },
+                {
+                    "question": "בַּעַל"
+                },
+                {
+                    "question": "גְּבוּרוֹת"
+                },
+                {
+                    "question": "וּמִי"
+                },
+                {
+                    "question": "דּוֹמֶה"
+                },
+                {
+                    "question": "לָּךְ"
+                },
+                {
+                    "question": "מֶלֶךְ"
+                },
+                {
+                    "question": "מֵמִית"
+                },
+                {
+                    "question": "וּמְחַיֵּה"
+                },
+                {
+                    "question": "וּמצְמִיחַ"
+                },
+                {
+                    "question": "יְשׁוּעָה"
+                },
+                {
+                    "question": "וְנֶאֱמָן"
+                },
+                {
+                    "question": "אַתָּה"
+                },
+                {
+                    "question": "לְהַחֲיוֹת"
+                },
+                {
+                    "question": "הַכֹּל"
+                },
+                {
+                    "question": "מֵתִים"
+                },
+                {
+                    "question": "בָּרוּךְ"
+                },
+                {
+                    "question": "אַתָּה"
+                },
+                {
+                    "question": "יְיָ"
+                },
+                {
+                    "question": "מְחַיֵּה"
+                },
+                {
+                    "question": "הַכֹּל"
+                },
+                {
+                    "question": "הַמֵּתִים"
+                }
+            ]
+        },
+        {
+            "title": "Birkat Cohanim: Letters and Vowels",
+            "description": "This is the priestly blessing",
+            "prompt": "can you sound this out?",
+            "material": [
+                {
+                    "question": "יְ"
+                },
+                {
+                    "question": "בָ"
+                },
+                {
+                    "question": "רֶכְךָ"
+                },
+                {
+                    "question": "יְיָ"
+                },
+                {
+                    "question": "וְ"
+                },
+                {
+                    "question": "יִשְׁ"
+                },
+                {
+                    "question": "מְ"
+                },
+                {
+                    "question": "רֶךָ"
+                },
+                {
+                    "question": "יָ"
+                },
+                {
+                    "question": "אֵר"
+                },
+                {
+                    "question": "יְיָ"
+                },
+                {
+                    "question": "פָּ"
+                },
+                {
+                    "question": "נָיו"
+                },
+                {
+                    "question": "אֵ"
+                },
+                {
+                    "question": "לֶיךָ"
+                },
+                {
+                    "question": "וִי"
+                },
+                {
+                    "question": "חֻ"
+                },
+                {
+                    "question": "נֶּ"
+                },
+                {
+                    "question": "ךָָּ"
+                },
+                {
+                    "question": "יִ"
+                },
+                {
+                    "question": "שָּׂא"
+                },
+                {
+                    "question": "יְיָ"
+                },
+                {
+                    "question": "פָּ"
+                },
+                {
+                    "question": "נָיו"
+                },
+                {
+                    "question": "אֵ"
+                },
+                {
+                    "question": "לֶיךָ"
+                },
+                {
+                    "question": "וְ"
+                },
+                {
+                    "question": "יָ"
+                },
+                {
+                    "question": "שֵׂם"
+                },
+                {
+                    "question": "לְךָ"
+                },
+                {
+                    "question": "שָׁ"
+                },
+                {
+                    "question": "לוֹם"
+                }
+            ]
+        },
+        {
+            "title": "Birkat Cohanim: Full Text",
+            "description": "This is the priestly blessing",
+            "prompt": "can you say this word?",
+            "material": [
+                {
+                    "question": "יְבָרֶכְךָ"
+                },
+                {
+                    "question": "יְיָ"
+                },
+                {
+                    "question": "וְיִשְׁמְרֶךָ"
+                },
+                {
+                    "question": "יָאֵר"
+                },
+                {
+                    "question": "יְיָ"
+                },
+                {
+                    "question": "פָּנָיו"
+                },
+                {
+                    "question": "אֵלֶיךָ"
+                },
+                {
+                    "question": "וִיחֻנֶּךָָּ"
+                },
+                {
+                    "question": "יִשָּׂא"
+                },
+                {
+                    "question": "יְיָ"
+                },
+                {
+                    "question": "פָּנָיו"
+                },
+                {
+                    "question": "אֵלֶיךָ"
+                },
+                {
+                    "question": "וְיָשֵׂם"
+                },
+                {
+                    "question": "לְךָ"
+                },
+                {
+                    "question": "שָׁלוֹם"
+                }
+            ]
+        },
+        {
+            "title": "Kedusha: Letters and Vowels",
+            "description": "The Kedusha blessing is about holiness. These are common syllables you may encounter in this blessing.",
+            "prompt": "can you sound this out?",
+            "material": [
+                {
+                    "question": "נְ"
+                },
+                {
+                    "question": "קַ"
+                },
+                {
+                    "question": "דֵּשׁ"
+                },
+                {
+                    "question": "אֶת"
+                },
+                {
+                    "question": "שִׁמְ"
+                },
+                {
+                    "question": "ךָ"
+                },
+                {
+                    "question": "בָּ"
+                },
+                {
+                    "question": "עוֹ"
+                },
+                {
+                    "question": "לָם"
+                },
+                {
+                    "question": "כְּ"
+                },
+                {
+                    "question": "שֵׁם"
+                },
+                {
+                    "question": "שֶׁ"
+                },
+                {
+                    "question": "מַּקְ"
+                },
+                {
+                    "question": "דִּי"
+                },
+                {
+                    "question": "שִׁים"
+                },
+                {
+                    "question": "אוֹ"
+                },
+                {
+                    "question": "תוֹ"
+                },
+                {
+                    "question": "בִּשְׁ"
+                },
+                {
+                    "question": "מֵי"
+                },
+                {
+                    "question": "מָ"
+                },
+                {
+                    "question": "רוֹם"
+                },
+                {
+                    "question": "כַּ"
+                },
+                {
+                    "question": "כָּ"
+                },
+                {
+                    "question": "תוּב"
+                },
+                {
+                    "question": "עַל"
+                },
+                {
+                    "question": "יַד"
+                },
+                {
+                    "question": "נְ"
+                },
+                {
+                    "question": "בִי"
+                },
+                {
+                    "question": "אֶךָ"
+                },
+                {
+                    "question": "וְ"
+                },
+                {
+                    "question": "קָ"
+                },
+                {
+                    "question": "רָא"
+                },
+                {
+                    "question": "זֶה"
+                },
+                {
+                    "question": "אֶל"
+                },
+                {
+                    "question": "זֶה"
+                },
+                {
+                    "question": "וְ"
+                },
+                {
+                    "question": "אָ"
+                },
+                {
+                    "question": "מַר"
+                },
+                {
+                    "question": "קָ"
+                },
+                {
+                    "question": "דוֹשׁ"
+                },
+                {
+                    "question": "יְיָ"
+                },
+                {
+                    "question": "צְ"
+                },
+                {
+                    "question": "בָ"
+                },
+                {
+                    "question": "אוֹת"
+                },
+                {
+                    "question": "מְ"
+                },
+                {
+                    "question": "לֹא"
+                },
+                {
+                    "question": "כָל"
+                },
+                {
+                    "question": "הָ"
+                },
+                {
+                    "question": "אָ"
+                },
+                {
+                    "question": "רֶץ"
+                },
+                {
+                    "question": "כְּ"
+                },
+                {
+                    "question": "בוֹ"
+                },
+                {
+                    "question": "דוֹ"
+                },
+                {
+                    "question": "בָּ"
+                },
+                {
+                    "question": "רוּךְ"
+                },
+                {
+                    "question": "כְּ"
+                },
+                {
+                    "question": "בוֹד"
+                },
+                {
+                    "question": "יְיָ"
+                },
+                {
+                    "question": "מִמְּ"
+                },
+                {
+                    "question": "קוֹ"
+                },
+                {
+                    "question": "מוֹ"
+                },
+                {
+                    "question": "יִמְ"
+                },
+                {
+                    "question": "לֹךְ"
+                },
+                {
+                    "question": "יְיָ"
+                },
+                {
+                    "question": "לְ"
+                },
+                {
+                    "question": "עוֹ"
+                },
+                {
+                    "question": "לָם"
+                },
+                {
+                    "question": "אֱ"
+                },
+                {
+                    "question": "לֹ"
+                },
+                {
+                    "question": "הַיךְ"
+                },
+                {
+                    "question": "צִ"
+                },
+                {
+                    "question": "יּוֹן"
+                },
+                {
+                    "question": "לְ"
+                },
+                {
+                    "question": "דֹר"
+                },
+                {
+                    "question": "וָ"
+                },
+                {
+                    "question": "דֹר"
+                },
+                {
+                    "question": "הַלְ"
+                },
+                {
+                    "question": "לוּ"
+                },
+                {
+                    "question": "יָהּ"
+                },
+                {
+                    "question": "לְ"
+                },
+                {
+                    "question": "דוֹר"
+                },
+                {
+                    "question": "וָ"
+                },
+                {
+                    "question": "דוֹר"
+                },
+                {
+                    "question": "נַ"
+                },
+                {
+                    "question": "גִּיד"
+                },
+                {
+                    "question": "גָּדְ"
+                },
+                {
+                    "question": "לֶךָ"
+                },
+                {
+                    "question": "וּלְ"
+                },
+                {
+                    "question": "נֵ"
+                },
+                {
+                    "question": "צַח"
+                },
+                {
+                    "question": "נְ"
+                },
+                {
+                    "question": "צָ"
+                },
+                {
+                    "question": "חִים"
+                },
+                {
+                    "question": "קְ"
+                },
+                {
+                    "question": "דֻ"
+                },
+                {
+                    "question": "שָּׁתְ"
+                },
+                {
+                    "question": "ךָ"
+                },
+                {
+                    "question": "נַקְ"
+                },
+                {
+                    "question": "דִּישׁ"
+                },
+                {
+                    "question": "וְ"
+                },
+                {
+                    "question": "שִׁבְ"
+                },
+                {
+                    "question": "חֲ"
+                },
+                {
+                    "question": "ךָ"
+                },
+                {
+                    "question": "אֱ"
+                },
+                {
+                    "question": "לֹ"
+                },
+                {
+                    "question": "הֵי"
+                },
+                {
+                    "question": "נוּ"
+                },
+                {
+                    "question": "מִ"
+                },
+                {
+                    "question": "פִּי"
+                },
+                {
+                    "question": "נוּ"
+                },
+                {
+                    "question": "לֹא"
+                },
+                {
+                    "question": "יָ"
+                },
+                {
+                    "question": "מוּשׁ"
+                },
+                {
+                    "question": "לְ"
+                },
+                {
+                    "question": "עוֹלָם"
+                },
+                {
+                    "question": "וָ"
+                },
+                {
+                    "question": "עֶד"
+                },
+                {
+                    "question": "בָּ"
+                },
+                {
+                    "question": "רוּךְ"
+                },
+                {
+                    "question": "אַ"
+                },
+                {
+                    "question": "תָּה"
+                },
+                {
+                    "question": "יְיָ"
+                },
+                {
+                    "question": "הָ"
+                },
+                {
+                    "question": "אֵל"
+                },
+                {
+                    "question": "הַ"
+                },
+                {
+                    "question": "קָּ"
+                },
+                {
+                    "question": "דוֹשׁ"
+                }
+            ]
+        },
+        {
+            "title": "Kedusha: Full Text",
+            "description": "The Kedusha blessing is about holiness.",
+            "prompt": "can you sound this out?",
+            "material": [
+                {
+                    "question": "נְקַדֵּשׁ"
+                },
+                {
+                    "question": "אֶת"
+                },
+                {
+                    "question": "שִׁמְךָ"
+                },
+                {
+                    "question": "בָּעוֹלָם"
+                },
+                {
+                    "question": "כְּשֵׁם"
+                },
+                {
+                    "question": "שֶׁמַּקְדִּישִׁים"
+                },
+                {
+                    "question": "אוֹתוֹ"
+                },
+                {
+                    "question": "בִּשְׁמֵי"
+                },
+                {
+                    "question": "מָרוֹם"
+                },
+                {
+                    "question": "כַּכָּתוּב"
+                },
+                {
+                    "question": "עַל"
+                },
+                {
+                    "question": "יַד"
+                },
+                {
+                    "question": "נְבִיאֶךָ"
+                },
+                {
+                    "question": "וְקָרָא"
+                },
+                {
+                    "question": "זֶה"
+                },
+                {
+                    "question": "אֶל-זֶה"
+                },
+                {
+                    "question": "וְאָמַר"
+                },
+                {
+                    "question": "קָדוֹשׁ"
+                },
+                {
+                    "question": "קָדוֹשׁ"
+                },
+                {
+                    "question": "קָדוֹשׁ"
+                },
+                {
+                    "question": "יְיָ"
+                },
+                {
+                    "question": "צְבָאוֹת"
+                },
+                {
+                    "question": "מְלֹא"
+                },
+                {
+                    "question": "כָל-הָאָרֶץ"
+                },
+                {
+                    "question": "כְּבוֹדוֹ"
+                },
+                {
+                    "question": "בָּרוּךְ"
+                },
+                {
+                    "question": "כְּבוֹד-יְיָ"
+                },
+                {
+                    "question": "מִמְּקוֹמוֹ"
+                },
+                {
+                    "question": "יִמְלֹךְ"
+                },
+                {
+                    "question": "יְיָ"
+                },
+                {
+                    "question": "לְעוֹלָם"
+                },
+                {
+                    "question": "אֱלֹהַיךְ"
+                },
+                {
+                    "question": "צִיּוֹן"
+                },
+                {
+                    "question": "לְדֹר"
+                },
+                {
+                    "question": "וָדֹר"
+                },
+                {
+                    "question": "הַלְלוּיָהּ"
+                },
+                {
+                    "question": "לְדוֹר"
+                },
+                {
+                    "question": "וָדוֹר"
+                },
+                {
+                    "question": "נַגִּיד"
+                },
+                {
+                    "question": "גָּדְלֶךָ"
+                },
+                {
+                    "question": "וּלְנֵצַח"
+                },
+                {
+                    "question": "נְצָחִים"
+                },
+                {
+                    "question": "קְדֻשָּׁתְךָ"
+                },
+                {
+                    "question": "נַקְדִּישׁ"
+                },
+                {
+                    "question": "וְשִׁבְחֲךָ"
+                },
+                {
+                    "question": "אֱלֹהֵינוּ"
+                },
+                {
+                    "question": "מִפִּינוּ"
+                },
+                {
+                    "question": "לֹא"
+                },
+                {
+                    "question": "יָמוּשׁ"
+                },
+                {
+                    "question": "לְעוֹלָם"
+                },
+                {
+                    "question": "וָעֶד"
+                },
+                {
+                    "question": "בָּרוּךְ"
+                },
+                {
+                    "question": "אַתָּה"
+                },
+                {
+                    "question": "יְיָ"
+                },
+                {
+                    "question": "הָאֵל"
+                },
+                {
+                    "question": "הַקָּדוֹשׁ"
                 }
             ]
         },
