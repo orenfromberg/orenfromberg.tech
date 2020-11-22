@@ -182,6 +182,7 @@ class LessonPage extends React.Component {
     const display_details = () => {
       return (
         <details>
+          <summary>Display Cheatsheet</summary>
           <h2>Letters</h2>
           <table><tbody>
             <tr><td>Vav</td><td>Hey</td><td>Dalet</td><td>Gimel</td><td>Vet</td><td>Bet</td><td>Alef</td></tr>
@@ -206,11 +207,11 @@ class LessonPage extends React.Component {
           <h2>Vowels</h2>
           <table><tbody>
             <tr>
-              <td className="he">בָּ</td>
+              <td className="he">בָּ or בֳּ</td>
               <td>"bah", as in father</td>
             </tr>
             <tr>
-              <td className="he">בַּ</td>
+              <td className="he">בַּ or בֲּ</td>
               <td>"bah", as in father</td>
             </tr>
             <tr>
@@ -218,7 +219,7 @@ class LessonPage extends React.Component {
               <td>"bay", as in baby</td>
             </tr>
             <tr>
-              <td className="he">בֶּ</td>
+              <td className="he">בֶּ or בֱּ</td>
               <td>"beh", as in bell</td>
             </tr>
             <tr>
@@ -234,8 +235,8 @@ class LessonPage extends React.Component {
               <td>"boo" as in boon</td>
             </tr>
             <tr>
-              <td className="he">בִּיעַ</td>
-              <td>"bee'ah"</td>
+              <td className="he">בֹּ or בּוֹ</td>
+              <td>"boh" as in bone</td>
             </tr>
             <tr>
               <td className="he">בִּיחַ</td>
@@ -271,13 +272,13 @@ class LessonPage extends React.Component {
           </div>
         }
         {
-          display_details()
-        }
-        {
           display_students(students, curr_student)
         }
         {
           display_quiz(students, lessons[curr_lesson].prompt)
+        }
+        {
+          display_details()
         }
       </Layout>
     )
