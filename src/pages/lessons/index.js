@@ -313,7 +313,7 @@ class LessonPage extends React.Component {
         }
         {
           <div>
-            If you find this useful, please support my work with <a rel="noreferrer" target="_blank" href="https://www.paypal.com/paypalme/orenfromberg" >paypal</a> 🙌🙇
+            If you find this useful, <a rel="noreferrer" target="_blank" href="/donate" >please support my work!</a> 🙌🙇
           </div>
         }
       </Layout>

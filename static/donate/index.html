@@ -1,6 +1,16 @@
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149825548-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-149825548-2');
+    </script>
+
     <meta charSet="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -182,43 +192,59 @@
             background: #fff;
         }
     </style>
-    <title>Donate</title>
+    <title>Donate to support my work</title>
 </head>
 
 <body>
     <main>
-        <h1 style="text-align: center;">Thank you!</h1>
-        <p>Dear supporter,</p>
-        <p>It is my passion as well as personal mission to create engaging educational content for people of all ages in order to spread Jewish and Hebrew literacy.</p>
+        <h1 style="text-align: center;">Please consider supporting my work!</h1>
+        <p>Dear visitor,</p>
+        <p>It is my passion as well as personal mission to create engaging educational content for people of all ages in
+            order to spread Jewish and Hebrew literacy.</p>
         <p>Your contribution will help me succeed on this mission.</p>
-        <p>Thank you for your support!</p>
+        <p>Thank you for your consideration!</p>
         <p>Sincerely,</p>
         <p>Oren Fromberg</p>
         <hr />
-        <p>Please use the slider below to choose your contribution amount.</p>
         <div style="text-align: center;">
+            <h2>PayPal</h2>
+            <a target="_blank" href="https://www.paypal.com/donate?hosted_button_id=QP467ADZM99UG"><img alt="" src="donate/paypal.png" width="209px" /></a>
+            <br />
+            <form action="https://www.paypal.com/donate" method="post" target="_top">
+                <input type="hidden" name="hosted_button_id" value="QP467ADZM99UG" />
+                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0"
+                    name="submit" title="PayPal - The safer, easier way to pay online!"
+                    alt="Donate with PayPal button" />
+                <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+            </form>
+
+        </div>
+        <br />
+        <div style="text-align: center;">
+            <h2>Bitcoin</h2>
+            <p>Please use the slider below to choose your contribution amount.</p>
             <form method="POST" action="https://btcpayserver.satoshislist.club/api/v1/invoices"
-            class="btcpay-form btcpay-form--block">
-            <input type="hidden" name="storeId" value="7vUWUiN8Nw5ZQurbhV4iFMNh9JaNDmSyfL1K1DjYqypq" />
-            <div class="btcpay-custom-container">
-                <input id="btcpay-input-price" name="price" type="text" min="0" max="none" step="any" value="1"
-                    style="width: 209px;"
-                    oninput="event.preventDefault();isNaN(event.target.value) || event.target.value <= 0 ? document.querySelector('#btcpay-input-price').value = 1 : event.target.value"
-                    onchange="document.querySelector('#btcpay-input-range').value = document.querySelector('#btcpay-input-price').value" />
-                <select name="currency">
-                    <option value="USD" selected>USD</option>
-                    <option value="GBP">GBP</option>
-                    <option value="EUR">EUR</option>
-                    <option value="BTC">BTC</option>
-                </select>
-                <input class="btcpay-input-range" id="btcpay-input-range" value="1" type="range" min="1" max="100"
-                    step="1" style="width:209px;margin-bottom:15px;"
-                    oninput="document.querySelector('#btcpay-input-price').value = document.querySelector('#btcpay-input-range').value" />
-            </div>
-            <input type="image" class="submit" name="submit"
-                src="https://btcpayserver.satoshislist.club/img/paybutton/pay.svg" style="width:209px"
-                alt="Pay with BtcPay, Self-Hosted Bitcoin Payment Processor">
-        </form>
+                class="btcpay-form btcpay-form--block">
+                <input type="hidden" name="storeId" value="7vUWUiN8Nw5ZQurbhV4iFMNh9JaNDmSyfL1K1DjYqypq" />
+                <div class="btcpay-custom-container">
+                    <input id="btcpay-input-price" name="price" type="text" min="0" max="none" step="any" value="1"
+                        style="width: 209px;"
+                        oninput="event.preventDefault();isNaN(event.target.value) || event.target.value <= 0 ? document.querySelector('#btcpay-input-price').value = 1 : event.target.value"
+                        onchange="document.querySelector('#btcpay-input-range').value = document.querySelector('#btcpay-input-price').value" />
+                    <select name="currency">
+                        <option value="USD" selected>USD</option>
+                        <option value="GBP">GBP</option>
+                        <option value="EUR">EUR</option>
+                        <option value="BTC">BTC</option>
+                    </select>
+                    <input class="btcpay-input-range" id="btcpay-input-range" value="1" type="range" min="1" max="100"
+                        step="1" style="width:209px;margin-bottom:15px;"
+                        oninput="document.querySelector('#btcpay-input-price').value = document.querySelector('#btcpay-input-range').value" />
+                </div>
+                <input type="image" class="submit" name="submit"
+                    src="https://btcpayserver.satoshislist.club/img/paybutton/pay.svg" style="width:209px"
+                    alt="Pay with BtcPay, Self-Hosted Bitcoin Payment Processor">
+            </form>
         </div>
     </main>
 </body>
