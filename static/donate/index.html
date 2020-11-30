@@ -92,6 +92,12 @@
             line-height: 35px;
             background: #fff;
         }
+
+        #btcpay-input-price::-webkit-outer-spin-button,
+        #btcpay-input-price::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
     </style>
     <style type="text/css">
         input[type=range].btcpay-input-range {
@@ -226,6 +232,9 @@
             <form method="POST" action="https://btcpayserver.satoshislist.club/api/v1/invoices"
                 class="btcpay-form btcpay-form--block">
                 <input type="hidden" name="storeId" value="7vUWUiN8Nw5ZQurbhV4iFMNh9JaNDmSyfL1K1DjYqypq" />
+                <input type="hidden" name="browserRedirect"
+                    value="https://blog.orenfromberg.tech/donate/success.html" />
+                <input type="hidden" name="notifyEmail" value="orenfromberg@gmail.com" />
                 <div class="btcpay-custom-container">
                     <input id="btcpay-input-price" name="price" type="text" min="0" max="none" step="any" value="1"
                         style="width: 209px;"
