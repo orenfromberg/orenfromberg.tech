@@ -20,9 +20,9 @@ class Scoreboard extends React.Component {
 players.map((x, i) => (<li key={x}><span className={
     [i === currPlayer ? "bold" : "",
     scores[i] === 0 ? "strikeout" : ""].join(" ")
-}>{x}</span>{`: `}{new Array(scores[i]).fill(0).map(()=>(<Coin />))}</li>))
+}>{x}</span>{`: `}{new Array(scores[i]).fill(0).map((x,i)=>(<Coin key={i} />))}</li>))
                     }</ul>
-                    <p className="bold">{`Pot: `}{new Array(pot).fill(0).map(()=>(<Coin />))}</p>
+                    <span className="bold">{`Pot: `}{new Array(pot).fill(0).map((x,i)=>(<Coin key={i}/>))}</span>
                 </div>
             )
         } else {

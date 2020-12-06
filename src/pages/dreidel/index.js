@@ -259,6 +259,10 @@ class DreidelPage extends React.Component {
                 <hr />
                 {
                     <div>
+                        <p style={{
+                            textAlign: "center",
+                            color: "red"
+                        }}>BETA</p>
                         <h1>Let's play Dreidel!</h1>
                         <p>A dreidel is a four-sided spinning top, played during the Jewish holiday of Hanukkah.</p>
                         <p>Don't have a dreidel to play with? <a target="_blank" rel="noopener noreferrer" href="https://www.dreidel.xyz">Use this virtual dreidel!</a></p>
