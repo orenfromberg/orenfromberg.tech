@@ -44,3 +44,22 @@
 tr > td {
     text-align: center;
 }
+
+.goldcoin {
+    background: #ffbd0b;
+    border-radius: 50%;
+    font-size: 1rem;
+    border-top: 7px solid #ffd84c;
+    border-left: 7px solid #ffd84c;
+    border-right: 7px solid #d57e08;
+    border-bottom: 7px solid #d57e08;
+    color: #d67f08;
+    text-align: center;
+    display: inline;
+    margin: 4px;
+}
+
+.strikeout {
+    text-decoration: line-through;
+    text-decoration-thickness: 3px;
+}
