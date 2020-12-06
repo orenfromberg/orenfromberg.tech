@@ -2,9 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../../components/layout"
-
-// const letters = [ "nun", "gimel", "hey", "shin"]
-const letters = [ "front", "right", "back", "left"]
+import Game from "./game"
 
 class DreidelPage extends React.Component {
     constructor(props) {
@@ -13,15 +11,16 @@ class DreidelPage extends React.Component {
         this.myInput = React.createRef();
         this.myButton = React.createRef();
         this.handleSubmit = this.handleSubmit.bind(this);
-
         this.startGame = this.startGame.bind(this);
-        this.spin = this.spin.bind(this)
+        this.handleDreidelSpun = this.handleDreidelSpun.bind(this);
 
         this.state = {
             players: [],
+            scores: [],
+            pot: 0,
             is_game_started: false,
-            curr_player: undefined,
-            curr_letter: undefined
+            curr_player: undefined, // this is an index
+            has_winner: false
         }
     }
 
@@ -68,15 +67,17 @@ class DreidelPage extends React.Component {
         })
     }
 
-    spin() {
-        this.setState({
-            curr_letter: letters[Math.floor(Math.random() * letters.length)]
-        })
-    }
-
     startGame() {
+        const { players } = this.state;
+
+        const scores = new Array(players.length).fill(5)
+
         this.setState({
-            is_game_started: true
+            is_game_started: true,
+            scores,
+            curr_player: Math.floor(Math.random() * players.length),
+            pot: players.length,
+            has_winner: false
         })
     }
 
@@ -88,42 +89,151 @@ class DreidelPage extends React.Component {
         })
     }
 
+    handleDreidelSpun(letter) {
+        const { scores, players, curr_player, pot } = this.state;
+
+        let new_pot = pot;
+        let next_player = curr_player;
+        let new_scores = [...scores];
+        let is_game_started = true;
+        let has_winner = false;
+
+        if (letter === "nun") {
+            // nothing happens
+
+            // go to next player with non-zero score
+            let done = false;
+            while (!done) {
+                next_player = (next_player + 1) % players.length
+                done = new_scores[next_player] > 0 ? true : false;
+            }
+
+            // is next_player same as curr_player?
+            if (curr_player === next_player) {
+                // game is over
+                is_game_started = false;
+                has_winner = true;
+            }
+        }
+        else if (letter === "gimel") {
+            // curr player gets pot
+            new_scores[curr_player] += pot
+
+            // pot is empty
+            new_pot = 0;
+
+            // players with non-zero scores put a point in pot
+            players.forEach((player, i) => {
+                if (new_scores[i] > 0) {
+                    new_scores[i] -= 1;
+                    new_pot++;
+                }
+            });
+
+            // go to next player with non-zero score
+            let done = false;
+            while (!done) {
+                next_player = (next_player + 1) % players.length
+                done = new_scores[next_player] > 0 ? true : false;
+            }
+
+            // is next_player same as curr_player?
+            if (curr_player === next_player) {
+                // game is over
+                is_game_started = false;
+                has_winner = true;
+            }
+        }
+        else if (letter === "hey") {
+            // curr player gets half the pot
+            let half_pot = Math.ceil(pot / 2);
+            new_pot = pot - half_pot;
+            new_scores[curr_player] += half_pot;
+
+            // is pot empty?
+            if (new_pot === 0) {
+                // players with non-zero scores put a point in pot
+                players.forEach((player, i) => {
+                    if (new_scores[i] > 0) {
+                        new_scores[i] -= 1;
+                        new_pot++;
+                    }
+                });
+            }
+
+            // go to next player with non-zero score
+            let done = false;
+            while (!done) {
+                next_player = (next_player + 1) % players.length
+                done = new_scores[next_player] > 0 ? true : false;
+            }
+
+            // is next_player same as curr_player?
+            if (curr_player === next_player) {
+                // game is over
+                is_game_started = false;
+                has_winner = true;
+            }
+        } else if (letter === "shin") {
+            // curr_player puts 1 into pot
+            new_scores[curr_player] -= 1
+            new_pot++;
+
+            // go to next player with non-zero score
+            let done = false;
+            while (!done) {
+                next_player = (next_player + 1) % players.length
+                done = new_scores[next_player] > 0 ? true : false;
+            }
+
+            // is the next_player the only player left?
+            if (new_scores[next_player] === new_scores.reduce((prev, currVal, currIdx) => {
+                return prev + new_scores[currIdx];
+            }, 0)) {
+                is_game_started = false;
+                has_winner = true;
+            }
+        }
+
+        this.setState({
+            pot: new_pot,
+            curr_player: next_player,
+            scores: new_scores,
+            is_game_started,
+            has_winner
+        })
+    }
+
     render() {
         const { data } = this.props;
         const siteTitle = data.site.siteMetadata.title;
         const {
             players,
-            curr_letter,
             curr_player,
-            is_game_started
+            is_game_started,
+            scores,
+            pot,
+            has_winner
         } = this.state;
-
-        const display_game = (curr_letter) => {
-            return (
-                <div>
-                    <div className="scene">
-                        <div className={`cube show-${curr_letter}`}>
-                            <div className="cube__face cube__face--front">נ</div>
-                            <div className="cube__face cube__face--back">ה</div>
-                            <div className="cube__face cube__face--right">ג</div>
-                            <div className="cube__face cube__face--left">שׁ</div>
-                        </div>
-                    </div>
-                    <button type="button" onClick={this.spin}>Spin</button>
-                </div>
-            )
-        }
 
         const display_details = () => {
             return (
                 <details className="cheatsheet">
                     <summary>Display Rules</summary>
-                    <p>Each side of the dreidel bears a letter of the Hebrew alphabet: נ‎ (nun), ג‎ (gimel), ה‎ (hei), ש‎ (shin). These letters are translated in Yiddish to a mnemonic for the rules of a gambling game played with a dreidel: Nun stands for the Yiddish word nisht ("nothing"), Gimel for gants ("all"), Hei for halb ("half"), and Shin for shtel arayn ("put in"). However, they represent the Hebrew phrase nes gadol hayah sham ("a great miracle happened there"), referring to the miracle of the cruse of oil.</p>
+                    <p>Each side of the dreidel bears a letter of the Hebrew alphabet: נ‎ (nun), ג‎ (gimel), ה‎ (hei), ש‎ (shin).</p>
+                    <p>These letters are translated in Yiddish to a mnemonic for the rules of a gambling game played with a dreidel:</p>
+                    <ul>
+                        <li>Nun stands for the Yiddish word nisht ("nothing"),</li>
+                        <li>Gimel for gants ("all"),</li>
+                        <li>Hei for halb ("half"),</li>
+                        <li>and Shin for shtel arayn ("put in").</li>
+                    </ul>
+                    <p>However, they represent the Hebrew phrase nes gadol hayah sham ("a great miracle happened there"), referring to the miracle of the cruse of oil.</p>
                 </details>
             )
         }
 
-        const display_players = (players, curr_player, is_game_started) => {
+        const display_players = (players, curr_player, is_game_started, scores, pot) => {
             return (
                 <div>
                     {
@@ -140,9 +250,12 @@ class DreidelPage extends React.Component {
                         is_game_started === false && players.map((x, i, arr) => (<span key={i} className={i === curr_player ? "bold" : ""}>{`${x} `}<button onClick={this.removePlayer(x)}>x</button>{i === arr.length - 1 ? ' ' : `, `}</span>))
                     }
                     {
-                        is_game_started === true && <ul>{
-                            players.map(x => (<li>{x}</li>))
-                        }</ul>
+                        is_game_started === true && <div>
+                            <ul>{
+                                players.map((x, i) => (<li key={x}>{`${x}: ${scores[i]}`}</li>))
+                            }</ul>
+                            <p>{`Pot: ${pot}`}</p>
+                        </div>
                     }
                 </div>
             )
@@ -155,18 +268,20 @@ class DreidelPage extends React.Component {
                     <div>
                         <h1>{`Let's play Dreidel!`}</h1>
                         <p>A dreidel is a four-sided spinning top, played during the Jewish holiday of Hanukkah.</p>
+                        <p>Don't have a dreidel to play with? <a target="_blank" rel="noopener noreferrer" href="https://www.dreidel.xyz">Use this virtual dreidel!</a></p>
                     </div>
                 }
                 {
-                    display_players(players, curr_player, is_game_started)
+                    display_players(players, curr_player, is_game_started, scores, pot)
                 }
                 {
-                    is_game_started === false && <button onClick={this.startGame} disabled={players.length > 1 ? false : true}>Start Game!</button>
+                    has_winner && <h1>{`${players[curr_player]} won!`}</h1>
+                }
+                {
+                    is_game_started === false && <button onClick={this.startGame} disabled={players.length > 1 ? false : true}>Start New Game!</button>
                 }
                 <hr />
-                {
-                    is_game_started === true && display_game(curr_letter)
-                }
+                <Game isGameStarted={is_game_started} players={players} currPlayer={curr_player} onDreidelSpun={this.handleDreidelSpun} />
                 {
                     display_details()
                 }
