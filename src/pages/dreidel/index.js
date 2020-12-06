@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 
 import Layout from "../../components/layout"
 import Game from "./game"
+import Scoreboard from "./scoreboard"
 
 class DreidelPage extends React.Component {
     constructor(props) {
@@ -249,14 +250,6 @@ class DreidelPage extends React.Component {
                     {
                         is_game_started === false && players.map((x, i, arr) => (<span key={i} className={i === curr_player ? "bold" : ""}>{`${x} `}<button onClick={this.removePlayer(x)}>x</button>{i === arr.length - 1 ? ' ' : `, `}</span>))
                     }
-                    {
-                        is_game_started === true && <div>
-                            <ul>{
-                                players.map((x, i) => (<li key={x}>{`${x}: ${scores[i]}`}</li>))
-                            }</ul>
-                            <p>{`Pot: ${pot}`}</p>
-                        </div>
-                    }
                 </div>
             )
         }
@@ -266,7 +259,7 @@ class DreidelPage extends React.Component {
                 <hr />
                 {
                     <div>
-                        <h1>{`Let's play Dreidel!`}</h1>
+                        <h1>Let's play Dreidel!</h1>
                         <p>A dreidel is a four-sided spinning top, played during the Jewish holiday of Hanukkah.</p>
                         <p>Don't have a dreidel to play with? <a target="_blank" rel="noopener noreferrer" href="https://www.dreidel.xyz">Use this virtual dreidel!</a></p>
                     </div>
@@ -274,6 +267,7 @@ class DreidelPage extends React.Component {
                 {
                     display_players(players, curr_player, is_game_started, scores, pot)
                 }
+                <Scoreboard players={players} currPlayer={curr_player} isGameStarted={is_game_started} scores={scores} pot={pot} />
                 {
                     has_winner && <h1>{`${players[curr_player]} won!`}</h1>
                 }
