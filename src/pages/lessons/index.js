@@ -6,7 +6,7 @@ import Layout from "../../components/layout"
 const { lessons } = require('./lessons.json')
 
 const get_random_question = (material) => {
-  return material[Math.floor(Math.random() * material.length)].question
+  return material[Math.floor(Math.random() * material.length)]
 }
 
 class LessonPage extends React.Component {
@@ -120,7 +120,7 @@ class LessonPage extends React.Component {
       curr_question: next_question,
       quiz: {
         student: students[i],
-        question: lessons[curr_lesson].material[next_question].question
+        question: lessons[curr_lesson].material[next_question]
       }
     })
   }
@@ -201,7 +201,8 @@ class LessonPage extends React.Component {
             <button disabled={students.length === 1} onClick={this.challengeNextStudent}>Let another student try</button>
             <hr />
             <h1 style={{textAlign: "center"}}>{quiz !== undefined ? `${quiz.student}, ${prompt}` : ""}</h1>
-            <p className="he quiz">{quiz !== undefined ? quiz.question : ""}</p>
+            <p className="he quiz">{quiz !== undefined ? quiz.question.question : ""}</p>
+            <h2 style={{textAlign: "center"}}>{quiz !== undefined ? (quiz.question.translation !== "" ? quiz.question.translation : ""): ""}</h2>
           </div>
         )
       }
