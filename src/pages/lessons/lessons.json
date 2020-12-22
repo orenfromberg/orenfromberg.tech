@@ -2428,6 +2428,169 @@
                     "question": "צֵאתְכֶם"
                 }
             ]
+        },
+        {
+            "title": "English Alphabet",
+            "description": "The English letters in various cases.",
+            "prompt": "what letter and case is this?",
+            "material": [
+                {
+                    "question": "a"
+                },
+                {
+                    "question": "b"
+                },
+                {
+                    "question": "c"
+                },
+                {
+                    "question": "d"
+                },
+                {
+                    "question": "e"
+                },
+                {
+                    "question": "f"
+                },
+                {
+                    "question": "g"
+                },
+                {
+                    "question": "h"
+                },
+                {
+                    "question": "i"
+                },
+                {
+                    "question": "j"
+                },
+                {
+                    "question": "k"
+                },
+                {
+                    "question": "l"
+                },
+                {
+                    "question": "m"
+                },
+                {
+                    "question": "n"
+                },
+                {
+                    "question": "o"
+                },
+                {
+                    "question": "p"
+                },
+                {
+                    "question": "q"
+                },
+                {
+                    "question": "r"
+                },
+                {
+                    "question": "s"
+                },
+                {
+                    "question": "t"
+                },
+                {
+                    "question": "u"
+                },
+                {
+                    "question": "v"
+                },
+                {
+                    "question": "w"
+                },
+                {
+                    "question": "x"
+                },
+                {
+                    "question": "y"
+                },
+                {
+                    "question": "z"
+                },
+                {
+                    "question": "A"
+                },
+                {
+                    "question": "B"
+                },
+                {
+                    "question": "C"
+                },
+                {
+                    "question": "D"
+                },
+                {
+                    "question": "E"
+                },
+                {
+                    "question": "F"
+                },
+                {
+                    "question": "G"
+                },
+                {
+                    "question": "H"
+                },
+                {
+                    "question": "I"
+                },
+                {
+                    "question": "J"
+                },
+                {
+                    "question": "K"
+                },
+                {
+                    "question": "L"
+                },
+                {
+                    "question": "M"
+                },
+                {
+                    "question": "N"
+                },
+                {
+                    "question": "O"
+                },
+                {
+                    "question": "P"
+                },
+                {
+                    "question": "Q"
+                },
+                {
+                    "question": "R"
+                },
+                {
+                    "question": "S"
+                },
+                {
+                    "question": "T"
+                },
+                {
+                    "question": "U"
+                },
+                {
+                    "question": "V"
+                },
+                {
+                    "question": "W"
+                },
+                {
+                    "question": "X"
+                },
+                {
+                    "question": "Y"
+                },
+                {
+                    "question": "Z"
+                }
+            ]
         }
     ]
 }
