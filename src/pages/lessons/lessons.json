@@ -1935,7 +1935,7 @@
             ]
         },
         {
-            "title": "Hoda'ah: Full Text",
+            "title": "Hoda'ah: Full Text - Easy Mode",
             "description": "The הוֹדאָה (\"thanksgiving\") blessing is the next-to-last blessing of the Amidah. In it, we thank God for our many blessings, and we recognize and acknowledge that God is One alone in creating and making possible life's goodness. Because we are expressing our gratitude to God, in many congregations we bow respectfully both at the start and at the end of the Hoda'ah blessing.",
             "prompt": "can you sound this out?",
             "material": [
@@ -2146,6 +2146,121 @@
                 {
                     "question": "לְהוֹדוֹת",
                     "translation": "to thank."
+                }
+            ]
+        },
+        {
+            "title": "Hoda'ah: Full Text - Hard Mode",
+            "description": "The הוֹדאָה (\"thanksgiving\") blessing is the next-to-last blessing of the Amidah. In it, we thank God for our many blessings, and we recognize and acknowledge that God is One alone in creating and making possible life's goodness. Because we are expressing our gratitude to God, in many congregations we bow respectfully both at the start and at the end of the Hoda'ah blessing.",
+            "prompt": "can you sound this out?",
+            "material": [
+                {
+                    "question": "מוֹדִים אֲנַחְנוּ לָךְ",
+                    "translation": "We give thanks to You"
+                },
+                {
+                    "question": "שָׁאַתָּה הוּא",
+                    "translation": "that You are"
+                },
+                {
+                    "question": "יְיָ אֱלֹהֵינוּ",
+                    "translation": "Adonai our God"
+                },
+                {
+                    "question": "וֵאלֹהֵי אֲבוֹתֵינוּ וְאִמּוֹתֵינוּ",
+                    "translation": "and the God of our fathers and mothers"
+                },
+                {
+                    "question": "לְעוֹלָם וָעֵד",
+                    "translation": "forever and ever"
+                },
+                {
+                    "question": "צוּר חַיֵּינוּ",
+                    "translation": "Rock of our lives"
+                },
+                {
+                    "question": "מָגֵן יִשְׁעֵנוּ",
+                    "translation": "Sheild who saves us"
+                },
+                {
+                    "question": "אַתָּה הוּא",
+                    "translation": "You are"
+                },
+                {
+                    "question": "לְדוֹר וָדוֹר",
+                    "translation": "from generation to generation"
+                },
+                {
+                    "question": "נוֹדֶה לְךָ",
+                    "translation": "We will give thanks"
+                },
+                {
+                    "question": "וּנְסַפֵּר תְּהִלָּתֶךָ",
+                    "translation": "and we will tell of Your praises"
+                },
+                {
+                    "question": "וְעַל כֻּלָּם",
+                    "translation": "and for all this"
+                },
+                {
+                    "question": "יִתְבָּרַךְ וְיִתְרוֹמַם שִׁמְךָ",
+                    "translation": "Your name will be praised and exalted"
+                },
+                {
+                    "question": "מַלְכֵּנוּ תָּמִיד",
+                    "translation": "our Ruler"
+                },
+                {
+                    "question": "לְעוֹלָם וָעֶד",
+                    "translation": "always and forever"
+                },
+                {
+                    "question": "וְכֹל הַחַיִּים",
+                    "translation": "and all living things"
+                },
+                {
+                    "question": "יוֹדוּךָ סֶּלָה",
+                    "translation": "will acknowledge, Selah"
+                },
+                {
+                    "question": "וִיהַלְלוּ",
+                    "translation": "and will praise"
+                },
+                {
+                    "question": "אֶת שִׁמְךָ",
+                    "translation": "Your name"
+                },
+                {
+                    "question": "בֶּאֱמֶת",
+                    "translation": "in truth"
+                },
+                {
+                    "question": "הָאֵל",
+                    "translation": "The God"
+                },
+                {
+                    "question": "יְשׁוּעָתֵנוּ",
+                    "translation": "our Rescuer"
+                },
+                {
+                    "question": "וְעֶזְרָתֵנוּ",
+                    "translation": "and our Helper"
+                },
+                {
+                    "question": "סֶלָה",
+                    "translation": "selah"
+                },
+                {
+                    "question": "בָּרוּךְ אַתָּה יְיָ",
+                    "translation": "Praised are You, Adonai"
+                },
+                {
+                    "question": "הַטּוֹב שִׁמְךָ",
+                    "translation": "Whose name is good"
+                },
+                {
+                    "question": "וּלְךָ נָאֶה לְהוֹדוֹת",
+                    "translation": "and to whom we give thanks"
                 }
             ]
         },
