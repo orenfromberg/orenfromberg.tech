@@ -2150,6 +2150,89 @@
             ]
         },
         {
+            "title": "Birkat Shalom - Shalom Rav",
+            "description": "The idea of peace is so important that the final blessing of the Amida is a prayer for peace - בִּרְכַּת שָׁלוֹם",
+            "prompt": "can you sound this out?",
+            "material": [
+                {
+                    "question": "שָׁלוֹם רָב",
+                    "translation": "great peace"
+                },
+                {
+                    "question": "עַל-יִשְׂרָאֵל עַמְּךָ",
+                    "translation": "upon Israel Your people"
+                },
+                {
+                    "question": "תָּשִׂים",
+                    "translation": "put (grant)"
+                },
+                {
+                    "question": "לְעוֹלָם",
+                    "translation": "forever"
+                },
+                {
+                    "question": "כִּי אַתָּה הוּא",
+                    "translation": "for You are"
+                },
+                {
+                    "question": "מֶלֶךְ",
+                    "translation": "king"
+                },
+                {
+                    "question": "אָדוֹן",
+                    "translation": "sovereign"
+                },
+                {
+                    "question": "לְכָל הַשָּׁלוֹם",
+                    "translation": "for all of peace"
+                },
+                {
+                    "question": "וְטוֹב בְּעֵינֶיךָ",
+                    "translation": "and it is good in your eyes"
+                },
+                {
+                    "question": "לְבָרֵךְ",
+                    "translation": "to bless"
+                },
+                {
+                    "question": "אֶת-עַמְּךָ יִשְׂרָאֵל",
+                    "translation": "Your people, Israel"
+                },
+                {
+                    "question": "וְאֶת-כָּל-הָעַמִּים",
+                    "translation": "and all the peoples"
+                },
+                {
+                    "question": "בְּכָל-עֵת",
+                    "translation": "at every time"
+                },
+                {
+                    "question": "וּבְכָל-שָׁעָה",
+                    "translation": "and at every hour"
+                },
+                {
+                    "question": "בִּשְׁלוֹמֶךָ",
+                    "translation": "with Your peace"
+                },
+                {
+                    "question": "בָּרוּךְ אַתָּה יְיָ",
+                    "translation": "Praised are you, Adonai"
+                },
+                {
+                    "question": "הַמְבָרֵךְ",
+                    "translation": "who blesses"
+                },
+                {
+                    "question": "אֶת-עַמּוֹ יִשְׂרָאֵל",
+                    "translation": "His people, Israel"
+                },
+                {
+                    "question": "בַּשָּׁלוֹם",
+                    "translation": "with peace"
+                }
+            ]
+        },
+        {
             "title": "Kita Hey Vocabulary Words",
             "description": "These are all the words we'll learn in Kita Hey.",
             "prompt": "can you read this?",
