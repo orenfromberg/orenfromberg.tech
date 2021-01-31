@@ -2348,6 +2348,197 @@
             ]
         },
         {
+            "title": "Sim Shalom",
+            "description": "In this prayer we ask God to inspire us to make peace and to act kindly towards others",
+            "prompt": "can you sound this out?",
+            "material": [
+                {
+                    "question": "שִׂים",
+                    "translation": "Grant"
+                },
+                {
+                    "question": "שָׁלוֹם",
+                    "translation": "peace"
+                },
+                {
+                    "question": "(בָּעוֹלָם)",
+                    "translation": "(in the world)"
+                },
+                {
+                    "question": "טוֹבָה",
+                    "translation": "goodness"
+                },
+                {
+                    "question": "וּבְרָכָה",
+                    "translation": "and blessing"
+                },
+                {
+                    "question": "חֵן",
+                    "translation": "graciousness"
+                },
+                {
+                    "question": "וָחֶסֶד",
+                    "translation": "and kindness"
+                },
+                {
+                    "question": "וְרַחֲמִים",
+                    "translation": "and mercy"
+                },
+                {
+                    "question": "עָלֵינוּ",
+                    "translation": "upon us"
+                },
+                {
+                    "question": "וְעַל-כָָּל-יִשְׂרָאֵל",
+                    "translation": "and upon all Israel"
+                },
+                {
+                    "question": "עַמֶּךָ",
+                    "translation": "Your people"
+                },
+                {
+                    "question": "בָּרְכֵנוּ",
+                    "translation": "Bless us"
+                },
+                {
+                    "question": "אָבִינוּ",
+                    "translation": "our Father"
+                },
+                {
+                    "question": "כֻּלָּנוּ",
+                    "translation": "all of us"
+                },
+                {
+                    "question": "כְּאֶחָד",
+                    "translation": "as one"
+                },
+                {
+                    "question": "בְּאוֹר",
+                    "translation": "with the light"
+                },
+                {
+                    "question": "פָּנֶיךָ",
+                    "translation": "of your face"
+                },
+                {
+                    "question": "כִּי",
+                    "translation": "for (because)"
+                },
+                {
+                    "question": "בְאוֹר",
+                    "translation": "with the light"
+                },
+                {
+                    "question": "פָּנֶיךָ",
+                    "translation": "of your face"
+                },
+                {
+                    "question": "נָחַתָּ",
+                    "translation": "You gave"
+                },
+                {
+                    "question": "לָּנוּ",
+                    "translation": "to us"
+                },
+                {
+                    "question": "יְיָ אֱלֹהֵינוּ",
+                    "translation": "God"
+                },
+                {
+                    "question": "תּוֹרַת",
+                    "translation": "the Torah of"
+                },
+                {
+                    "question": "חַיִּים",
+                    "translation": "Life"
+                },
+                {
+                    "question": "וְאַהֲבַת",
+                    "translation": "and a love"
+                },
+                {
+                    "question": "חֶסֶד",
+                    "translation": "of kindness"
+                },
+                {
+                    "question": "וּצְדָקָה",
+                    "translation": "and of righteousness"
+                },
+                {
+                    "question": "וּבְרָכָה",
+                    "translation": "and blessing"
+                },
+                {
+                    "question": "וְרַחֲמִים",
+                    "translation": "and mercy"
+                },
+                {
+                    "question": "וְחַיִּים",
+                    "translation": "and life"
+                },
+                {
+                    "question": "וְשָׁלוֹם",
+                    "translation": "and peace"
+                },
+                {
+                    "question": "וְטוֹב",
+                    "translation": "and may it be good"
+                },
+                {
+                    "question": "בְּעֵינֶיךָ",
+                    "translation": "in Your eyes"
+                },
+                {
+                    "question": "לְבָרֵךְ",
+                    "translation": "to bless"
+                },
+                {
+                    "question": "אֶת-עַמְּךָ",
+                    "translation": "Your people"
+                },
+                {
+                    "question": "יִשְׂרָאֵל",
+                    "translation": "Israel"
+                },
+                {
+                    "question": "(וְאֶת-כָּל-הָָעַמִּים)",
+                    "translation": "and all peoples"
+                },
+                {
+                    "question": "בְּכָל-עֵת",
+                    "translation": "at every time"
+                },
+                {
+                    "question": "וּבְכָל-שָׁעָה",
+                    "translation": "and at every hour"
+                },
+                {
+                    "question": "בִּשְׁלוֹמֶךָ",
+                    "translation": "with Your peace"
+                },
+                {
+                    "question": "בָּרוּךְ אַתָּה יְיָ",
+                    "translation": "Praised are you, Adonai"
+                },
+                {
+                    "question": "הַמְבָרֵךְ",
+                    "translation": "Who blesses"
+                },
+                {
+                    "question": "אֶת-עַמּוֹ",
+                    "translation": "the people"
+                },
+                {
+                    "question": "יִשְׂרָאֵל",
+                    "translation": "of Israel"
+                },
+                {
+                    "question": "בַּשָּׁלוֹם",
+                    "translation": "with peace"
+                }
+            ]
+        },
+        {
             "title": "Kita Hey Vocabulary Words",
             "description": "These are all the words we'll learn in Kita Hey.",
             "prompt": "can you read this?",
