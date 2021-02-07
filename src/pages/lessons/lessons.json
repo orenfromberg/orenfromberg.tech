@@ -2539,6 +2539,57 @@
             ]
         },
         {
+            "title": "Oseh Shalom",
+            "description": "This prayer is said immediately after the Amidah and asks God to make peace in our lives and in our world.",
+            "prompt": "can you sound this out?",
+            "material": [
+                {
+                    "question": "עֹשֶׂה",
+                    "translation": "Make"
+                },
+                {
+                    "question": "שָׁלוֹם",
+                    "translation": "Peace"
+                },
+                {
+                    "question": "בִּמְרוֹמָיו",
+                    "translation": "Above (In His Heights)"
+                },
+                {
+                    "question": "הוּא",
+                    "translation": "He"
+                },
+                {
+                    "question": "יַעֲשֶׂה",
+                    "translation": "Will Make"
+                },
+                {
+                    "question": "שָׁלוֹם",
+                    "translation": "Peace"
+                },
+                {
+                    "question": "עָלֵינוּ",
+                    "translation": "Upon Us"
+                },
+                {
+                    "question": "וְעַל",
+                    "translation": "and Upon"
+                },
+                {
+                    "question": "כָּל-יִשְׂרָאֵל",
+                    "translation": "All of Israel"
+                },
+                {
+                    "question": "וְאִמְרוּ",
+                    "translation": "And You (y'all) will say"
+                },
+                {
+                    "question": "אָמֶן",
+                    "translation": "Amen"
+                }
+            ]
+        },
+        {
             "title": "Kita Hey Vocabulary Words",
             "description": "These are all the words we'll learn in Kita Hey.",
             "prompt": "can you read this?",
