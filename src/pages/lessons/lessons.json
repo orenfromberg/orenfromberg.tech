@@ -2590,6 +2590,575 @@
             ]
         },
         {
+            "title": "Lecha Dodi - Letters and Vowels",
+            "description": "In this prayer we greet Shabbat as if it were a bride or queen -- radiant and beautiful. Let's look at the simple letters and vowels that make up this prayer.",
+            "prompt": "can you sound this out?",
+            "material": [
+                {
+                    "question": "לְ"
+                },
+                {
+                    "question": "כָה"
+                },
+                {
+                    "question": "דוֹ"
+                },
+                {
+                    "question": "דִי"
+                },
+                {
+                    "question": "לִקְ"
+                },
+                {
+                    "question": "רַאת"
+                },
+                {
+                    "question": "כַּ"
+                },
+                {
+                    "question": "לָּה"
+                },
+                {
+                    "question": "פְּ"
+                },
+                {
+                    "question": "נֵי"
+                },
+                {
+                    "question": "שַׁ"
+                },
+                {
+                    "question": "בָּת"
+                },
+                {
+                    "question": "נְ"
+                },
+                {
+                    "question": "קַבְּ"
+                },
+                {
+                    "question": "לָה"
+                },
+                {
+                    "question": "שָׁ"
+                },
+                {
+                    "question": "מוֹר"
+                },
+                {
+                    "question": "וְ"
+                },
+                {
+                    "question": "זָ"
+                },
+                {
+                    "question": "כוֹר"
+                },
+                {
+                    "question": "בְּ"
+                },
+                {
+                    "question": "דִ"
+                },
+                {
+                    "question": "בּוּר"
+                },
+                {
+                    "question": "אֶ"
+                },
+                {
+                    "question": "חָד"
+                },
+                {
+                    "question": "הִשְׁ"
+                },
+                {
+                    "question": "מִי"
+                },
+                {
+                    "question": "עָ"
+                },
+                {
+                    "question": "נוּ"
+                },
+                {
+                    "question": "אֵל"
+                },
+                {
+                    "question": "הַמְ"
+                },
+                {
+                    "question": "יֻ"
+                },
+                {
+                    "question": "חָד"
+                },
+                {
+                    "question": "יְיָ"
+                },
+                {
+                    "question": "אֶ"
+                },
+                {
+                    "question": "חָד"
+                },
+                {
+                    "question": "וּשְׁ"
+                },
+                {
+                    "question": "מוֹ"
+                },
+                {
+                    "question": "אֶ"
+                },
+                {
+                    "question": "חָד"
+                },
+                {
+                    "question": "לְ"
+                },
+                {
+                    "question": "שֵׁם"
+                },
+                {
+                    "question": "וּלְ"
+                },
+                {
+                    "question": "תִפְ"
+                },
+                {
+                    "question": "אֶרֶת"
+                },
+                {
+                    "question": "וְ"
+                },
+                {
+                    "question": "לִתְ"
+                },
+                {
+                    "question": "הִ"
+                },
+                {
+                    "question": "לָּה"
+                },
+                {
+                    "question": "לִקְ"
+                },
+                {
+                    "question": "רַאת"
+                },
+                {
+                    "question": "שַׁ"
+                },
+                {
+                    "question": "בָּת"
+                },
+                {
+                    "question": "לְכוּ"
+                },
+                {
+                    "question": "וְ"
+                },
+                {
+                    "question": "נֵלְ"
+                },
+                {
+                    "question": "כָה"
+                },
+                {
+                    "question": "כִּי"
+                },
+                {
+                    "question": "הִיא"
+                },
+                {
+                    "question": "מְ"
+                },
+                {
+                    "question": "קוֹר"
+                },
+                {
+                    "question": "הַבְּ"
+                },
+                {
+                    "question": "רָ"
+                },
+                {
+                    "question": "כָה"
+                },
+                {
+                    "question": "מֵ"
+                },
+                {
+                    "question": "רֹאשׁ"
+                },
+                {
+                    "question": "מִ"
+                },
+                {
+                    "question": "קֶּ"
+                },
+                {
+                    "question": "דֶם"
+                },
+                {
+                    "question": "נְסוּ"
+                },
+                {
+                    "question": "כָה"
+                },
+                {
+                    "question": "סוֹף"
+                },
+                {
+                    "question": "מַ"
+                },
+                {
+                    "question": "עֲ"
+                },
+                {
+                    "question": "שֶׂה"
+                },
+                {
+                    "question": "בְּ"
+                },
+                {
+                    "question": "מַ"
+                },
+                {
+                    "question": "חֲ"
+                },
+                {
+                    "question": "שָׁ"
+                },
+                {
+                    "question": "בָה"
+                },
+                {
+                    "question": "תְּ"
+                },
+                {
+                    "question": "חִ"
+                },
+                {
+                    "question": "לָּה"
+                },
+                {
+                    "question": "בּוֹ"
+                },
+                {
+                    "question": "אִי"
+                },
+                {
+                    "question": "בְ"
+                },
+                {
+                    "question": "שָׁ"
+                },
+                {
+                    "question": "לוֹם"
+                },
+                {
+                    "question": "עֲ"
+                },
+                {
+                    "question": "טֶ"
+                },
+                {
+                    "question": "רֶת"
+                },
+                {
+                    "question": "בַּעְ"
+                },
+                {
+                    "question": "לָהּ"
+                },
+                {
+                    "question": "גַּם"
+                },
+                {
+                    "question": "בְּ"
+                },
+                {
+                    "question": "שִׂמְ"
+                },
+                {
+                    "question": "חָה"
+                },
+                {
+                    "question": "וּבְ"
+                },
+                {
+                    "question": "צָ"
+                },
+                {
+                    "question": "הֳ"
+                },
+                {
+                    "question": "לָה"
+                },
+                {
+                    "question": "תּוֹךְ"
+                },
+                {
+                    "question": "אֱ"
+                },
+                {
+                    "question": "מוּ"
+                },
+                {
+                    "question": "נֵי"
+                },
+                {
+                    "question": "עַם"
+                },
+                {
+                    "question": "סְ"
+                },
+                {
+                    "question": "גֻ"
+                },
+                {
+                    "question": "לָּה"
+                },
+                {
+                    "question": "בֹּ"
+                },
+                {
+                    "question": "אִי"
+                },
+                {
+                    "question": "כַ"
+                },
+                {
+                    "question": "לָּה"
+                },
+                {
+                    "question": "בֹּ"
+                },
+                {
+                    "question": "אִי"
+                },
+                {
+                    "question": "כַ"
+                },
+                {
+                    "question": "לָּה"
+                }
+            ]
+        },
+        {
+            "title": "Lecha Dodi - Full Text",
+            "description": "In this prayer we greet Shabbat as if it were a bride or queen -- radiant and beautiful. Let's look at the words that make up this prayer",
+            "prompt": "can you sound this out?",
+            "material": [
+                {
+                    "question": "לְכָה",
+                    "translation": "Let us go"
+                },
+                {
+                    "question": "דוֹדִי",
+                    "translation": "my beloved"
+                },
+                {
+                    "question": "לִקְרַאת",
+                    "translation": "toward"
+                },
+                {
+                    "question": "כַּלָּה",
+                    "translation": "bride"
+                },
+                {
+                    "question": "פְּנֵי",
+                    "translation": "face (of)"
+                },
+                {
+                    "question": "שַׁבָּת",
+                    "translation": "Shabbat"
+                },
+                {
+                    "question": "נְקַבְּלָה",
+                    "translation": "We will recieve"
+                },
+                {
+                    "question": "שָׁמוֹר",
+                    "translation": "Keep"
+                },
+                {
+                    "question": "וְזָכוֹר",
+                    "translation": "and Remember"
+                },
+                {
+                    "question": "בְּדִבּוּר",
+                    "translation": "with a commandment"
+                },
+                {
+                    "question": "אֶחָד",
+                    "translation": "one"
+                },
+                {
+                    "question": "הִשְׁמִיעָנוּ",
+                    "translation": "made us hear"
+                },
+                {
+                    "question": "אֵל",
+                    "translation": "God"
+                },
+                {
+                    "question": "הַמְיֻחָד",
+                    "translation": "the only"
+                },
+                {
+                    "question": "יְיָ",
+                    "translation": "Adonai"
+                },
+                {
+                    "question": "אֶחָד",
+                    "translation": "one"
+                },
+                {
+                    "question": "וּשְׁמוֹ",
+                    "translation": "and His name"
+                },
+                {
+                    "question": "אֶחָד",
+                    "translation": "one"
+                },
+                {
+                    "question": "לְשֵׁם",
+                    "translation": "for honor"
+                },
+                {
+                    "question": "וּלְתִפְאֶרֶת",
+                    "translation": "and for glory"
+                },
+                {
+                    "question": "וְלִתְהִלָּה",
+                    "translation": "and for praise"
+                },
+                {
+                    "question": "לִקְרַאת",
+                    "translation": "toward"
+                },
+                {
+                    "question": "שַׁבָּת",
+                    "translation": "shabbat"
+                },
+                {
+                    "question": "לְכוּ",
+                    "translation": "Go! (plural)"
+                },
+                {
+                    "question": "וְנֵלְכָה",
+                    "translation": "And we will go"
+                },
+                {
+                    "question": "כִּי",
+                    "translation": "because/for"
+                },
+                {
+                    "question": "הִיא",
+                    "translation": "she"
+                },
+                {
+                    "question": "מְקוֹר",
+                    "translation": "source"
+                },
+                {
+                    "question": "הַבְּרָכָה",
+                    "translation": "the blessing"
+                },
+                {
+                    "question": "מֵרֹאשׁ",
+                    "translation": "from the beginning"
+                },
+                {
+                    "question": "מִקֶּדֶם",
+                    "translation": "from before"
+                },
+                {
+                    "question": "נְסוּכָה",
+                    "translation": "annointed"
+                },
+                {
+                    "question": "סוֹף",
+                    "translation": "end"
+                },
+                {
+                    "question": "מַעֲשֶׂה",
+                    "translation": "doing"
+                },
+                {
+                    "question": "בְּמַחֲשָׁבָה",
+                    "translation": "in thought"
+                },
+                {
+                    "question": "תְּחִלָּה",
+                    "translation": "first"
+                },
+                {
+                    "question": "בּוֹאִי",
+                    "translation": "come"
+                },
+                {
+                    "question": "בְשָׁלוֹם",
+                    "translation": "in peace"
+                },
+                {
+                    "question": "עֲטֶרֶת",
+                    "translation": "crown"
+                },
+                {
+                    "question": "בַּעְלָהּ",
+                    "translation": "husband"
+                },
+                {
+                    "question": "גַּם",
+                    "translation": "also"
+                },
+                {
+                    "question": "בְּשִׂמְחָה",
+                    "translation": "with happiness"
+                },
+                {
+                    "question": "וּבְצָהֳלָה",
+                    "translation": "and in gladness"
+                },
+                {
+                    "question": "תּוֹךְ",
+                    "translation": "within"
+                },
+                {
+                    "question": "אֱמוּנֵי",
+                    "translation": "the faith of"
+                },
+                {
+                    "question": "עַם",
+                    "translation": "people"
+                },
+                {
+                    "question": "סְגֻלָּה",
+                    "translation": "treasured/inscribed"
+                },
+                {
+                    "question": "בֹּאִי",
+                    "translation": "Come"
+                },
+                {
+                    "question": "כַלָּה",
+                    "translation": "Bride"
+                },
+                {
+                    "question": "בֹּאִי",
+                    "translation": "Come"
+                },
+                {
+                    "question": "כַלָּה",
+                    "translation": "Bride"
+                }
+            ]
+        },
+        {
             "title": "Kita Hey Vocabulary Words",
             "description": "These are all the words we'll learn in Kita Hey.",
             "prompt": "can you read this?",
