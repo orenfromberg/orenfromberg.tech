@@ -2948,9 +2948,9 @@
             ]
         },
         {
-            "title": "Lecha Dodi - Full Text",
+            "title": "Lecha Dodi - Full Words",
             "description": "In this prayer we greet Shabbat as if it were a bride or queen -- radiant and beautiful. Let's look at the words that make up this prayer",
-            "prompt": "can you sound this out?",
+            "prompt": "can you sound this word out?",
             "material": [
                 {
                     "question": "לְכָה",
@@ -3155,6 +3155,537 @@
                 {
                     "question": "כַלָּה",
                     "translation": "Bride"
+                }
+            ]
+        },
+        {
+            "title": "Lecha Dodi (Complete Text) - Full Words",
+            "description": "In this prayer we greet Shabbat as if it were a bride or queen -- radiant and beautiful. Let's look at the words that make up this prayer",
+            "prompt": "can you sound this word out?",
+            "material": [
+                {
+                    "question": "לְְכָה",
+                    "translation": "Come"
+                },
+                {
+                    "question": "דוֹדִי",
+                    "translation": "my beloved"
+                },
+                {
+                    "question": "לִקְרַאת",
+                    "translation": "to meet"
+                },
+                {
+                    "question": "כַּלָּה",
+                    "translation": "bride"
+                },
+                {
+                    "question": "פְּנֵי",
+                    "translation": "the face of"
+                },
+                {
+                    "question": "שַׁבָּת",
+                    "translation": "sabbath"
+                },
+                {
+                    "question": "נְקַבְּלָה",
+                    "translation": "we will welcome"
+                },
+                {
+                    "question": "שָׁמוֹר",
+                    "translation": "observer"
+                },
+                {
+                    "question": "וְזָכוֹֹר",
+                    "translation": "and remember"
+                },
+                {
+                    "question": "בְּדִבּוּר",
+                    "translation": "in a commandment"
+                },
+                {
+                    "question": "אֶחָד",
+                    "translation": "one (single)"
+                },
+                {
+                    "question": "הִשְׁמִיעָנוּ",
+                    "translation": "announced to us"
+                },
+                {
+                    "question": "אֵל",
+                    "translation": "God"
+                },
+                {
+                    "question": "הַמְיֻחָד",
+                    "translation": "the special"
+                },
+                {
+                    "question": "יְיָ",
+                    "translation": "Adonai"
+                },
+                {
+                    "question": "אֶחָד",
+                    "translation": "is One"
+                },
+                {
+                    "question": "וּשְׁמוֹ",
+                    "translation": "and His name"
+                },
+                {
+                    "question": "אֶחָד",
+                    "translation": "is One"
+                },
+                {
+                    "question": "לְשֵׁם",
+                    "translation": "for fame"
+                },
+                {
+                    "question": "וּלְתִפְאֶרֶת",
+                    "translation": "for glory"
+                },
+                {
+                    "question": "וְלִתְהִלָּה",
+                    "translation": "and for praise"
+                },
+                {
+                    "question": "לִקְרַאת",
+                    "translation": "toward"
+                },
+                {
+                    "question": "שַׁבָּת",
+                    "translation": "shabbat"
+                },
+                {
+                    "question": "לְכוּ",
+                    "translation": "Come! (plural)"
+                },
+                {
+                    "question": "וְנֵלְכָה",
+                    "translation": "and we will go"
+                },
+                {
+                    "question": "כִּי",
+                    "translation": "because"
+                },
+                {
+                    "question": "הִיא",
+                    "translation": "she"
+                },
+                {
+                    "question": "מְקוֹר",
+                    "translation": "source"
+                },
+                {
+                    "question": "הַבְּרָכָה",
+                    "translation": "of the blessing"
+                },
+                {
+                    "question": "מֵרֹאשׁ",
+                    "translation": "from the beginning"
+                },
+                {
+                    "question": "מִקֶּדֶם",
+                    "translation": "ancient"
+                },
+                {
+                    "question": "נְסוּכָה",
+                    "translation": "ordained"
+                },
+                {
+                    "question": "סוֹף",
+                    "translation": "last"
+                },
+                {
+                    "question": "מַעֲשֶׂה",
+                    "translation": "creation"
+                },
+                {
+                    "question": "בְּמַחֲשָׁבָה",
+                    "translation": "in a plan"
+                },
+                {
+                    "question": "תְּחִלָּה",
+                    "translation": "beginning"
+                },
+                {
+                    "question": "מִקְדַּשׁ",
+                    "translation": "from the east"
+                },
+                {
+                    "question": "מֶלֶךְ",
+                    "translation": "king"
+                },
+                {
+                    "question": "עִיר",
+                    "translation": "city"
+                },
+                {
+                    "question": "מְלוּכָה",
+                    "translation": "kingdom"
+                },
+                {
+                    "question": "קוּמִי",
+                    "translation": "rise!"
+                },
+                {
+                    "question": "צְאִי",
+                    "translation": "go!"
+                },
+                {
+                    "question": "מִתּוֹךְ",
+                    "translation": "within"
+                },
+                {
+                    "question": "הַהֲפֵכָה",
+                    "translation": "chaos (revolution)"
+                },
+                {
+                    "question": "רַב",
+                    "translation": "Long"
+                },
+                {
+                    "question": "לָךְ",
+                    "translation": "For you"
+                },
+                {
+                    "question": "שֶׁבֶת",
+                    "translation": "sitting"
+                },
+                {
+                    "question": "בְּעֵמֶק",
+                    "translation": "in the valley"
+                },
+                {
+                    "question": "הַבָּכָא",
+                    "translation": "of Bacha"
+                },
+                {
+                    "question": "וְהוּא",
+                    "translation": "and He"
+                },
+                {
+                    "question": "יַחֲמוֹל",
+                    "translation": "will grant"
+                },
+                {
+                    "question": "עָלַיִךְ",
+                    "translation": "upon you"
+                },
+                {
+                    "question": "חֶמְלָה",
+                    "translation": "mercy"
+                },
+                {
+                    "question": "הִתְנַעֲרִי",
+                    "translation": "Shake!"
+                },
+                {
+                    "question": "מֵעָפָר",
+                    "translation": "from the ashes"
+                },
+                {
+                    "question": "קוּמִי",
+                    "translation": "Rise!"
+                },
+                {
+                    "question": "לִבְשִׁי",
+                    "translation": "Dress!"
+                },
+                {
+                    "question": "בִּגְדֵי",
+                    "translation": "the clothes of"
+                },
+                {
+                    "question": "תִפְאַרתֵּךְ",
+                    "translation": "your glory"
+                },
+                {
+                    "question": "עַמִּי",
+                    "translation": "my people"
+                },
+                {
+                    "question": "עַל-יַד",
+                    "translation": "By"
+                },
+                {
+                    "question": "בֶּן-יִשַׁי",
+                    "translation": "son of Jesse"
+                },
+                {
+                    "question": "בֵּית-הַלַּחְמִי",
+                    "translation": "the Bethlehemite"
+                },
+                {
+                    "question": "קָרְבָה",
+                    "translation": "Nearer"
+                },
+                {
+                    "question": "אֶל",
+                    "translation": "to"
+                },
+                {
+                    "question": "נַפְשִׁי",
+                    "translation": "my soul"
+                },
+                {
+                    "question": "גְּאָלָהּ",
+                    "translation": "redemption"
+                },
+                {
+                    "question": "הִתְעוֹרְרִי",
+                    "translation": "Waken!"
+                },
+                {
+                    "question": "הִתְעוֹרְרִי",
+                    "translation": "Waken!"
+                },
+                {
+                    "question": "כִּי",
+                    "translation": "Because"
+                },
+                {
+                    "question": "בָא",
+                    "translation": "coming"
+                },
+                {
+                    "question": "אוֹרֵךְ",
+                    "translation": "your light"
+                },
+                {
+                    "question": "קוּמִי",
+                    "translation": "Rise!"
+                },
+                {
+                    "question": "אוֹרִי",
+                    "translation": "my light"
+                },
+                {
+                    "question": "עוּרִי",
+                    "translation": "Wake up!"
+                },
+                {
+                    "question": "עוּרִי",
+                    "translation": "Wake up!"
+                },
+                {
+                    "question": "שִׁיר",
+                    "translation": "a song"
+                },
+                {
+                    "question": "דַּבֵּרִי",
+                    "translation": "speak"
+                },
+                {
+                    "question": "כְּבוֹד",
+                    "translation": "glory"
+                },
+                {
+                    "question": "יְיָ",
+                    "translation": "Adonai"
+                },
+                {
+                    "question": "עָלַיִךְ",
+                    "translation": "upon you"
+                },
+                {
+                    "question": "נִגְלָה",
+                    "translation": "revealed"
+                },
+                {
+                    "question": "לֹא",
+                    "translation": "Don't"
+                },
+                {
+                    "question": "תֵבשִׁי",
+                    "translation": "be ashamed"
+                },
+                {
+                    "question": "וְלֹא",
+                    "translation": "Don't"
+                },
+                {
+                    "question": "תִכָּלְמִי",
+                    "translation": "be abashed"
+                },
+                {
+                    "question": "מַה-תִּשְׁתּוֹחֲחִי",
+                    "translation": "why be depressed"
+                },
+                {
+                    "question": "וּמַה-תֶּהֱמִי",
+                    "translation": "why be upset"
+                },
+                {
+                    "question": "בָּךְ",
+                    "translation": "in you"
+                },
+                {
+                    "question": "יֶחֱסוּ",
+                    "translation": "be sheltered"
+                },
+                {
+                    "question": "עֲנִיֵּי",
+                    "translation": "the humbled of"
+                },
+                {
+                    "question": "עַמִּי",
+                    "translation": "my people"
+                },
+                {
+                    "question": "וְנִבְנְתָה",
+                    "translation": "and will be rebuilt"
+                },
+                {
+                    "question": "עִיר",
+                    "translation": "city"
+                },
+                {
+                    "question": "עַל-תִּלָּהּ",
+                    "translation": "upon her hill"
+                },
+                {
+                    "question": "וְהָיוּ",
+                    "translation": "and shall be"
+                },
+                {
+                    "question": "לִמְשִׁסָּה",
+                    "translation": "attacked"
+                },
+                {
+                    "question": "שֹׁאסָיִךְ",
+                    "translation": "your attackers"
+                },
+                {
+                    "question": "וְרָחֲקוּ",
+                    "translation": "and made distant"
+                },
+                {
+                    "question": "כָּל-מְבַלְּעָיִךְ",
+                    "translation": "all who devour you"
+                },
+                {
+                    "question": "יָשִּׂישּׂ",
+                    "translation": "rejoice"
+                },
+                {
+                    "question": "עָלַיִךְ",
+                    "translation": "upon you"
+                },
+                {
+                    "question": "אֱלֹהָיִךְ",
+                    "translation": "your God"
+                },
+                {
+                    "question": "כִּמְשׂוֹשׂ",
+                    "translation": "as rejoices"
+                },
+                {
+                    "question": "חָתָן",
+                    "translation": "a groom"
+                },
+                {
+                    "question": "עַל-כַּלָּה",
+                    "translation": "upon a bride"
+                },
+                {
+                    "question": "יָמִין",
+                    "translation": "right"
+                },
+                {
+                    "question": "וּשְׂמאֹל",
+                    "translation": "left"
+                },
+                {
+                    "question": "תִּפְרֹצִי",
+                    "translation": "you will break out"
+                },
+                {
+                    "question": "וְאֶת-יְיָ",
+                    "translation": "and Adonai"
+                },
+                {
+                    "question": "תַּעֲרִיצִי",
+                    "translation": "you will venerate"
+                },
+                {
+                    "question": "עַל-יַד",
+                    "translation": "by"
+                },
+                {
+                    "question": "אִישׁ",
+                    "translation": "man"
+                },
+                {
+                    "question": "בֶּן-פַּרְצִי",
+                    "translation": "Peretzite"
+                },
+                {
+                    "question": "וְנִשְׂמְחָה",
+                    "translation": "and we will be happy"
+                },
+                {
+                    "question": "וְנָגִילָה",
+                    "translation": "and we will rejoice"
+                },
+                {
+                    "question": "בּוֹאִי",
+                    "translation": "Come!"
+                },
+                {
+                    "question": "בְשָׁלוֹם",
+                    "translation": "in peace"
+                },
+                {
+                    "question": "עֲטֶרֶת",
+                    "translation": "crown"
+                },
+                {
+                    "question": "בַּעְלָהּ",
+                    "translation": "of her husband"
+                },
+                {
+                    "question": "גַּם",
+                    "translation": "also"
+                },
+                {
+                    "question": "בְּשִׂמְחָה",
+                    "translation": "in happiness"
+                },
+                {
+                    "question": "וּבְצָהֳלָה",
+                    "translation": "in jubilation"
+                },
+                {
+                    "question": "תּוֹךְ",
+                    "translation": "midst"
+                },
+                {
+                    "question": "אֱמוּנֵי",
+                    "translation": "the faithful"
+                },
+                {
+                    "question": "עַם",
+                    "translation": "a people"
+                },
+                {
+                    "question": "סְגֻלָּה",
+                    "translation": "precious"
+                },
+                {
+                    "question": "בֹּאִי",
+                    "translation": "come!"
+                },
+                {
+                    "question": "כַלָּה",
+                    "translation": "bride"
+                },
+                {
+                    "question": "בֹּּאִי",
+                    "translation": "come!"
+                },
+                {
+                    "question": "כַלָּה",
+                    "translation": "bride"
                 }
             ]
         },
