@@ -3690,6 +3690,201 @@
             ]
         },
         {
+            "title": "The Four Questions - Full Words",
+            "description": "One of the main focal points of the traditional Passover seder is the maggid, the telling of the story of the Exodus from Egypt. This story begins with the youngest person at the seder asking the Four Questions (Mah Nishtanah). These questions provide the impetus for telling why this night is different from all other nights.",
+            "prompt": "can you sound this word out?",
+            "material": [
+                {
+                    "question": "מַה",
+                    "translation": "What"
+                },
+                {
+                    "question": "נִּשְׁתַּנָּה",
+                    "translation": "is different"
+                },
+                {
+                    "question": "הַלַּיְלָה",
+                    "translation": "tonight (the night)"
+                },
+                {
+                    "question": "הַזֶּה",
+                    "translation": "this"
+                },
+                {
+                    "question": "מִכָּל",
+                    "translation": "from all"
+                },
+                {
+                    "question": "הַלֵּילוֹת",
+                    "translation": "the nights"
+                },
+                {
+                    "question": "שֶׁבְּכָל",
+                    "translation": "that in all"
+                },
+                {
+                    "question": "הַלֵּילוֹת",
+                    "translation": "the nights"
+                },
+                {
+                    "question": "אָנוּ",
+                    "translation": "we"
+                },
+                {
+                    "question": "אוֹכְלִין",
+                    "translation": "eat"
+                },
+                {
+                    "question": "חָמֵץ",
+                    "translation": "chametz"
+                },
+                {
+                    "question": "וּמַצָּה",
+                    "translation": "and matzah"
+                },
+                {
+                    "question": "הַלַּיְלָה",
+                    "translation": "tonight"
+                },
+                {
+                    "question": "הַזֶּה",
+                    "translation": "this"
+                },
+                {
+                    "question": "כֻלּוֹ",
+                    "translation": "is all"
+                },
+                {
+                    "question": "מַצָּה",
+                    "translation": "matzah"
+                },
+                {
+                    "question": "שֶׁבְּכָל",
+                    "translation": "that in all"
+                },
+                {
+                    "question": "הַלֵּילוֹת",
+                    "translation": "the nights"
+                },
+                {
+                    "question": "אָנוּ",
+                    "translation": "we"
+                },
+                {
+                    "question": "אוֹכְלִין",
+                    "translation": "eat"
+                },
+                {
+                    "question": "שְׁאָר",
+                    "translation": "the remainder"
+                },
+                {
+                    "question": "יְרָקוֹת",
+                    "translation": "vegatables"
+                },
+                {
+                    "question": "הַלַּיְלָה",
+                    "translation": "tonight"
+                },
+                {
+                    "question": "הַזֶּה",
+                    "translation": "this"
+                },
+                {
+                    "question": "מָרוֹר",
+                    "translation": "bitter herbs"
+                },
+                {
+                    "question": "שֶׁבְּכָל",
+                    "translation": "that in all"
+                },
+                {
+                    "question": "הַלֵּילוֹת",
+                    "translation": "the nights"
+                },
+                {
+                    "question": "אָנוּ",
+                    "translation": "we"
+                },
+                {
+                    "question": "מַטְבִּילִין",
+                    "translation": "dip"
+                },
+                {
+                    "question": "פַּעַם",
+                    "translation": "step"
+                },
+                {
+                    "question": "אַחַת",
+                    "translation": "one"
+                },
+                {
+                    "question": "הַלַּיְלָה",
+                    "translation": "tonight"
+                },
+                {
+                    "question": "הַזֶּה",
+                    "translation": "this"
+                },
+                {
+                    "question": "שְׁתֵּי",
+                    "translation": "two (of)"
+                },
+                {
+                    "question": "פְעָמִים",
+                    "translation": "steps"
+                },
+                {
+                    "question": "שֶׁבְּכָל",
+                    "translation": "that in all"
+                },
+                {
+                    "question": "הַלֵּילוֹת",
+                    "translation": "the nights"
+                },
+                {
+                    "question": "אָנוּ",
+                    "translation": "we"
+                },
+                {
+                    "question": "אוֹכְלִין",
+                    "translation": "eat"
+                },
+                {
+                    "question": "בֵּין",
+                    "translation": "between"
+                },
+                {
+                    "question": "יוֹשְׁבִין",
+                    "translation": "sitting"
+                },
+                {
+                    "question": "בֵּין",
+                    "translation": "between"
+                },
+                {
+                    "question": "מְסֻבִּין",
+                    "translation": "reclining"
+                },
+                {
+                    "question": "וְהַלַּיְלָה",
+                    "translation": "tonight"
+                },
+                {
+                    "question": "הַזֶּה",
+                    "translation": "this"
+                },
+                {
+                    "question": "כֻּלָּנוּ",
+                    "translation": "we are all"
+                },
+                {
+                    "question": "מְסֻבִּין",
+                    "translation": "reclining"
+                }
+            ]
+        },
+        {
             "title": "Kita Hey Vocabulary Words",
             "description": "These are all the words we'll learn in Kita Hey.",
             "prompt": "can you read this?",
