@@ -3885,6 +3885,121 @@
             ]
         },
         {
+            "title": "Ha Lachma Anya - Full Words",
+            "description": "Ha Lachma Anya \"This is the bread of affliction\") is a declaration that is recited at the beginning of the Magid portion of the Passover Seder. Written in Aramaic, the recitation serves as the first explanation of the purpose of the matzo during the Seder.",
+            "prompt": "can you sound this word out?",
+            "material": [
+                {
+                    "question": "הָא",
+                    "translation": "this"
+                },
+                {
+                    "question": "לַחְמָא",
+                    "translation": "the bread"
+                },
+                {
+                    "question": "עַנְיָא",
+                    "translation": "(of) affliction"
+                },
+                {
+                    "question": "דִי",
+                    "translation": "that"
+                },
+                {
+                    "question": "אֲכָלוּ",
+                    "translation": "they ate"
+                },
+                {
+                    "question": "אַבְהָתָנָא",
+                    "translation": "our forefathers"
+                },
+                {
+                    "question": "בְּאַרְעָא",
+                    "translation": "in the land"
+                },
+                {
+                    "question": "דְמִצְרָיִם",
+                    "translation": "of Egypt"
+                },
+                {
+                    "question": "כָּל",
+                    "translation": "all"
+                },
+                {
+                    "question": "דִכְפִין",
+                    "translation": "that are hungry"
+                },
+                {
+                    "question": "יֵיתֵי",
+                    "translation": "will come"
+                },
+                {
+                    "question": "וְיֵיכֹל",
+                    "translation": "and eat"
+                },
+                {
+                    "question": "כָּל",
+                    "translation": "all"
+                },
+                {
+                    "question": "דִצְרִיךְ",
+                    "translation": "that need"
+                },
+                {
+                    "question": "יֵיתֵי",
+                    "translation": "will come"
+                },
+                {
+                    "question": "וְיִפְסַח",
+                    "translation": "and celebrate passover"
+                },
+                {
+                    "question": "הָשַׁתָּא",
+                    "translation": "now"
+                },
+                {
+                    "question": "הָכָא",
+                    "translation": "here"
+                },
+                {
+                    "question": "לְשָׁנָה",
+                    "translation": "the year"
+                },
+                {
+                    "question": "הַבָּאָה",
+                    "translation": "the next"
+                },
+                {
+                    "question": "בְּאַרְעָא",
+                    "translation": "in the land"
+                },
+                {
+                    "question": "דְיִשְׂרָאֵל",
+                    "translation": "of Israel"
+                },
+                {
+                    "question": "הָשַׁתָּא",
+                    "translation": "now"
+                },
+                {
+                    "question": "עַבְדֵי",
+                    "translation": "we are slaves"
+                },
+                {
+                    "question": "לְשָׁנָה",
+                    "translation": "the year"
+                },
+                {
+                    "question": "הַבָּאָה",
+                    "translation": "the next"
+                },
+                {
+                    "question": "בְּנֵי חוֹרִין",
+                    "translation": "we are free"
+                }
+            ]
+        },
+        {
             "title": "Kita Hey Vocabulary Words",
             "description": "These are all the words we'll learn in Kita Hey.",
             "prompt": "can you read this?",
