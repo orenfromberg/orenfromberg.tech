@@ -4000,6 +4000,236 @@
             ]
         },
         {
+            "title": "Hatikva",
+            "description": "a 19th-century Jewish poem and the national anthem of the state of Israel.",
+            "prompt": "can you sound this word out?",
+            "material": [
+                {
+                    "question": "כֹּל",
+                    "translation": "all"
+                },
+                {
+                    "question": "עוֹד",
+                    "translation": "more"
+                },
+                {
+                    "question": "בַּלֵּבָב",
+                    "translation": "in the heart"
+                },
+                {
+                    "question": "פְּנִימָה",
+                    "translation": "within"
+                },
+                {
+                    "question": "נֶפֶשׁ",
+                    "translation": "soul"
+                },
+                {
+                    "question": "יְהוּדִי",
+                    "translation": "jewish"
+                },
+                {
+                    "question": "הוֹמִיָּה",
+                    "translation": "yearns"
+                },
+                {
+                    "question": "וּלְפַאֲתֵי",
+                    "translation": "to the ends of"
+                },
+                {
+                    "question": "מִזְרָח",
+                    "translation": "east"
+                },
+                {
+                    "question": "קָדִימָה",
+                    "translation": "onward"
+                },
+                {
+                    "question": "עַיִן",
+                    "translation": "an eye"
+                },
+                {
+                    "question": "לְצִיּוֹן",
+                    "translation": "to Zion"
+                },
+                {
+                    "question": "צוֹפִיָּה",
+                    "translation": "glances"
+                },
+                {
+                    "question": "עוֹד",
+                    "translation": "more"
+                },
+                {
+                    "question": "לֹא",
+                    "translation": "not"
+                },
+                {
+                    "question": "אָבְדָה",
+                    "translation": "lost"
+                },
+                {
+                    "question": "תִּקְוָתֵנוּ",
+                    "translation": "our hope"
+                },
+                {
+                    "question": "הַתִּקְוָה",
+                    "translation": "the hope"
+                },
+                {
+                    "question": "בַּת",
+                    "translation": "daughter"
+                },
+                {
+                    "question": "שְׁנוֹת",
+                    "translation": "years"
+                },
+                {
+                    "question": "אַלְפַּיִם",
+                    "translation": "a thousand"
+                },
+                {
+                    "question": "לִהְיוֹת",
+                    "translation": "to be"
+                },
+                {
+                    "question": "עַם",
+                    "translation": "a people"
+                },
+                {
+                    "question": "חָפְשִׁי",
+                    "translation": "free"
+                },
+                {
+                    "question": "בְּאַרְצֵנוּ",
+                    "translation": "in our land"
+                },
+                {
+                    "question": "אֶרֶץ",
+                    "translation": "land"
+                },
+                {
+                    "question": "צִיּוֹן",
+                    "translation": "Zion"
+                },
+                {
+                    "question": "וִירוּשָׁלַיִם‎",
+                    "translation": "and Jerusalem"
+                }
+            ]
+        },
+        {
+            "title": "V'shamru",
+            "description": "V'shamru is said before the Amidah during the friday night service. In reciting it, we declare that we are guarding Shabbat because it is God's special creation -- and we remember that by celebrating Shabbat we are strengthening our ties to God.",
+            "prompt": "can you sound this word out?",
+            "material": [
+                {
+                    "question": "וְשָׁמְרוּ",
+                    "translation": "they preserved"
+                },
+                {
+                    "question": "בְנֵי-יִשְׂרָאֵל",
+                    "translation": "children of Israel"
+                },
+                {
+                    "question": "אֶת-הַשַּׁבָּת",
+                    "translation": "the sabbath"
+                },
+                {
+                    "question": "לַעֲשׂוֹת",
+                    "translation": "to do"
+                },
+                {
+                    "question": "אֶת-הַשַּׁבָּת",
+                    "translation": "the sabbath"
+                },
+                {
+                    "question": "לְדֹרֹתָם ",
+                    "translation": "for their generations"
+                },
+                {
+                    "question": "בְּרִית",
+                    "translation": "a covenant"
+                },
+                {
+                    "question": "עוֹלָם",
+                    "translation": "eternal"
+                },
+                {
+                    "question": "בֵּינִי",
+                    "translation": "between me"
+                },
+                {
+                    "question": "וּבֵין",
+                    "translation": "and between"
+                },
+                {
+                    "question": "בְּנֵי",
+                    "translation": "the children of"
+                },
+                {
+                    "question": "יִשְׂרָאֵל",
+                    "translation": "Israel"
+                },
+                {
+                    "question": "אוֹת",
+                    "translation": "a sign"
+                },
+                {
+                    "question": "הִיא",
+                    "translation": "she"
+                },
+                {
+                    "question": "לְעֹלָם",
+                    "translation": "forever"
+                },
+                {
+                    "question": "כִּי",
+                    "translation": "because"
+                },
+                {
+                    "question": "שֵׁשֶׁת",
+                    "translation": "six (of)"
+                },
+                {
+                    "question": "יָמִים",
+                    "translation": "days"
+                },
+                {
+                    "question": "עָשָׂה",
+                    "translation": "made"
+                },
+                {
+                    "question": "יְיָ",
+                    "translation": "Adonai"
+                },
+                {
+                    "question": "אֶת-הַשָּׁמַיִם",
+                    "translation": "the heavens"
+                },
+                {
+                    "question": "וְאֶת-הָאָרֶץ",
+                    "translation": "and the earth"
+                },
+                {
+                    "question": "וּבְיּוֹם",
+                    "translation": "and on the day"
+                },
+                {
+                    "question": "הַשְּׁבִיעִי",
+                    "translation": "the seventh"
+                },
+                {
+                    "question": "שָׁבַת",
+                    "translation": "rested"
+                },
+                {
+                    "question": "וַיִּנָּפַשׁ",
+                    "translation": "and was refreshed"
+                }
+            ]
+        },
+        {
             "title": "Kita Hey Vocabulary Words",
             "description": "These are all the words we'll learn in Kita Hey.",
             "prompt": "can you read this?",
