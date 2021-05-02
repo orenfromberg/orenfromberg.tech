@@ -4230,6 +4230,117 @@
             ]
         },
         {
+            "title": "Ani Cactus",
+            "description": "By Static and Ben-El Tabori",
+            "prompt": "can you sound this word out?",
+            "material": [
+                {
+                    "question": "אֲנִי",
+                    "translation": "I"
+                },
+                {
+                    "question": "קַקְטוּס",
+                    "translation": "a cactus"
+                },
+                {
+                    "question": "אֲנִי",
+                    "translation": "I"
+                },
+                {
+                    "question": "צֶפַע",
+                    "translation": "a viper"
+                },
+                {
+                    "question": "אֲנִי",
+                    "translation": "I"
+                },
+                {
+                    "question": "דָּבוּר",
+                    "translation": "a hornet"
+                },
+                {
+                    "question": "עוֹקְצָנִי",
+                    "translation": "stinging (sarcastic)"
+                },
+                {
+                    "question": "בְּקִיצוֹנִי",
+                    "translation": "with my exterior"
+                },
+                {
+                    "question": "עוֹשֶׂה",
+                    "translation": "doing"
+                },
+                {
+                    "question": "אֶת",
+                    "translation": "(direct object marker)"
+                },
+                {
+                    "question": "כָּל",
+                    "translation": "all"
+                },
+                {
+                    "question": "מָה",
+                    "translation": "what"
+                },
+                {
+                    "question": "שֶׁאָסוּר",
+                    "translation": "that is forbidden"
+                },
+                {
+                    "question": "אֲנִי",
+                    "translation": "I"
+                },
+                {
+                    "question": "קַקְטוּס",
+                    "translation": "a cactus"
+                },
+                {
+                    "question": "אֲנִי",
+                    "translation": "I"
+                },
+                {
+                    "question": "צֶפַע",
+                    "translation": "a viper"
+                },
+                {
+                    "question": "אֲנִי",
+                    "translation": "I"
+                },
+                {
+                    "question": "דָּבוּר",
+                    "translation": "a hornet"
+                },
+                {
+                    "question": "כָּל",
+                    "translation": "every"
+                },
+                {
+                    "question": "חֲתִיכָה",
+                    "translation": "piece"
+                },
+                {
+                    "question": "רוֹצָה",
+                    "translation": "wanting"
+                },
+                {
+                    "question": "פֹּה",
+                    "translation": "here"
+                },
+                {
+                    "question": "חֲתִיכָה",
+                    "translation": "piece"
+                },
+                {
+                    "question": "וְזֶה",
+                    "translation": "and this"
+                },
+                {
+                    "question": "בָּרוּר",
+                    "translation": "is clear"
+                }
+            ]
+        },
+        {
             "title": "Kita Hey Vocabulary Words",
             "description": "These are all the words we'll learn in Kita Hey.",
             "prompt": "can you read this?",
