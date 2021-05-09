@@ -4421,12 +4421,12 @@
         },
         {
             "title": "Shalom Aleichem",
-            "description": "",
+            "description": "We sing the shalom alechem hymn at home on friday night, between lighting the candles and reciting the kiddush.",
             "prompt": "can you read this?",
             "material": [
                 {
                     "question": "שָׁלוֹם עֲלֵיכֶם",
-                    "translation": "shalom aleichem (welcome)"
+                    "translation": "shalom aleichem (peace be upon you)"
                 },
                 {
                     "question": "מַלְאֲכֵי הַשָּׁרֵת",
