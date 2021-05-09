@@ -4341,6 +4341,172 @@
             ]
         },
         {
+            "title": "Mi Lo Yavo",
+            "description": "By Avraham Tal and Benaya Barabi",
+            "prompt": "can you sound these lyrics out?",
+            "material": [
+                {
+                    "question": "תַּגִּיד לִי",
+                    "translation": "tell me"
+                },
+                {
+                    "question": "מִי לֹא יָבוֹא",
+                    "translation": "who won't come"
+                },
+                {
+                    "question": "תַּגִּיד לִי",
+                    "translation": "tell me"
+                },
+                {
+                    "question": "מִי לֹא יָבוֹא",
+                    "translation": "who won't come"
+                },
+                {
+                    "question": "עַכְשָׁו ",
+                    "translation": "now"
+                },
+                {
+                    "question": "לָשִׁיר ",
+                    "translation": "to sing"
+                },
+                {
+                    "question": "אִתָּנוּ",
+                    "translation": "with us"
+                },
+                {
+                    "question": "תַּגִּיד לִי",
+                    "translation": "tell me"
+                },
+                {
+                    "question": "מִי לֹא יָבוֹא",
+                    "translation": "who won't come"
+                },
+                {
+                    "question": "תַּגִּיד לִי",
+                    "translation": "tell me"
+                },
+                {
+                    "question": "מִי לֹא יָבוֹא",
+                    "translation": "who won't come"
+                },
+                {
+                    "question": "זֹאת הַשָּׁנָה שֶׁלָּנוּ",
+                    "translation": "it's our year"
+                },
+                {
+                    "question": "אֵיךְ שֶׁזֶּה זוֹרֵם אֶצְלִי בַּדָּם",
+                    "translation": "how that this flows in my blood"
+                },
+                {
+                    "question": "שְׁנֵינוּ מוּל כָּל הָעוֹלָם",
+                    "translation": "the two of us in front of the whole world"
+                },
+                {
+                    "question": "וְעוֹד לֹא הִתְחִיל הַלַּיְלָה",
+                    "translation": "and the night hasn't started yet"
+                },
+                {
+                    "question": "אֵיךְ שֶׁזֶּה זוֹרֵם אֶצְלִי בַּדָּם",
+                    "translation": "how that this flows in my blood"
+                },
+                {
+                    "question": "שְׁנֵינוּ מוּל כָּל הָעוֹלָם",
+                    "translation": "the two of us in front of the whole world"
+                },
+                {
+                    "question": "וְעוֹד לֹא הִתְחִיל הַלַּיְלָה",
+                    "translation": "and the night hasn't started yet"
+                }
+            ]
+        },
+        {
+            "title": "Shalom Aleichem",
+            "description": "",
+            "prompt": "can you read this?",
+            "material": [
+                {
+                    "question": "שָׁלוֹם עֲלֵיכֶם",
+                    "translation": "shalom aleichem (welcome)"
+                },
+                {
+                    "question": "מַלְאֲכֵי הַשָּׁרֵת",
+                    "translation": "ministering angels"
+                },
+                {
+                    "question": "מַלְאֲכֵי עֶלְיוֹן",
+                    "translation": "angels of the most high"
+                },
+                {
+                    "question": "מִמֶּלֶךְ מַלְכֵי הַמְּלָכִים",
+                    "translation": "from the king of kings of kings"
+                },
+                {
+                    "question": "הַקָּדוֹשׁ בָּרוּךְ הוּא",
+                    "translation": "the holy One, blessed be He"
+                },
+                {
+                    "question": "בּוֹאֲכֶם לְשָׁלוֹם",
+                    "translation": "Welcome"
+                },
+                {
+                    "question": "מַלְאֲכֵי הַשָּׁרֵת",
+                    "translation": "ministering angels"
+                },
+                {
+                    "question": "מַלְאֲכֵי עֶלְיוֹן",
+                    "translation": "angels of the most high"
+                },
+                {
+                    "question": "מִמֶּלֶךְ מַלְכֵי הַמְּלָכִים",
+                    "translation": "from the king of kings of kings"
+                },
+                {
+                    "question": "הַקָּדוֹשׁ בָּרוּךְ הוּא",
+                    "translation": "the holy One, blessed be He"
+                },
+                {
+                    "question": "בָּרְכוּנִי לְשָׁלוֹם",
+                    "translation": "Bless me in peace"
+                },
+                {
+                    "question": "מַלְאֲכֵי הַשָּׁרֵת",
+                    "translation": "ministering angels"
+                },
+                {
+                    "question": "מַלְאֲכֵי עֶלְיוֹן",
+                    "translation": "angels of the most high"
+                },
+                {
+                    "question": "מִמֶּלֶךְ מַלְכֵי הַמְּלָכִים",
+                    "translation": "from the king of kings of kings"
+                },
+                {
+                    "question": "הַקָּדוֹשׁ בָּרוּךְ הוּא",
+                    "translation": "the holy One, blessed be He"
+                },
+                {
+                    "question": "צֵאתְכֶם לְשָׁלוֹם",
+                    "translation": "go in peace"
+                },
+                {
+                    "question": "מַלְאֲכֵי הַשָּׁרֵת",
+                    "translation": "ministering angels"
+                },
+                {
+                    "question": "מַלְאֲכֵי עֶלְיוֹן",
+                    "translation": "angels of the most high"
+                },
+                {
+                    "question": "מִמֶּלֶךְ מַלְכֵי הַמְּלָכִים",
+                    "translation": "from the king of kings of kings"
+                },
+                {
+                    "question": "הַקָּדוֹשׁ בָּרוּךְ הוּא",
+                    "translation": "the holy One, blessed be He"
+                }
+            ]
+        },
+        {
             "title": "Kita Hey Vocabulary Words",
             "description": "These are all the words we'll learn in Kita Hey.",
             "prompt": "can you read this?",
