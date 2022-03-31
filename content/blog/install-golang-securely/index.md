@@ -59,7 +59,7 @@ sub   rsa4096 2019-07-22 [S] [expires: 2022-07-21]
 sub   rsa4096 2021-10-26 [S] [expires: 2024-10-25]
 ```
 
-Note that the fingerprint for their primary public key is `EB4C1BFD4F042F6DDDCCEC917721F63BD38B4796`.
+Note that the fingerprint for their primary public key is `EB4C1BFD4F042F6DDDCCEC917721F63BD38B4796` and that it is set to expire on July 21, 2022. If you are reading this post and it's past that date, make sure to import their latest public key!
 
 The best thing to do is try to find the Google public key from multiple locations to increase the likelihood that it is authentic. Don't trust me!
 
