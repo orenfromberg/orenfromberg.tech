@@ -60,7 +60,7 @@ sub   elg2048 2007-03-08 [E]
 
 Note that the fingerprint for the public key is `4CCA1EAF950CEE4AB83976DCA040830F7FAC5991`.
 
-The best thing to do is try to find the Google public key from multiple locations to increase the likelihood that it is authentic. You can also find it on keybase.
+The best thing to do is try to find the Google public key from multiple locations to increase the likelihood that it is authentic. Don't trust me!
 
 Finally, verify the signature:
 
