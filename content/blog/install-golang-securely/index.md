@@ -2,6 +2,7 @@
 title: How to install golang securely on linux
 date: "2022-03-29"
 description: This post will describe how to install golang securely on linux.
+draft: true
 ---
 
 On Windows and MacOS the golang installers are signed by Google so that the operating systems can verify that they have been published by Google.
