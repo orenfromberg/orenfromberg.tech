@@ -52,13 +52,14 @@ You can list the keys in your keyring with the following:
 
 ```shell
 $ gpg --list-keys
-pub   dsa1024 2007-03-08 [SC]
-      4CCA1EAF950CEE4AB83976DCA040830F7FAC5991
-uid           [ unknown] Google, Inc. Linux Package Signing Key <linux-packages-keymaster@google.com>
-sub   elg2048 2007-03-08 [E]
+pub   rsa4096 2016-04-12 [SC]
+      EB4C1BFD4F042F6DDDCCEC917721F63BD38B4796
+uid           [ unknown] Google Inc. (Linux Packages Signing Authority) <linux-packages-keymaster@google.com>
+sub   rsa4096 2019-07-22 [S] [expires: 2022-07-21]
+sub   rsa4096 2021-10-26 [S] [expires: 2024-10-25]
 ```
 
-Note that the fingerprint for the public key is `4CCA1EAF950CEE4AB83976DCA040830F7FAC5991`.
+Note that the fingerprint for their primary public key is `EB4C1BFD4F042F6DDDCCEC917721F63BD38B4796`.
 
 The best thing to do is try to find the Google public key from multiple locations to increase the likelihood that it is authentic. Don't trust me!
 
@@ -76,8 +77,10 @@ Primary key fingerprint: EB4C 1BFD 4F04 2F6D DDCC  EC91 7721 F63B D38B 4796
      Subkey fingerprint: 2F52 8D36 D67B 69ED F998  D857 78BD 6547 3CB3 BD13
 ```
 
+Note the primary key fingerprint listed below.
+
 You can ignore the `WARNING` since we haven't verified their public key by signing it.
 
-Now you can sleep well at night knowing that you are safe from supply chain attacks on the golang binaries.
+Now you can sleep well at night knowing that you are safe from supply chain attacks on the golang binaries!
 
 Some content for this post came from [this github issue](https://github.com/golang/go/issues/14739).
