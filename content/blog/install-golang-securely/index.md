@@ -20,7 +20,7 @@ To install the amd64 artifact, first download the file with curl:
 $ curl https://go.dev/dl/go1.18.linux-amd64.tar.gz -OL
 ```
 
-Make sure you use the `-L` option to handle `3xx` redirect responses.
+The `-OL` options will write the file to your disk and handle `3xx` redirect responses.
 
 Now compare the sha256 hash to what is on the website:
 
