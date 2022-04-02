@@ -4,9 +4,15 @@ date: "2022-03-29"
 description: This post will describe how to install golang securely on linux.
 ---
 
-On Windows and MacOS the golang installers are signed by Google so that the operating systems can verify that they have been published by Google.
+# Securely installing the Go programming language (golang)
 
-However, for linux-based operating systems the binaries are distributed as an archive and their integrity must be checked manually.
+On Windows and MacOS the golang installers are signed so that the operating systems can verify that they have been published by Google.
+
+With Linux-based operating systems there are various methods that will depend on the distro you use. For example, [Ubuntu offers snap and apt](https://www.cyberciti.biz/faq/how-to-install-gol-ang-on-ubuntu-linux/) to install specific versions of golang. Other distros have their own software management tools like [yum](https://medium.com/cloud-security/go-get-go-download-install-8b48a0425717).
+
+These software managers will let you install certain releases but not all. If you want to install a newer or different version of golang from a tarball archive then the integrity must be checked manually.
+
+# Installing from tarball archive
 
 The linux installers/archives for various architectures are found on this page [here](https://go.dev/dl/).
 
@@ -34,6 +40,10 @@ Looks good!
 If you trust that this web page and these artifacts were really published by Google then you can stop here and follow [the rest of their installation instructions](https://go.dev/doc/install).
 
 But if you want to verify with the least uncertainty that this file and checksum have been published by Google, then you'll want to verify the signature using Google's public key.
+
+# Checking the signature on the archive
+
+Verifying the signature on the archive gives us confidence that Google has released this archive for our use.
 
 The signature for the archive isn't listed as an artifact but can still be downloaded by concatenating `.asc` to the filename:
 
@@ -77,7 +87,7 @@ Primary key fingerprint: EB4C 1BFD 4F04 2F6D DDCC  EC91 7721 F63B D38B 4796
      Subkey fingerprint: 2F52 8D36 D67B 69ED F998  D857 78BD 6547 3CB3 BD13
 ```
 
-Note the primary key fingerprint listed below.
+Note the primary key fingerprint matches above.
 
 You can ignore the `WARNING` since we haven't verified their public key by signing it.
 
