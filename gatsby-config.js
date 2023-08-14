@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Oren-source`,
+    title: `My Tech Blog`,
     author: `Oren Fromberg`,
     description: `My blog about tech and other stuff.`,
     siteUrl: `https://blog.orenfromberg.tech/`,
@@ -117,6 +117,7 @@ module.exports = {
         ],
       },
     },
+    `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
