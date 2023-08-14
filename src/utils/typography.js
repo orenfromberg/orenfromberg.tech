@@ -13,8 +13,10 @@ import Typography from "typography"
 
 // const typography = new Typography(Wordpress2016)
 
-import moragaTheme from "typography-theme-moraga"
-const typography = new Typography(moragaTheme)
+// import moragaTheme from "typography-theme-moraga"
+// const typography = new Typography(moragaTheme)
+import irvingTheme from "typography-theme-irving"
+const typography = new Typography(irvingTheme)
 
 // Hot reload typography in development.
 if (process.env.NODE_ENV !== `production`) {
