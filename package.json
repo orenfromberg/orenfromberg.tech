@@ -41,9 +41,7 @@
     "serve": "^13.0.4",
     "typeface-merriweather": "0.0.72",
     "typeface-montserrat": "0.0.75",
-    "typography": "^0.16.24",
-    "typography-theme-irving": "^0.16.19",
-    "typography-theme-moraga": "^0.16.19"
+    "typography": "^0.16.24"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
   "keywords": [
