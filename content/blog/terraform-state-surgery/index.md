@@ -152,7 +152,7 @@ terraform state rm \
 ```
 Running this command will remove the resource with address `module.security_group.aws_security_group.sg` from the terraform state.
 
-The next step is to import all the security group rules into their own standalone resources. This will use a somewhat beefy `jq` query on the planned state that we can cache in a file called `filter.jq`:
+The next step is to import all the security group rules into their own standalone resources. This will use a somewhat beefy `jq` filter on the planned state that we can cache in a file called `filter.jq`:
 
 ```jq
 .resource_changes[] 
