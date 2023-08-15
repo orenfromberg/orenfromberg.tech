@@ -2,6 +2,7 @@
 title: GitHub Actions
 date: "2019-10-31"
 description: "How to set up some simple workflows using GitHub Actions to build, test, and deploy a blog to AWS S3 and Cloudfront."
+draft: true
 ---
 
 ## Getting Started
