@@ -100,7 +100,7 @@ Here is the choice: Either bite the bullet and incur painful downtime by destroy
 
 Since hard things are the only things worth doing, we're going to go the zero-downtime route and manipulate the state using our precision tooling. Indeed, this can be a tricky operation and I've heard it called *Terraform State Surgery*.
 
-## The Procedure
+## The Surgical Plan
 
 Now we see that the security groups will need to be surgically separated from the inline rules in order to make the terraform state match reality. Here is a high level overview of the steps we'll need to take to restore the integrity of the terraform state:
 
@@ -211,9 +211,16 @@ Running `terraform apply` to adjust some defaults such as setting `revoke_rules_
 
 ## Postop
 
-Now the terraform is fully migrated over to the new security group module that uses standalone rule resources. We've shown that it is possible to modify the terraform state so that no infrastructure in AWS is affected. At this point we can rest assured that the operation was a success and no downtime was incurred. 
+Now the terraform is fully migrated over to the new security group module that uses standalone rule resources. We've shown that it is possible to modify the terraform state so that no infrastructure in AWS is affected. At this point we can rest assured that the operation was a success and no downtime was incurred.
 
-All the code used for this blog post can be found on github here:
+Before you try this on your own infrastructure, there are a few things to consider.
+1. The size of your terraform state: if the state is large then terraform commands may take a long time to run
+2. The duration of AWS credential validity: if the AWS credentials become invalid while running the script, you may not be able to import any resources
+3. Others performing terraform apply operations on the same backend while you are running the migration script: this should be avoided since if you need to revert to an old state then any new resources will no longer exist.
+
+It may be possible to lock the terraform state for the backend manually and then run terraform commands with `-lock=false` so that they do not attempt to acquire the state. This can be risky and should be used at your own discretion.
+
+Good luck! All the code used for this blog post can be found on github here:
 
 https://github.com/orenfromberg/terraform-sg-demo
 
