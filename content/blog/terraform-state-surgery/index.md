@@ -154,7 +154,7 @@ Running this command will remove the resource with address `module.security_grou
 
 The next step is to import all the security group rules into their own standalone resources. This will use a somewhat beefy `jq` filter on the planned state that we can cache in a file called `filter.jq`:
 
-```jq
+```jq{numberLines: true}
 .resource_changes[] 
 | select((.type == "aws_security_group_rule") and (.change.actions[] == "create")) 
 | {address} + .change.after 

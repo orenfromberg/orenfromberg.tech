@@ -21,8 +21,8 @@ import Typography from "typography"
 const typography = new Typography({
   baseFontSize: '18px',
   baseLineHeight: 1.66,
-  headerFontFamily: ['Verdana','Segoe UI', 'Helvetica', 'Arial', 'sans-serif'],
-  bodyFontFamily: ['Georgia', 'serif'],
+  headerFontFamily: ['Fira Mono','Verdana','Segoe UI', 'Helvetica', 'Arial', 'sans-serif'],
+  bodyFontFamily: ['Lora','Georgia', 'serif'],
   // See below for the full list of options.
 })
 

@@ -8,6 +8,8 @@
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "dependencies": {
+    "@fontsource/fira-mono": "^5.0.8",
+    "@fontsource/lora": "^5.0.8",
     "disqus-react": "^1.1.5",
     "gatsby": "^4.25.7",
     "gatsby-image": "^2.11.0",
@@ -24,6 +26,7 @@
     "gatsby-remark-copy-linked-files": "^2.10.0",
     "gatsby-remark-images": "^6.25.0",
     "gatsby-remark-prismjs": "^3.13.0",
+    "gatsby-remark-prismjs-copy-button": "^0.4.0",
     "gatsby-remark-responsive-iframe": "^2.11.0",
     "gatsby-remark-smartypants": "^2.10.0",
     "gatsby-source-filesystem": "^2.11.1",
@@ -39,8 +42,6 @@
     "react-helmet": "^5.2.1",
     "react-typography": "^0.16.23",
     "serve": "^13.0.4",
-    "typeface-merriweather": "0.0.72",
-    "typeface-montserrat": "0.0.75",
     "typography": "^0.16.24"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
