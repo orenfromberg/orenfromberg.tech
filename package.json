@@ -1,11 +1,11 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "orenfromberg.tech",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "description": "my tech blog",
+  "version": "1.0.0",
+  "author": "Oren Fromberg <orenfromberg@gmail.com>",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/orenfromberg/orenfromberg.tech/issues"
   },
   "dependencies": {
     "@fontsource-variable/frank-ruhl-libre": "^5.0.8",
@@ -35,7 +35,6 @@
     "gatsby-transformer-remark": "^5.25.1",
     "gatsby-transformer-sharp": "^4.25.0",
     "immer": "^9.0.21",
-    "parcel": "^2.9.3",
     "prettier": "^1.19.1",
     "prismjs": "^1.29.0",
     "query-string": "^6.14.1",
