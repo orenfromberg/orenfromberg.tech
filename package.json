@@ -16,7 +16,6 @@
     "gatsby": "^4.25.7",
     "gatsby-image": "^2.11.0",
     "gatsby-parcel-config": "^1.11.0",
-    "gatsby-plugin-draft": "^0.2.0",
     "gatsby-plugin-feed": "^4.25.0",
     "gatsby-plugin-google-analytics": "^4.25.0",
     "gatsby-plugin-image": "^2.25.0",
