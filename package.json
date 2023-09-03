@@ -42,7 +42,7 @@
     "serve": "^14.2.1",
     "typography": "^0.16.24"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://blog.orenfromberg.tech",
   "keywords": [
     "gatsby"
   ],
@@ -50,7 +50,7 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "git+https://github.com/orenfromberg/orenfromberg.tech.git"
   },
   "scripts": {
     "build": "gatsby build",
