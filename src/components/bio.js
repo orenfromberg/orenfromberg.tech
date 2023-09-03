@@ -24,6 +24,8 @@ const Bio = () => {
       siteSrc
       social {
         keybase
+        github
+        email
       }
     }
   }
@@ -52,11 +54,9 @@ const Bio = () => {
       <p>
         Written by <strong>{author}</strong> {` `}
         <br />
-        <a href={`https://keybase.io/${social.keybase}`}>keybase</a>
+        <a href={`https://github.com/${social.github}`}>GitHub</a>
         <br />
-        <a href={`${siteSrc}`}>blog sourcecode</a>
-        <br />
-        <span>orenfromberg at gmail dot com</span>
+        <a href={`mailto:${social.email}`}>orenfromberg@gmail.com</a>
       </p>
     </div>
   );

@@ -1,6 +1,7 @@
 // custom typefaces
 import "@fontsource/fira-mono";
 import "@fontsource/lora";
+import '@fontsource-variable/frank-ruhl-libre';
 
 // require("prismjs/themes/prism-okaidia.css")
 require("prismjs/themes/prism-tomorrow.css")

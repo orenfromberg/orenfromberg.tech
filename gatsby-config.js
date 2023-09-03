@@ -9,6 +9,7 @@ module.exports = {
       keybase: `orenfromberg`,
       twitter: `o_m_f__g`,
       github: `orenfromberg`,
+      email: `orenfromberg@gmail.com`
     },
   },
   plugins: [
