@@ -2,6 +2,7 @@
 title: Terraform State Surgery
 date: "2023-08-14"
 description: Moving AWS Security Group Rules from Attributes-as-Blocks to standalone resources.
+tags: ["terraform","aws"]
 ---
 
 ## The Condition

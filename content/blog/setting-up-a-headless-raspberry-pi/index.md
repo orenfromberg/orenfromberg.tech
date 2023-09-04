@@ -2,6 +2,7 @@
 title: Setting up a Headless Raspberry Pi
 date: "2020-05-25"
 description: "These are the steps I take when I am setting up a headless Raspberry Pi."
+tags: ["raspberry pi"]
 ---
 
 These are the steps I take when setting up a headless Raspberry Pi. 

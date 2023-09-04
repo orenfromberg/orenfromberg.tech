@@ -2,6 +2,7 @@
 title: How to install golang securely on linux
 date: "2022-03-29"
 description: This post will describe how to install golang securely on linux.
+tags: ["security"]
 ---
 
 # Securely installing the Go programming language (golang)
