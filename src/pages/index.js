@@ -31,6 +31,8 @@ class BlogIndex extends React.Component {
                   </Link>
                 </h3>
                 <small>{node.frontmatter.date}</small>
+                <br />
+                {node.frontmatter.tags != null ? <small>Tags: {node.frontmatter.tags.join(', ')}</small>: ""}
               </header>
               <section>
                 <p
@@ -69,6 +71,7 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             description
+            tags
           }
         }
       }

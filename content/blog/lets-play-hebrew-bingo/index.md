@@ -2,6 +2,7 @@
 title: Let's play Hebrew Bingo!
 date: "2020-05-28"
 description: A fun game to teach kids hebrew numerals.
+tags: ['hebrew']
 ---
 
 [Hebrew numerals](https://en.wikipedia.org/wiki/Hebrew_numerals) are often used to represent dates on the Hebrew calendar. 
