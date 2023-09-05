@@ -18,6 +18,8 @@ Optionally:
 * you can pass onto another student using the `Let another student try` button
 * Click `Display Cheatsheet` to show the Hebrew letters and vowels
 
+The source code for this application is available [here on GitHub](https://github.com/orenfromberg/orenfromberg.tech/blob/master/src/pages/lessons/index.js).
+
 בהצלחה!
 
 (good luck!)
