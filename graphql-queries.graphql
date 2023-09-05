@@ -1,0 +1,102 @@
+query MyQuery {
+  allMarkdownRemark {
+    group(field: frontmatter___tags) {
+      tag: fieldValue
+      totalCount
+    }
+  }
+}
+
+query TestQuery($tag: String) {
+  allMarkdownRemark(
+    limit: 2000
+    sort: {fields: frontmatter___date, order: DESC}
+    filter: {frontmatter: {tags: {in: [$tag]}}}
+  ) {
+    totalCount
+    edges {
+      node {
+        fields {
+          slug
+        }
+        frontmatter {
+          title
+        }
+      }
+    }
+  }
+}
+
+query NodeQuery {
+  PostsRemark: allMarkdownRemark(
+    sort: {fields: [frontmatter___date], order: DESC}
+    limit: 1000
+  ) {
+    edges {
+      node {
+        fields {
+          slug
+        }
+        frontmatter {
+          title
+          tags
+        }
+      }
+    }
+  }
+  tagsGroup: allMarkdownRemark(limit: 2000) {
+    group(field: frontmatter___tags) {
+      fieldValue
+    }
+  }
+}
+
+query lastQuery {
+  site {
+    siteMetadata {
+      title
+    }
+  }
+  allMarkdownRemark(limit: 2000) {
+    group(field: frontmatter___tags) {
+      fieldValue
+      totalCount
+    }
+  }
+}
+
+query ImagesForGallery {
+  allFile(filter: {extension: {in: "jpg"}}) {
+    edges {
+      node {
+        dir
+        relativeDirectory
+        extension
+        relativePath
+        root
+        size
+        sourceInstanceName
+        uid
+        publicURL
+        id
+        absolutePath
+        base
+        name
+        blocks
+        internal {
+          content
+          contentDigest
+          contentFilePath
+          description
+          fieldOwners
+          ignoreType
+          mediaType
+          owner
+          type
+        }
+        ext
+        ino
+      }
+    }
+  }
+}

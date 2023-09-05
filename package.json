@@ -8,6 +8,7 @@
     "url": "https://github.com/orenfromberg/orenfromberg.tech/issues"
   },
   "dependencies": {
+    "@browniebroke/gatsby-image-gallery": "^7.2.1",
     "@fontsource-variable/frank-ruhl-libre": "^5.0.8",
     "@fontsource/fira-mono": "^5.0.8",
     "@fontsource/lora": "^5.0.8",
