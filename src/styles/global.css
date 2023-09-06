@@ -67,6 +67,7 @@ tr > td {
 span.header > h1, span.header > h3 {
     color: #86d686;
     font-family: "Fira Mono",ui-monospace,monospace;
+    text-shadow: 2px 2px #f8c2f4;
 }
 
 span.header h1::before, span.header h3::before {
