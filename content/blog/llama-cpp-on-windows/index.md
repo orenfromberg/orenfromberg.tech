@@ -28,7 +28,7 @@ https://news.ycombinator.com/item?id=36871730
     git clone https://github.com/ggerganov/llama.cpp
     ```
 1. [Install CMake for windows](https://cmake.org/download/)
-1. Install visual studio community edition with at least the following components:
+1. Install [Visual Studio Community Edition](https://visualstudio.microsoft.com/vs/community/) with at least the following components:
     * C++ CMake tools for Windows
     * C++ Clang Compiler for Windows (16.0.5)
 1. [Install the NVIDIA Cuda toolkit](https://developer.nvidia.com/cuda-downloads)
