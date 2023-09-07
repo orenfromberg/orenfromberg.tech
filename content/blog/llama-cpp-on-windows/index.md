@@ -1,8 +1,8 @@
 ---
-title: Building Llama.cpp on a Windows Laptop
+title: Building llama.cpp on a Windows Laptop
 date: "2023-09-07"
-description: These are the steps I took to install Llama 2 on my Windows laptop.
-tags: ["AI","LLM"]
+description: The steps for building and running llama.cpp on my Windows laptop.
+tags: ["AI","LLM","llama 2"]
 ---
 The following steps were used to build [llama.cpp](https://github.com/ggerganov/llama.cpp) and run a llama 2 model on my Dell XPS 15 laptop running Windows 10 Professional Edition laptop.
 
