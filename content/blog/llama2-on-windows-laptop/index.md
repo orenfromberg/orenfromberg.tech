@@ -1,33 +1,37 @@
 ---
-title: Installing Llama2 on a Windows Laptop
+title: Building Llama.cpp on a Windows Laptop
 date: "2023-09-07"
-description: The steps I took to install Llama 2 on my Windows laptop.
+description: These are the steps I took to install Llama 2 on my Windows laptop.
 tags: ["AI","LLM"]
 ---
-my Windows 10 Pro laptop is a Dell XPS 15 from around 2017:
+The following steps were used to build llama.cpp and run a llama 2 model on my Windows 10 laptop.
+
+Here are the specs for my laptop which is a Dell XPS 15 from around 201:
 * Intel Core i7-7700HQ 2.80 GHz
 * 32 GB RAM
 * 1TB NVMe SSD
-* GPU 0 Intel HD Graphics 630
-* GPU 2 NVIDIA GeForce GTX 1050
+* Intel HD Graphics 630
+* NVIDIA GeForce GTX 1050
 
-I started with the instructions here: https://news.ycombinator.com/item?id=36871730
+This guide is based off the following instructions here:
 
-1. Run powershell as an administrator
+https://news.ycombinator.com/item?id=36871730
+
+1. Run powershell as an Administrator
 1. [install chocolatey](https://chocolatey.org/install#individual)
-1. install git: 
-```
-choco install git
-```
-1. clone the llama.cpp repository locally:
-```
-git clone https://github.com/ggerganov/llama.cpp
-```
-1. [install CMake for windows](https://cmake.org/download/)
-1. install visual studio community edition with at least the following components:
+1. Install git: 
+    ```
+    choco install git
+    ```
+1. Clone the llama.cpp repository locally:
+    ```
+    git clone https://github.com/ggerganov/llama.cpp
+    ```
+1. [Install CMake for windows](https://cmake.org/download/)
+1. Install visual studio community edition with at least the following components:
     * C++ CMake tools for Windows
     * C++ Clang Compiler for Windows (16.0.5)
-1. [install the NVIDIA Cuda toolkit](https://developer.nvidia.com/cuda-downloads)
+1. [Install the NVIDIA Cuda toolkit](https://developer.nvidia.com/cuda-downloads)
 1. Download llama 2 model from here: ~https://huggingface.co/TheBloke/Llama-2-13B-chat-GGML/resolve/main/llama-2-13b-chat.ggmlv3.q4_0.bin~ (see discussion [here](https://huggingface.co/TheBloke/Llama-2-13B-chat-GGML/discussions/14)) https://huggingface.co/TheBloke/Llama-2-13B-chat-GGUF/resolve/main/llama-2-13b-chat.Q5_K_M.gguf
 1. At this point I needed to create a new Visual Studio project (Cuda runtime C++) so it downloads all the necessary C++ dependencies (see [this comment](https://stackoverflow.com/a/31619842)).
 1. In the llama.cpp repo, make a subdirectory and change into it:
