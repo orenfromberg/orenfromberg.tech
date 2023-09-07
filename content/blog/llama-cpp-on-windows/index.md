@@ -4,21 +4,21 @@ date: "2023-09-07"
 description: These are the steps I took to install Llama 2 on my Windows laptop.
 tags: ["AI","LLM"]
 ---
-The following steps were used to build llama.cpp and run a llama 2 model on my Windows 10 laptop.
+The following steps were used to build [llama.cpp](https://github.com/ggerganov/llama.cpp) and run a llama 2 model on my Dell XPS 15 laptop running Windows 10 Professional Edition laptop.
 
-Here are the specs for my laptop which is a Dell XPS 15 from around 201:
+For what it's worth, the laptop specs include:
 * Intel Core i7-7700HQ 2.80 GHz
 * 32 GB RAM
 * 1TB NVMe SSD
 * Intel HD Graphics 630
 * NVIDIA GeForce GTX 1050
 
-This guide is based off the following instructions here:
+This guide is based off the following instructions hacker news comment:
 
 https://news.ycombinator.com/item?id=36871730
 
 1. Run powershell as an Administrator
-1. [install chocolatey](https://chocolatey.org/install#individual)
+1. [Install chocolatey](https://chocolatey.org/install#individual)
 1. Install git: 
     ```
     choco install git
@@ -39,7 +39,11 @@ https://news.ycombinator.com/item?id=36871730
     mkdir build
     cd build
     ```
-1. Now build llama.cpp:
+1. Now build llama.cpp using:
+    ```
+    cmake .. -DLLAMA_CUBLAS=ON
+    ```
+    Here is the full output of the build:
     ```
     PS C:\Users\orenf\llama.cpp\build> cmake .. -DLLAMA_CUBLAS=ON
     -- Building for: Visual Studio 17 2022
@@ -79,20 +83,22 @@ https://news.ycombinator.com/item?id=36871730
     -- Generating done (0.7s)
     -- Build files have been written to: C:/Users/orenf/llama.cpp/build
     ```
-1. Then run:
+2. Then run:
     ```
-    PS C:\Users\orenf\llama.cpp\build> cmake --build . --config Release
+    cmake --build . --config Release
     ```
-1. Once it finishes building, create a models subdirectory and copy the model into it:
+3. Once it finishes building, create a models subdirectory and copy the model into it:
     ```
     cd bin/Release
     mkdir models
     mv Folder\Where\You\Downloaded\The\Model .\models
     ```
-1. Finally, run the model:
+4. Finally, run the model:
     ```
      .\main.exe -m .\models\llama-2-13b-chat.Q5_K_M.gguf --color -p 'tell me some cool facts' 2> $null
     ```
+    Note: the `2> $null` is used to suppress the debugging output.
+
 Here was the response:
 <hr />
 Here are some cool facts about the human brain:
