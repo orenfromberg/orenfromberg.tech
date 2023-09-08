@@ -10,6 +10,7 @@ import { rhythm, scale } from "../utils/typography"
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
+    const lastModified = this.props.data.allFile.edges[0].node.modifiedTime
     const siteTitle = this.props.data.site.siteMetadata.title
     const { previous, next } = this.props.pageContext
     const disqusConfig = {
@@ -44,6 +45,7 @@ class BlogPostTemplate extends React.Component {
             </p>
           </header>
           <section dangerouslySetInnerHTML={{ __html: post.html }} />
+          <small>This post was last modified {lastModified}</small>
           <hr
             style={{
               marginBottom: rhythm(1),
@@ -103,8 +105,16 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "MMMM Do, YYYY")
         description
+      }
+    }
+    allFile(filter: {relativeDirectory: {regex: $slug}}) {
+      edges {
+        node {
+          modifiedTime(formatString: "MMMM Do, YYYY h:mmA")
+          relativeDirectory
+        }
       }
     }
   }
