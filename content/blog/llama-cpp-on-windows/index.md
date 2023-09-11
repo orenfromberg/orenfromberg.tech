@@ -13,7 +13,7 @@ For what it's worth, the laptop specs include:
 * Intel HD Graphics 630
 * NVIDIA GeForce GTX 1050
 
-This guide is based off the following instructions hacker news comment:
+This guide is based off the following hacker news comment:
 
 https://news.ycombinator.com/item?id=36871730
 
@@ -23,17 +23,14 @@ https://news.ycombinator.com/item?id=36871730
     ```
     choco install git
     ```
-1. Clone the llama.cpp repository locally:
+1. Clone the `llama.cpp` repository locally:
     ```
     git clone https://github.com/ggerganov/llama.cpp
     ```
 1. [Install CMake for windows](https://cmake.org/download/)
-1. Install [Visual Studio Community Edition](https://visualstudio.microsoft.com/vs/community/) with at least the following components:
-    * C++ CMake tools for Windows
-    * C++ Clang Compiler for Windows (16.0.5)
+1. Install [Visual Studio Community Edition](https://visualstudio.microsoft.com/vs/community/). Make sure to add the "Desktop development with C++" workload for core C and C++ support.
 1. [Install the NVIDIA Cuda toolkit](https://developer.nvidia.com/cuda-downloads)
 1. Download llama 2 model from here: ~https://huggingface.co/TheBloke/Llama-2-13B-chat-GGML/resolve/main/llama-2-13b-chat.ggmlv3.q4_0.bin~ (see discussion [here](https://huggingface.co/TheBloke/Llama-2-13B-chat-GGML/discussions/14)) https://huggingface.co/TheBloke/Llama-2-13B-chat-GGUF/resolve/main/llama-2-13b-chat.Q5_K_M.gguf
-1. At this point I needed to create a new Visual Studio project (Cuda runtime C++) so it downloads all the necessary C++ dependencies (see [this comment](https://stackoverflow.com/a/31619842)).
 1. In the llama.cpp repo, make a subdirectory and change into it:
     ```
     mkdir build
@@ -83,17 +80,17 @@ https://news.ycombinator.com/item?id=36871730
     -- Generating done (0.7s)
     -- Build files have been written to: C:/Users/orenf/llama.cpp/build
     ```
-2. Then run:
+1. Then run:
     ```
     cmake --build . --config Release
     ```
-3. Once it finishes building, create a models subdirectory and copy the model into it:
+1. Once it finishes building, create a models subdirectory and copy the model into it:
     ```
     cd bin/Release
     mkdir models
     mv Folder\Where\You\Downloaded\The\Model .\models
     ```
-4. Finally, run the model:
+1. Finally, run the model:
     ```
      .\main.exe -m .\models\llama-2-13b-chat.Q5_K_M.gguf --color -p 'tell me some cool facts' 2> $null
     ```
