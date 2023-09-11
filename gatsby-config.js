@@ -9,6 +9,7 @@ module.exports = {
       keybase: `orenfromberg`,
       twitter: `o_m_f__g`,
       github: `orenfromberg`,
+      linkedin: `orenfromberg`,
       email: `orenfromberg@gmail.com`
     },
   },
@@ -150,7 +151,7 @@ module.exports = {
               }
             `,
             output: "/rss.xml",
-            title: "Your Site's RSS Feed",
+            title: "Oren’s Tech Blog RSS Feed",
           },
         ],
       },
