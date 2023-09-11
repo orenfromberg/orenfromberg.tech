@@ -30,13 +30,13 @@ https://news.ycombinator.com/item?id=36871730
 1. [Install CMake for windows](https://cmake.org/download/)
 1. Install [Visual Studio Community Edition](https://visualstudio.microsoft.com/vs/community/). Make sure to add the "Desktop development with C++" workload for core C and C++ support.
 1. [Install the NVIDIA Cuda toolkit](https://developer.nvidia.com/cuda-downloads)
-1. Download llama 2 model from here: ~https://huggingface.co/TheBloke/Llama-2-13B-chat-GGML/resolve/main/llama-2-13b-chat.ggmlv3.q4_0.bin~ (see discussion [here](https://huggingface.co/TheBloke/Llama-2-13B-chat-GGML/discussions/14)) https://huggingface.co/TheBloke/Llama-2-13B-chat-GGUF/resolve/main/llama-2-13b-chat.Q5_K_M.gguf
+1. Download llama 2 model from here: ~https://huggingface.co/TheBloke/Llama-2-13B-chat-GGML/resolve/main/llama-2-13b-chat.ggmlv3.q4_0.bin~ (see discussion [here](https://huggingface.co/TheBloke/Llama-2-13B-chat-GGML/discussions/14)) https://huggingface.co/TheBloke/Llama-2-13B-chat-GGUF/resolve/main/llama-2-13b-chat.Q5_K_M.gguf. Note the location where the file is downloaded.
 1. In the llama.cpp repo, make a subdirectory and change into it:
     ```
     mkdir build
     cd build
     ```
-1. Now build llama.cpp using:
+1. Prepare the llama.cpp build using:
     ```
     cmake .. -DLLAMA_CUBLAS=ON
     ```
@@ -80,19 +80,13 @@ https://news.ycombinator.com/item?id=36871730
     -- Generating done (0.7s)
     -- Build files have been written to: C:/Users/orenf/llama.cpp/build
     ```
-1. Then run:
+1. To build the release binary run:
     ```
     cmake --build . --config Release
     ```
-1. Once it finishes building, create a models subdirectory and copy the model into it:
+1. Once it finishes building, run the model specifying the absolute path to the model:
     ```
-    cd bin/Release
-    mkdir models
-    mv Folder\Where\You\Downloaded\The\Model .\models
-    ```
-1. Finally, run the model:
-    ```
-     .\main.exe -m .\models\llama-2-13b-chat.Q5_K_M.gguf --color -p 'tell me some cool facts' 2> $null
+     .\main.exe -m <Downloads location>\llama-2-13b-chat.Q5_K_M.gguf --color -p 'tell me some cool facts' 2> $null
     ```
     Note: the `2> $null` is used to suppress the debugging output.
 
