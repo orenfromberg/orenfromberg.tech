@@ -2,7 +2,7 @@
 title: Welcome to my tech blog!
 date: "2019-10-24"
 description: "First post!"
-tags: "web development", "gatsby"
+tags: ["web development", "gatsby"]
 ---
 
 Welcome to my tech blog! I will use this space to write about the things I love, especially technology.
