@@ -1,5 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import kebabCase from "lodash/kebabCase"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
@@ -32,7 +33,10 @@ class BlogIndex extends React.Component {
                 </h3>
                 <small>{node.frontmatter.date}</small>
                 <br />
-                {node.frontmatter.tags != null ? <small>Tags: {node.frontmatter.tags.join(', ')}</small>: ""}
+                {node.frontmatter.tags != null ? <small>Tags: <span>{node.frontmatter.tags.map((tag, i) => [
+                  i > 0 && ", ",
+                  <Link key={tag} to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
+                  ])}</span></small>: ""}
               </header>
               <section>
                 <p
