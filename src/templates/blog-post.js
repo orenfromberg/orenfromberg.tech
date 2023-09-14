@@ -6,6 +6,7 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
+import kebabCase from "lodash/kebabCase"
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -44,6 +45,10 @@ class BlogPostTemplate extends React.Component {
             </p>
           </header>
           <section dangerouslySetInnerHTML={{ __html: post.html }} />
+          <small>Tags:<span className={"tagslist"}> {post.frontmatter.tags.map((tag, i) => [
+                  i > 0 && ", ",
+                  <Link key={tag} to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
+                  ])}</span></small>
           <hr
             style={{
               marginBottom: rhythm(1),
@@ -105,6 +110,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM Do, YYYY")
         description
+        tags
       }
     }
   }
