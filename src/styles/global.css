@@ -138,3 +138,7 @@ span.header h1::after, span.header h3::after {
     padding-left: 2.8em;
     overflow: initial;
 }
+
+.tagslist {
+    font-family: "Fira Mono",ui-monospace,monospace;
+}
