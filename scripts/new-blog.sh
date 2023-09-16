@@ -2,7 +2,7 @@
 set -euo pipefail
 IFS=$'\n\t'
 
-formatted_date=$(date +"%Y-%m-%d")
+formatted_date=$(date +"%Y-%m-%d %H:%M")
 
 echo "Enter the title of the blog post:"
 read -r title
