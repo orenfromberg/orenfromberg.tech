@@ -45,7 +45,7 @@ class BlogPostTemplate extends React.Component {
             </p>
           </header>
           <section dangerouslySetInnerHTML={{ __html: post.html }} />
-          <small>Tags:<span className={"tagslist"}> {post.frontmatter.tags.map((tag, i) => [
+          <small>Tags:<span className={"tagslist"}> {post.frontmatter.tags.sort().map((tag, i) => [
                   i > 0 && ", ",
                   <Link key={tag} to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
                   ])}</span></small>

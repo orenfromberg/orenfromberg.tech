@@ -33,7 +33,7 @@ class BlogIndex extends React.Component {
                 </h3>
                 <small>{node.frontmatter.date}</small>
                 <br />
-                {node.frontmatter.tags != null ? <small>Tags:<span className={"tagslist"}> {node.frontmatter.tags.map((tag, i) => [
+                {node.frontmatter.tags != null ? <small>Tags:<span className={"tagslist"}> {node.frontmatter.tags.sort().map((tag, i) => [
                   i > 0 && ", ",
                   <Link key={tag} to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
                   ])}</span></small>: ""}

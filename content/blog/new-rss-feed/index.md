@@ -1,5 +1,5 @@
 ---
-title: New RSS feed for orenfromberg.tech
+title: New RSS feed for my blog
 date: "2023-09-05"
 description: New RSS feed for my blog
 tags: ["web development","gatsby"]
