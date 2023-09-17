@@ -1,18 +1,20 @@
 import React from "react"
 import PropTypes from "prop-types"
+import Layout from "../components/layout"
 
 // Components
 import { Link, graphql } from "gatsby"
 
-const Tags = ({ pageContext, data }) => {
+const Tags = ({ location, pageContext, data }) => {
   const { tag } = pageContext
+  const { title } = data.site.siteMetadata
   const { edges, totalCount } = data.allMarkdownRemark
   const tagHeader = `${totalCount} post${
     totalCount === 1 ? "" : "s"
   } tagged with "${tag}"`
 
   return (
-    <div>
+    <Layout location={location} title={title}>
       <h1>{tagHeader}</h1>
       <ul>
         {edges.map(({ node }) => {
@@ -30,7 +32,7 @@ const Tags = ({ pageContext, data }) => {
               You'll come back to it!
             */}
       <Link to="/tags">All tags</Link>
-    </div>
+    </Layout>
   )
 }
 
@@ -61,6 +63,11 @@ export default Tags
 
 export const pageQuery = graphql`
   query($tag: String) {
+    site {
+      siteMetadata {
+        title
+      }
+    }
     allMarkdownRemark(
       limit: 2000
       sort: {fields: frontmatter___date, order: DESC}
