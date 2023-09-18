@@ -12,6 +12,23 @@ module.exports = {
       linkedin: `orenfromberg`,
       email: `orenfromberg@gmail.com`
     },
+    menuLinks: [
+      {
+        name: `Home`,
+        link: `/`,
+        isGatsbyLink: true
+      },
+      {
+        name: `Tags`,
+        link: `/tags`,
+        isGatsbyLink: true
+      },
+      {
+        name: `RSS`,
+        link: `/rss.xml`,
+        isGatsbyLink: false
+      }
+    ]
   },
   plugins: [
     {

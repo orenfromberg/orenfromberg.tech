@@ -82,6 +82,35 @@ span.header h1::after, span.header h3::after {
     animation: cursor-blink 1.25s steps(2) infinite;
 }
 
+.headerLink {
+    text-decoration: none;
+    color: #86d686;
+    /* color: #333333; */
+    /* font-weight: bold; */
+    /* font-style: italic; */
+    font-family: "Fira Mono",ui-monospace,monospace;
+}
+
+/* .headerLink::before {
+    content: "* ";
+} */
+
+nav ul {
+    display: flex;
+    flex: 1;
+    margin-left: 0;
+    margin-bottom: 0;
+}
+
+nav ul li {
+    /* margin-bottom: 0; */
+    /* padding-left: 0; */
+    list-style-type: none;
+    /* padding: 1 1 1 0; */
+    padding: 1em 1em 0em 0em;
+    margin: 0em 1em 1em 0em;
+}
+
 @keyframes cursor-blink {
     0% {
         opacity: 0;

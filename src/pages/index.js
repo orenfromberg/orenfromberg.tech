@@ -51,11 +51,11 @@ const BlogIndex = ({ location, data }) => {
 }
 
 BlogIndex.propTypes = {
-  location: PropTypes.string,
+  location: PropTypes.object,
 }
 
 BlogIndex.defaultProps = {
-  location: ``,
+  location: {},
 }
 
 export default BlogIndex
