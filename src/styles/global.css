@@ -84,8 +84,8 @@ span.header h1::after, span.header h3::after {
 
 .headerLink {
     text-decoration: none;
-    color: #86d686;
-    /* color: #333333; */
+    /* color: #86d686; */
+    color: #333333;
     /* font-weight: bold; */
     /* font-style: italic; */
     font-family: "Fira Mono",ui-monospace,monospace;

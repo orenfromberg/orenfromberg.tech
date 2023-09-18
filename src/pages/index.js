@@ -33,7 +33,10 @@ const BlogIndex = ({ location, data }) => {
               <br />
               {node.frontmatter.tags != null ? <small>Tags:<span className={"tagslist"}> {node.frontmatter.tags.sort().map((tag, i) => [
                 i > 0 && ", ",
-                <Link key={tag} to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
+                <Link style={{
+                  textDecoration: `none`,
+                  color: '#333333'
+                }} key={tag} to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
                 ])}</span></small>: ""}
             </header>
             <section>
