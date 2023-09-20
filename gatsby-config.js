@@ -24,6 +24,11 @@ module.exports = {
         isGatsbyLink: true
       },
       {
+        name: `About`,
+        link: `/about`,
+        isGatsbyLink: true
+      },
+      {
         name: `RSS`,
         link: `/rss.xml`,
         isGatsbyLink: false
