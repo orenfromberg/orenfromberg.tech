@@ -65,9 +65,9 @@ const Bio = () => {
       <p>
         Written by <strong>{author}</strong> {` `}
         <br />
-        <FontAwesomeIcon icon={faGithub} /> <a className={`social`} href={`https://github.com/${social.github}`}>{social.github}</a>
+        <FontAwesomeIcon icon={faGithub} /> <a className={`social`} href={`https://www.github.com/${social.github}`}>{social.github}</a>
         <br />
-        <FontAwesomeIcon icon={faLinkedin} /> <a className={`social`} href={`https://linkedin.com/${social.linkedin}`}>{social.linkedin}</a>
+        <FontAwesomeIcon icon={faLinkedin} /> <a className={`social`} href={`https://www.linkedin.com/in/${social.linkedin}`}>{social.linkedin}</a>
         <br />
         {/* <FontAwesomeIcon icon={faSquareXTwitter} /> <a className={`social`} href={`https://x.com/${social.twitter}`}>{social.twitter}</a>
         <br />
