@@ -64,17 +64,17 @@ tr > td {
     text-decoration-thickness: 3px;
 }
 
-span.header > h1, span.header > h3 {
+span.header > div {
     color: #86d686;
     font-family: "Fira Mono",ui-monospace,monospace;
     /* text-shadow: 5px 5px #f6f4ff; */
 }
 
-span.header h1::before, span.header h3::before {
+span.header div::before {
     content: "❯ "
 }
 
-span.header h1::after, span.header h3::after {
+span.header div::after {
     content: "█";
     /* width: 5px; */
     /* height: 20px; */

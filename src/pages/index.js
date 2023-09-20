@@ -2,7 +2,6 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import kebabCase from "lodash/kebabCase"
 import PropTypes from "prop-types"
-import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { rhythm } from "../utils/typography"
@@ -14,7 +13,6 @@ const BlogIndex = ({ location, data }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <Seo title="All posts" />
-      {/* <Bio /> */}
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
         return (
