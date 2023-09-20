@@ -82,10 +82,18 @@ span.header div::after {
     animation: cursor-blink 1.25s steps(2) infinite;
 }
 
+a.social {
+    text-decoration: none;
+    /* color: #333333; */
+    color: inherit;
+    font-family: "Fira Mono",ui-monospace,monospace;
+}
+
 .headerLink {
     text-decoration: none;
     /* color: #86d686; */
-    color: #333333;
+    /* color: #333333; */
+    color: inherit;
     /* font-weight: bold; */
     /* font-style: italic; */
     font-family: "Fira Mono",ui-monospace,monospace;

@@ -10,6 +10,7 @@ module.exports = {
       twitter: `o_m_f__g`,
       github: `orenfromberg`,
       linkedin: `orenfromberg`,
+      reddit: `o_m_f_g`,
       email: `orenfromberg@gmail.com`
     },
     menuLinks: [

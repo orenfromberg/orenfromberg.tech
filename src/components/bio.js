@@ -11,6 +11,12 @@ import { GatsbyImage } from "gatsby-plugin-image";
 
 import { rhythm } from "../utils/typography"
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faGithub, faLinkedin, 
+  // faSquareXTwitter, faReddit 
+} from '@fortawesome/free-brands-svg-icons'
+
 const Bio = () => {
   const data = useStaticQuery(graphql`query BioQuery {
   avatar: file(absolutePath: {regex: "/profile-image.jpg/"}) {
@@ -26,6 +32,9 @@ const Bio = () => {
         keybase
         github
         email
+        linkedin
+        twitter
+        reddit
       }
     }
   }
@@ -56,9 +65,15 @@ const Bio = () => {
       <p>
         Written by <strong>{author}</strong> {` `}
         <br />
-        <a href={`https://github.com/${social.github}`}>GitHub</a>
+        <FontAwesomeIcon icon={faGithub} /> <a className={`social`} href={`https://github.com/${social.github}`}>{social.github}</a>
         <br />
-        <a href={`mailto:${social.email}`}>orenfromberg@gmail.com</a>
+        <FontAwesomeIcon icon={faLinkedin} /> <a className={`social`} href={`https://linkedin.com/${social.linkedin}`}>{social.linkedin}</a>
+        <br />
+        {/* <FontAwesomeIcon icon={faSquareXTwitter} /> <a className={`social`} href={`https://x.com/${social.twitter}`}>{social.twitter}</a>
+        <br />
+        <FontAwesomeIcon icon={faReddit} /> <a className={`social`} href={`https://reddit.com/${social.reddit}`}>{social.reddit}</a>
+        <br /> */}
+        <FontAwesomeIcon icon={faEnvelope} /> <a className={`social`} href={`mailto:${social.email}`}>{social.email}</a>
       </p>
     </div>
   );
