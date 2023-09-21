@@ -91,6 +91,8 @@ a.social {
 
 .headerLink {
     text-decoration: none;
+    margin: 1 1 1 1;
+    padding: 1 1 1 1;
     /* color: #86d686; */
     /* color: #333333; */
     color: inherit;
@@ -178,4 +180,8 @@ nav ul li {
 
 .tagslist {
     font-family: "Fira Mono",ui-monospace,monospace;
+}
+
+li a[aria-current="page"] {
+    text-decoration-line: underline;
 }
