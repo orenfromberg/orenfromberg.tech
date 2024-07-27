@@ -2,6 +2,15 @@ const path = require(`path`)
 const _ = require("lodash")
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
+exports.createSchemaCustomization = ({ actions }) => {
+  const { createTypes } = actions
+  createTypes(`
+    type MarkdownRemarkFrontmatter {
+      draft: Boolean
+    }
+  `)
+}
+
 exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions
 
@@ -14,6 +23,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       PostsRemark: allMarkdownRemark(
         sort: { fields: [frontmatter___date], order: DESC }
         limit: 1000
+        filter: { frontmatter: { draft: { ne: true } } }
       ) {
         edges {
           node {
@@ -27,7 +37,10 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
           }
         }
       }
-      tagsGroup: allMarkdownRemark(limit: 2000) {
+      tagsGroup: allMarkdownRemark(
+        limit: 2000
+        filter: { frontmatter: { draft: { ne: true } } }
+      ) {
         group(field: frontmatter___tags) {
           fieldValue
         }

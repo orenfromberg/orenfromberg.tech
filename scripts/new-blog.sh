@@ -24,5 +24,6 @@ title: ${title}
 date: ${formatted_date}
 description: ${description}
 tags: []
+draft: true
 ---
 EOF
