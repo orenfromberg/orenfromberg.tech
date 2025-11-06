@@ -21,9 +21,9 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     `
     {
       PostsRemark: allMarkdownRemark(
-        sort: { fields: [frontmatter___date], order: DESC }
+        sort: {frontmatter: {date: DESC}}
         limit: 1000
-        filter: { frontmatter: { draft: { ne: true } } }
+        filter: {frontmatter: {draft: {ne: true}}}
       ) {
         edges {
           node {
@@ -39,9 +39,9 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       }
       tagsGroup: allMarkdownRemark(
         limit: 2000
-        filter: { frontmatter: { draft: { ne: true } } }
+        filter: {frontmatter: {draft: {ne: true}}}
       ) {
-        group(field: frontmatter___tags) {
+        group(field: {frontmatter: {tags: SELECT}}) {
           fieldValue
         }
       }
