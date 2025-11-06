@@ -7,10 +7,19 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-function Seo({ description, lang, meta, title }) {
+// Keep a presentational Seo component for convenience (renders nothing to the
+// document body). The Head export below is the Gatsby Head-compatible piece
+// which pages can re-export: `export { Head as Head } from '../components/seo'`.
+function Seo(/* { description, lang, meta, title } */) {
+  return null
+}
+
+// Gatsby's Head API: return head elements here (title/meta/html). Pages can
+// re-export this named export so Gatsby will use it to populate the document
+// head without react-helmet.
+export function Head({ description, lang = `en`, meta = [], title }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -26,49 +35,24 @@ function Seo({ description, lang, meta, title }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
+  const fullTitle = title ? `${title} | ${site.siteMetadata.title}` : site.siteMetadata.title
 
   return (
-    <Helmet
-      htmlAttributes={{
-        lang,
-      }}
-      title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
-      meta={[
-        {
-          name: `description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:title`,
-          content: title,
-        },
-        {
-          property: `og:description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:type`,
-          content: `website`,
-        },
-        {
-          name: `twitter:card`,
-          content: `summary`,
-        },
-        {
-          name: `twitter:creator`,
-          content: site.siteMetadata.author,
-        },
-        {
-          name: `twitter:title`,
-          content: title,
-        },
-        {
-          name: `twitter:description`,
-          content: metaDescription,
-        },
-      ].concat(meta)}
-    />
+    <>
+      <html lang={lang} />
+      <title>{fullTitle}</title>
+      <meta name="description" content={metaDescription} />
+      <meta property="og:title" content={title} />
+      <meta property="og:description" content={metaDescription} />
+      <meta property="og:type" content="website" />
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:creator" content={site.siteMetadata.author} />
+      <meta name="twitter:title" content={title} />
+      <meta name="twitter:description" content={metaDescription} />
+      {meta.map((m, i) => (
+        <meta key={i} {...m} />
+      ))}
+    </>
   )
 }
 
