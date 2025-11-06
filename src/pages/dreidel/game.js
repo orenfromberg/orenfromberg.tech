@@ -5,7 +5,6 @@ class Game extends React.Component {
         super(props)
         this.state = {};
         this.onValueChange = this.onValueChange.bind(this);
-        this.onClickLabel = this.onClickLabel.bind(this);
         this.handleSpin = this.handleSpin.bind(this);
     }
 
@@ -15,11 +14,6 @@ class Game extends React.Component {
         });
     }
 
-    onClickLabel(event) {
-        this.setState({
-            selectedOption: event.target.value
-        });
-    }
 
     handleSpin(event) {
         event.preventDefault();
@@ -44,7 +38,7 @@ class Game extends React.Component {
                                 checked={this.state.selectedOption === "nun"}
                                 onChange={this.onValueChange}
                             />
-                            <label htmlFor="num" onClick={this.onClickLabel}>Nun</label>
+                            <label htmlFor="nun">Nun</label>
                             <br />
                             <input
                                 type="radio"
@@ -54,7 +48,7 @@ class Game extends React.Component {
                                 checked={this.state.selectedOption === "gimel"}
                                 onChange={this.onValueChange}
                             />
-                            <label htmlFor="gimel" onClick={this.onClickLabel}>Gimel</label>
+                            <label htmlFor="gimel">Gimel</label>
                             <br />
                             <input
                                 type="radio"
@@ -64,7 +58,7 @@ class Game extends React.Component {
                                 checked={this.state.selectedOption === "hey"}
                                 onChange={this.onValueChange}
                             />
-                            <label htmlFor="hey" onClick={this.onClickLabel}>Hey</label>
+                            <label htmlFor="hey">Hey</label>
                             <br />
                             <input
                                 type="radio"
@@ -74,7 +68,7 @@ class Game extends React.Component {
                                 checked={this.state.selectedOption === "shin"}
                                 onChange={this.onValueChange}
                             />
-                            <label htmlFor="shin" onClick={this.onClickLabel}>Shin</label>
+                            <label htmlFor="shin">Shin</label>
                         </div>
                         <div>
                             <button onClick={this.handleSpin} type="submit">Submit</button>
