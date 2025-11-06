@@ -64,14 +64,14 @@ export default BlogIndex
 export const pageQuery = graphql`
   query {
     site {
-      siteMetadata {
-        title
-      }
+    siteMetadata {
+      title
+    }
     }
     allMarkdownRemark(
-      sort: { fields: [frontmatter___date], order: DESC }
+      sort: {frontmatter: {date: DESC}}
       limit: 1000
-      filter: { frontmatter: { draft: { ne: true } } }
+      filter: {frontmatter: {draft: {ne: true}}}
     ) {
       edges {
         node {
