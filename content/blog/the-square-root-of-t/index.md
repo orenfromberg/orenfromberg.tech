@@ -44,7 +44,7 @@ Since $(2a+1)^2$ is in the form of $2x+1$ where $x=2a^2+2a$ then $(2a+1)^2$ is o
 
 With these two facts in hand, we can prove that if $x^2$ is even then $x$ is even.
 
-"if $x$ then $y$" can be written as $x \implies y$.
+"if $x$ then $y$" can be written as $x \implies y$, read "x implies y".
 
 The contrapositive of "P implies Q" is "not Q implies not P", and they are logically equivalent.
 
@@ -74,7 +74,7 @@ $$
 
 Since $m^2$ is in the form of $2x$, $m^2$ is by definition an even number. 
 
-Based on what we proved above, $m^2$ implies that $m$ is even.
+Based on what we proved above, $m^2$ is even implies that $m$ is even.
 
 And since $m$ is even, we can write it as $m=2k$. Then:
 
