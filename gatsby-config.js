@@ -164,7 +164,7 @@ module.exports = {
             query: `
               {
                 allMarkdownRemark(
-                  sort: { order: DESC, fields: [frontmatter___date] },
+                  sort: {frontmatter: {date: DESC}},
                   limit: 1000
                   filter: { frontmatter: { draft: { ne: true } } }
                 ) {

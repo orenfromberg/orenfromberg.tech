@@ -1,5 +1,4 @@
-#FROM node:16-alpine3.14
-FROM node:14-alpine3.15
+FROM node:22-alpine
 
 COPY . /blog
 
